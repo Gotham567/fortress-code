@@ -1,11 +1,14 @@
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const bureaux = [
   { ville: "Lyon (siège)", adresse: "40 rue de Bruxelles, 69009 Lyon" },
@@ -16,6 +19,58 @@ const bureaux = [
 ];
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    nom: "",
+    prenom: "",
+    email: "",
+    telephone: "",
+    societe: "",
+    message: "",
+  });
+  const { toast } = useToast();
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData((prev) => ({ ...prev, [e.target.id]: e.target.value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!formData.nom || !formData.prenom || !formData.email || !formData.societe || !formData.message) {
+      toast({
+        title: "Champs manquants",
+        description: "Veuillez remplir tous les champs obligatoires.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("send-contact", {
+        body: formData,
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Message envoyé !",
+        description: "Nous vous répondrons dans les plus brefs délais.",
+      });
+      setFormData({ nom: "", prenom: "", email: "", telephone: "", societe: "", message: "" });
+    } catch (err) {
+      console.error("Submit error:", err);
+      toast({
+        title: "Erreur",
+        description: "Une erreur est survenue. Veuillez réessayer.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -47,37 +102,44 @@ const Contact = () => {
             >
               <div className="card-glass rounded-2xl p-8 md:p-10">
                 <h2 className="font-heading text-xl font-bold text-foreground mb-6">Envoyez-nous un message</h2>
-                <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+                <form className="space-y-5" onSubmit={handleSubmit}>
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div className="space-y-2">
                       <Label htmlFor="nom">Nom *</Label>
-                      <Input id="nom" placeholder="Votre nom" className="bg-secondary border-border" />
+                      <Input id="nom" placeholder="Votre nom" className="bg-secondary border-border" value={formData.nom} onChange={handleChange} />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="prenom">Prénom *</Label>
-                      <Input id="prenom" placeholder="Votre prénom" className="bg-secondary border-border" />
+                      <Input id="prenom" placeholder="Votre prénom" className="bg-secondary border-border" value={formData.prenom} onChange={handleChange} />
                     </div>
                   </div>
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div className="space-y-2">
                       <Label htmlFor="email">Email *</Label>
-                      <Input id="email" type="email" placeholder="votre@email.com" className="bg-secondary border-border" />
+                      <Input id="email" type="email" placeholder="votre@email.com" className="bg-secondary border-border" value={formData.email} onChange={handleChange} />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="telephone">Téléphone</Label>
-                      <Input id="telephone" type="tel" placeholder="04 XX XX XX XX" className="bg-secondary border-border" />
+                      <Input id="telephone" type="tel" placeholder="04 XX XX XX XX" className="bg-secondary border-border" value={formData.telephone} onChange={handleChange} />
                     </div>
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="societe">Société *</Label>
-                    <Input id="societe" placeholder="Nom de votre entreprise" className="bg-secondary border-border" />
+                    <Input id="societe" placeholder="Nom de votre entreprise" className="bg-secondary border-border" value={formData.societe} onChange={handleChange} />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="message">Message *</Label>
-                    <Textarea id="message" placeholder="Décrivez votre projet ou votre besoin..." rows={5} className="bg-secondary border-border" />
+                    <Textarea id="message" placeholder="Décrivez votre projet ou votre besoin..." rows={5} className="bg-secondary border-border" value={formData.message} onChange={handleChange} />
                   </div>
-                  <Button type="submit" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold w-full sm:w-auto px-10">
-                    Envoyer le message
+                  <Button type="submit" size="lg" disabled={isLoading} className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold w-full sm:w-auto px-10">
+                    {isLoading ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Envoi en cours...
+                      </>
+                    ) : (
+                      "Envoyer le message"
+                    )}
                   </Button>
                 </form>
               </div>
