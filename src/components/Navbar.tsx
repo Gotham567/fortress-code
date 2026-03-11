@@ -2,45 +2,53 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
-  { label: "Qui sommes-nous", href: "#about" },
-  { label: "Audit", href: "#services" },
-  { label: "Conseil", href: "#services" },
-  { label: "CERT", href: "#services" },
-  { label: "Actualités", href: "#blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "Qui sommes-nous", href: "/qui-sommes-nous" },
+  { label: "Audit", href: "/audit" },
+  { label: "Conseil", href: "/conseil" },
+  { label: "CERT", href: "/cert" },
+  { label: "Actualités", href: "/actualites" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <Shield className="h-8 w-8 text-primary" />
           <span className="font-heading text-xl font-bold text-foreground tracking-tight">
             algo<span className="text-primary">secure</span>
           </span>
-        </a>
+        </Link>
 
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
-              href={link.href}
-              className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium"
+              to={link.href}
+              className={`text-sm font-medium transition-colors ${
+                location.pathname === link.href
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-primary"
+              }`}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
 
         <div className="hidden md:block">
-          <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold">
-            Contactez-nous
-          </Button>
+          <Link to="/contact">
+            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold">
+              Contactez-nous
+            </Button>
+          </Link>
         </div>
 
         <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
@@ -58,16 +66,22 @@ const Navbar = () => {
           >
             <div className="px-6 py-4 flex flex-col gap-4">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.label}
-                  href={link.href}
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  to={link.href}
+                  className={`transition-colors ${
+                    location.pathname === link.href
+                      ? "text-primary"
+                      : "text-muted-foreground hover:text-primary"
+                  }`}
                   onClick={() => setOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
-              <Button className="bg-primary text-primary-foreground w-full font-heading">Contactez-nous</Button>
+              <Link to="/contact" onClick={() => setOpen(false)}>
+                <Button className="bg-primary text-primary-foreground w-full font-heading">Contactez-nous</Button>
+              </Link>
             </div>
           </motion.div>
         )}
