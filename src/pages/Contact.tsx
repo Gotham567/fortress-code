@@ -1,0 +1,140 @@
+import Navbar from "@/components/Navbar";
+import FooterSection from "@/components/FooterSection";
+import { motion } from "framer-motion";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+
+const bureaux = [
+  { ville: "Lyon (siège)", adresse: "40 rue de Bruxelles, 69009 Lyon" },
+  { ville: "Paris", adresse: "8 rue de Hanovre, 75002 Paris" },
+  { ville: "Saint-Étienne", adresse: "3 rue Javelin Pagnon, 42000 Saint-Étienne" },
+  { ville: "Grenoble", adresse: "17 rue Jean Prévost, 38000 Grenoble" },
+  { ville: "Annecy", adresse: "21 avenue de Genève, 74000 Annecy" },
+];
+
+const Contact = () => {
+  return (
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <section className="pt-32 pb-20 px-6 md:px-12 lg:px-20">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl mb-16"
+          >
+            <p className="text-primary font-heading font-semibold text-sm uppercase tracking-widest mb-4">
+              Contact
+            </p>
+            <h1 className="font-heading text-4xl md:text-6xl font-bold leading-tight mb-6">
+              Contactez-<span className="text-gradient">nous</span>
+            </h1>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Une question, un projet, une urgence ? Nos experts sont à votre écoute.
+            </p>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-5 gap-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="lg:col-span-3"
+            >
+              <div className="card-glass rounded-2xl p-8 md:p-10">
+                <h2 className="font-heading text-xl font-bold text-foreground mb-6">Envoyez-nous un message</h2>
+                <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+                  <div className="grid sm:grid-cols-2 gap-5">
+                    <div className="space-y-2">
+                      <Label htmlFor="nom">Nom *</Label>
+                      <Input id="nom" placeholder="Votre nom" className="bg-secondary border-border" />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="prenom">Prénom *</Label>
+                      <Input id="prenom" placeholder="Votre prénom" className="bg-secondary border-border" />
+                    </div>
+                  </div>
+                  <div className="grid sm:grid-cols-2 gap-5">
+                    <div className="space-y-2">
+                      <Label htmlFor="email">Email *</Label>
+                      <Input id="email" type="email" placeholder="votre@email.com" className="bg-secondary border-border" />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="telephone">Téléphone</Label>
+                      <Input id="telephone" type="tel" placeholder="04 XX XX XX XX" className="bg-secondary border-border" />
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="societe">Société *</Label>
+                    <Input id="societe" placeholder="Nom de votre entreprise" className="bg-secondary border-border" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="message">Message *</Label>
+                    <Textarea id="message" placeholder="Décrivez votre projet ou votre besoin..." rows={5} className="bg-secondary border-border" />
+                  </div>
+                  <Button type="submit" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold w-full sm:w-auto px-10">
+                    Envoyer le message
+                  </Button>
+                </form>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="lg:col-span-2 space-y-6"
+            >
+              <div className="card-glass rounded-xl p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <Phone className="h-5 w-5 text-primary" />
+                  <h3 className="font-heading font-semibold text-foreground">Téléphone</h3>
+                </div>
+                <a href="tel:0426782486" className="text-muted-foreground hover:text-primary transition-colors">04 26 78 24 86</a>
+              </div>
+
+              <div className="card-glass rounded-xl p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <Mail className="h-5 w-5 text-primary" />
+                  <h3 className="font-heading font-semibold text-foreground">Email</h3>
+                </div>
+                <a href="mailto:contact@algosecure.fr" className="text-muted-foreground hover:text-primary transition-colors">contact@algosecure.fr</a>
+              </div>
+
+              <div className="card-glass rounded-xl p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <Clock className="h-5 w-5 text-primary" />
+                  <h3 className="font-heading font-semibold text-foreground">Horaires</h3>
+                </div>
+                <p className="text-muted-foreground text-sm">Lun-Ven : 9h - 18h</p>
+                <p className="text-primary text-sm font-medium mt-1">CERT : 24h/24, 7j/7</p>
+              </div>
+
+              <div className="card-glass rounded-xl p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <MapPin className="h-5 w-5 text-primary" />
+                  <h3 className="font-heading font-semibold text-foreground">Nos bureaux</h3>
+                </div>
+                <div className="space-y-3">
+                  {bureaux.map((b) => (
+                    <div key={b.ville}>
+                      <p className="text-foreground text-sm font-medium">{b.ville}</p>
+                      <p className="text-muted-foreground text-xs">{b.adresse}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+      <FooterSection />
+    </div>
+  );
+};
+
+export default Contact;
