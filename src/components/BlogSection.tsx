@@ -33,8 +33,8 @@ const BlogSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {articles.map((a, i) => (
+            <Link key={i} to="/actualites">
             <motion.article
-              key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
