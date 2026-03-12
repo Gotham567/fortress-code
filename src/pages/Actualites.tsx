@@ -19,7 +19,7 @@ const articles = [
   },
   {
     tag: "Événement",
-    title: "AlgoSecure au Forum InCyber 2026",
+    title: "CyberSecure au Forum InCyber 2026",
     desc: "Retrouvez-nous au FIC à Lille les 1-3 avril 2026 sur notre stand pour échanger autour de la cybersécurité.",
     date: "10 Jan 2026",
   },
