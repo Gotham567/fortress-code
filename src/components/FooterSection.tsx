@@ -29,7 +29,7 @@ const FooterSection = () => {
 
         <div className="text-center mt-8">
           <p className="text-muted-foreground text-xs">
-            © AlgoSecure 2026 — Spécialistes en sécurité informatique à Lyon, Paris, Saint-Étienne et partout en France
+            © CyberSecure 2026 — Spécialistes en sécurité informatique à Lyon, Paris, Saint-Étienne et partout en France
           </p>
         </div>
       </div>

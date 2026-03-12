@@ -164,7 +164,7 @@ const Contact = () => {
                   <Mail className="h-5 w-5 text-primary" />
                   <h3 className="font-heading font-semibold text-foreground">Email</h3>
                 </div>
-                <a href="mailto:contact@algosecure.fr" className="text-muted-foreground hover:text-primary transition-colors">contact@algosecure.fr</a>
+                <a href="mailto:contact@cybersecure.fr" className="text-muted-foreground hover:text-primary transition-colors">contact@cybersecure.fr</a>
               </div>
 
               <div className="card-glass rounded-xl p-6">
