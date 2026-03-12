@@ -9,7 +9,7 @@ const FooterSection = () => {
           <Link to="/" className="flex items-center gap-2">
             <Shield className="h-6 w-6 text-primary" />
             <span className="font-heading text-lg font-bold text-foreground">
-              algo<span className="text-primary">secure</span>
+              cyber<span className="text-primary">secure</span>
             </span>
           </Link>
 
