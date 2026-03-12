@@ -19,7 +19,7 @@ const logos = [
 
 const TrustSection = () => {
   return (
-    <section className="section-padding border-b border-border" id="trust">
+    <section className="section-padding border-b border-border" id="trust" aria-label="Références clients">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +31,7 @@ const TrustSection = () => {
             Ils nous font <span className="text-gradient">confiance</span>
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">
-            Grands comptes, ETI, PME et acteurs publics nous confient la sécurité de leurs systèmes d'information.
+            Grands comptes, ETI, PME et acteurs publics nous confient la sécurisation de leurs systèmes d'information.
           </p>
         </motion.div>
 
@@ -46,8 +46,11 @@ const TrustSection = () => {
               >
                 <img
                   src={logo.src}
-                  alt={`Logo ${logo.name}`}
+                  alt={`${logo.name} fait confiance à CyberSecure pour sa cybersécurité`}
                   className="h-10 max-w-[120px] object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
+                  loading="lazy"
+                  width="120"
+                  height="40"
                 />
               </div>
             ))}

@@ -8,17 +8,17 @@ const testimonials = [
     role: "RSSI - Mirion Technologies",
   },
   {
-    quote: "Très à l'écoute, les équipes d'AlgoSecure m'ont conseillé des solutions pertinentes. Leur prestation toute aussi pointue que bienveillante a été une véritable plus-value.",
+    quote: "Très à l'écoute, les équipes de CyberSecure m'ont conseillé des solutions pertinentes. Leur prestation toute aussi pointue que bienveillante a été une véritable plus-value.",
     author: "Caroline G.",
     role: "Directrice - MSD",
   },
   {
-    quote: "Depuis la fin des années 2000, AlgoSecure a fourni son expertise technique à plusieurs de nos projets complexes de cybersécurité, avec un niveau d'efficience remarquable.",
+    quote: "Depuis la fin des années 2000, CyberSecure a fourni son expertise technique à plusieurs de nos projets complexes de cybersécurité, avec un niveau d'efficience remarquable.",
     author: "Direction de la Sécurité du Numérique",
     role: "Groupe SNCF",
   },
   {
-    quote: "Les consultants ont été efficaces et très professionnels. Les résultats de ces deux audits nous ont été très utiles. Je recommande AlgoSecure.",
+    quote: "Les consultants ont été efficaces et très professionnels. Les résultats de ces deux audits nous ont été très utiles. Je recommande CyberSecure.",
     author: "Jean-Baptiste B.",
     role: "Technology Operations Manager - Cosmo Tech",
   },
@@ -26,7 +26,7 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="section-padding border-t border-border">
+    <section className="section-padding border-t border-border" aria-label="Témoignages clients">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,12 +37,14 @@ const TestimonialsSection = () => {
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
             Ce que nos clients <span className="text-gradient">disent de nous</span>
           </h2>
-          <p className="text-muted-foreground">Nos clients sont les meilleurs témoins de la qualité de notre travail.</p>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Grands comptes, ETI et PME témoignent de la qualité de nos prestations en audit, conseil et réponse à incident de cybersécurité.
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-6">
           {testimonials.map((t, i) => (
-            <motion.div
+            <motion.blockquote
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -50,15 +52,15 @@ const TestimonialsSection = () => {
               transition={{ delay: i * 0.1 }}
               className="card-glass rounded-xl p-8 relative"
             >
-              <Quote className="h-8 w-8 text-primary/20 absolute top-6 right-6" />
+              <Quote className="h-8 w-8 text-primary/20 absolute top-6 right-6" aria-hidden="true" />
               <p className="text-foreground/90 text-sm leading-relaxed mb-6 italic">
                 "{t.quote}"
               </p>
-              <div>
+              <footer>
                 <p className="font-heading font-semibold text-foreground text-sm">{t.author}</p>
                 <p className="text-muted-foreground text-xs">{t.role}</p>
-              </div>
-            </motion.div>
+              </footer>
+            </motion.blockquote>
           ))}
         </div>
       </div>
