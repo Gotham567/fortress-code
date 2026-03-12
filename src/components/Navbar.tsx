@@ -23,7 +23,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2">
           <Shield className="h-8 w-8 text-primary" />
           <span className="font-heading text-xl font-bold text-foreground tracking-tight">
-            algo<span className="text-primary">secure</span>
+            cyber<span className="text-primary">secure</span>
           </span>
         </Link>
 

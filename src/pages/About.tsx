@@ -26,7 +26,7 @@ const About = () => {
               Qui sommes-<span className="text-gradient">nous</span>
             </h1>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              AlgoSecure est un cabinet de conseil indépendant en cybersécurité fondé en 2008 à Lyon. Nous accompagnons entreprises et organismes publics dans la sécurisation de leurs systèmes d'information avec expertise, indépendance et bienveillance.
+              CyberSecure est un cabinet de conseil indépendant en cybersécurité fondé en 2008 à Lyon. Nous accompagnons entreprises et organismes publics dans la sécurisation de leurs systèmes d'information avec expertise, indépendance et bienveillance.
             </p>
           </motion.div>
 

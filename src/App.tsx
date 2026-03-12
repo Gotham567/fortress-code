@@ -16,6 +16,7 @@ import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite.tsx";
 import RSE from "./pages/RSE.tsx";
 import Glossaire from "./pages/Glossaire.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import ScrollToTop from "./components/ScrollToTop.tsx";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/qui-sommes-nous" element={<About />} />

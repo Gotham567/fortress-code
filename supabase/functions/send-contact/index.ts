@@ -59,7 +59,7 @@ serve(async (req) => {
           },
           body: JSON.stringify({
             to: contactEmail,
-            subject: `[AlgoSecure] Nouveau message de ${prenom} ${nom}`,
+            subject: `[CyberSecure] Nouveau message de ${prenom} ${nom}`,
             html: `
               <h2>Nouveau message depuis le formulaire de contact</h2>
               <p><strong>Nom :</strong> ${nom}</p>

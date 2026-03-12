@@ -36,7 +36,7 @@ const CertificationsSection = () => {
             {
               icon: Building2,
               title: "Membre Campus Cyber",
-              desc: "AlgoSecure est membre du Campus Cyber, le lieu totem de la cybersécurité en France, renforçant notre réseau et notre expertise collective.",
+              desc: "CyberSecure est membre du Campus Cyber, le lieu totem de la cybersécurité en France, renforçant notre réseau et notre expertise collective.",
             },
           ].map((cert, i) => (
             <motion.div

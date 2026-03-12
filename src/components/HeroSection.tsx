@@ -83,7 +83,7 @@ const HeroSection = () => {
               <h2 className="font-heading text-2xl font-bold text-foreground mb-2">
                 algo<span className="text-primary">LightHouse</span>
               </h2>
-              <p className="text-muted-foreground text-sm mb-6">by algosecure</p>
+              <p className="text-muted-foreground text-sm mb-6">by cybersecure</p>
               <h3 className="font-heading text-xl font-semibold text-foreground mb-4 leading-snug">
                 Pilotez et maîtrisez votre surface d'attaque externe
               </h3>
