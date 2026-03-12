@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import { Search, ShieldCheck, Phone, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const services = [
-  { icon: Search, title: "Audit", desc: "Tests d'intrusion, audits de configuration et d'architecture" },
-  { icon: ShieldCheck, title: "Conseil", desc: "Accompagnement RSSI, conformité, formations" },
-  { icon: Phone, title: "CERT", desc: "Réponse à incident, analyse forensique, gestion de crise" },
-  { icon: Award, title: "Certifications", desc: "PASSI, ISO 27001, Cyber Expert, OSEP, OSCP" },
+  { icon: Search, title: "Audit", desc: "Tests d'intrusion, audits de configuration et d'architecture", href: "/audit" },
+  { icon: ShieldCheck, title: "Conseil", desc: "Accompagnement RSSI, conformité, formations", href: "/conseil" },
+  { icon: Phone, title: "CERT", desc: "Réponse à incident, analyse forensique, gestion de crise", href: "/cert" },
+  { icon: Award, title: "Certifications", desc: "PASSI, ISO 27001, Cyber Expert, OSEP, OSCP", href: "/qui-sommes-nous" },
 ];
 
 const HeroSection = () => {
@@ -38,12 +39,16 @@ const HeroSection = () => {
                 Nous accompagnons les entreprises et organismes publics pour sécuriser leur système d'information avec expertise et indépendance.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold text-base px-8">
-                  Découvrir nos services
-                </Button>
-                <Button size="lg" variant="outline" className="border-border text-foreground hover:bg-secondary font-heading font-semibold text-base px-8">
-                  Nous contacter
-                </Button>
+                <Link to="/audit">
+                  <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold text-base px-8">
+                    Découvrir nos services
+                  </Button>
+                </Link>
+                <Link to="/contact">
+                  <Button size="lg" variant="outline" className="border-border text-foreground hover:bg-secondary font-heading font-semibold text-base px-8">
+                    Nous contacter
+                  </Button>
+                </Link>
               </div>
             </motion.div>
 
@@ -53,15 +58,14 @@ const HeroSection = () => {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="grid grid-cols-2 gap-4 mt-14"
             >
-              {services.map((s, i) => (
-                <div
-                  key={s.title}
-                  className="card-glass rounded-lg p-5 hover:border-primary/50 transition-all cursor-pointer group"
-                >
-                  <s.icon className="h-10 w-10 text-primary mb-3 group-hover:scale-110 transition-transform" />
-                  <h3 className="font-heading font-semibold text-foreground mb-1">{s.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
-                </div>
+              {services.map((s) => (
+                <Link key={s.title} to={s.href}>
+                  <div className="card-glass rounded-lg p-5 hover:border-primary/50 transition-all cursor-pointer group h-full">
+                    <s.icon className="h-10 w-10 text-primary mb-3 group-hover:scale-110 transition-transform" />
+                    <h3 className="font-heading font-semibold text-foreground mb-1">{s.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
+                  </div>
+                </Link>
               ))}
             </motion.div>
           </div>
@@ -86,9 +90,11 @@ const HeroSection = () => {
               <p className="text-muted-foreground text-sm mb-8 leading-relaxed">
                 Service managé combinant technologie et expertise humaine pour une cybersécurité pilotable et efficiente.
               </p>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold w-full">
-                Découvrir AlgoLightHouse
-              </Button>
+              <Link to="/algolighthouse">
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold w-full">
+                  Découvrir AlgoLightHouse
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>

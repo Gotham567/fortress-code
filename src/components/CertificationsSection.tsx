@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ShieldCheck, Award, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const CertificationsSection = () => {
   return (
@@ -56,9 +57,11 @@ const CertificationsSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" className="border-border text-foreground hover:bg-secondary font-heading">
-            Télécharger nos livres blancs
-          </Button>
+          <Link to="/contact">
+            <Button variant="outline" className="border-border text-foreground hover:bg-secondary font-heading">
+              Demander nos livres blancs
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

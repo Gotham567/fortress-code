@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const articles = [
   {
@@ -32,8 +33,8 @@ const BlogSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {articles.map((a, i) => (
+            <Link key={i} to="/actualites">
             <motion.article
-              key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -54,6 +55,7 @@ const BlogSection = () => {
                 </span>
               </div>
             </motion.article>
+            </Link>
           ))}
         </div>
       </div>
