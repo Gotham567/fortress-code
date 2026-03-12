@@ -31,7 +31,7 @@ const articles = [
   },
   {
     tag: "Actualité",
-    title: "AlgoSecure renouvelle sa qualification PASSI",
+    title: "CyberSecure renouvelle sa qualification PASSI",
     desc: "Notre qualification PASSI délivrée par l'ANSSI a été renouvelée, confirmant notre expertise en audit de sécurité.",
     date: "18 Déc 2025",
   },

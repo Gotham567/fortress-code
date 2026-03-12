@@ -16,7 +16,7 @@ const MentionsLegales = () => {
             <div className="space-y-8 text-muted-foreground leading-relaxed">
               <div>
                 <h2 className="font-heading text-xl font-semibold text-foreground mb-3">Éditeur du site</h2>
-                <p>AlgoSecure SAS<br />Siège social : Lyon, France<br />SIRET : [À compléter]<br />Directeur de la publication : [À compléter]</p>
+                <p>CyberSecure SAS<br />Siège social : Lyon, France<br />SIRET : [À compléter]<br />Directeur de la publication : [À compléter]</p>
               </div>
               <div>
                 <h2 className="font-heading text-xl font-semibold text-foreground mb-3">Hébergement</h2>
