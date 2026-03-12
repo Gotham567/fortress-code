@@ -55,6 +55,7 @@ const BlogSection = () => {
                 </span>
               </div>
             </motion.article>
+            </Link>
           ))}
         </div>
       </div>

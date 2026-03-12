@@ -1,22 +1,23 @@
 import { Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FooterSection = () => {
   return (
     <footer className="border-t border-border py-12 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <Shield className="h-6 w-6 text-primary" />
             <span className="font-heading text-lg font-bold text-foreground">
               algo<span className="text-primary">secure</span>
             </span>
-          </div>
+          </Link>
 
           <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">Mentions légales</a>
-            <a href="#" className="hover:text-primary transition-colors">Politique de confidentialité</a>
-            <a href="#" className="hover:text-primary transition-colors">Démarche RSE</a>
-            <a href="#" className="hover:text-primary transition-colors">Glossaire</a>
+            <Link to="/mentions-legales" className="hover:text-primary transition-colors">Mentions légales</Link>
+            <Link to="/politique-confidentialite" className="hover:text-primary transition-colors">Politique de confidentialité</Link>
+            <Link to="/rse" className="hover:text-primary transition-colors">Démarche RSE</Link>
+            <Link to="/glossaire" className="hover:text-primary transition-colors">Glossaire</Link>
           </div>
 
           <div className="flex items-center gap-4">
