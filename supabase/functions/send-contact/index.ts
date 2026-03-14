@@ -38,27 +38,19 @@ serve(async (req) => {
       );
     }
 
-    const contactEmail = Deno.env.get("CONTACT_EMAIL");
-    if (!contactEmail) {
-      console.error("CONTACT_EMAIL not configured");
-      return new Response(
-        JSON.stringify({ success: true, warning: "Email not configured" }),
-        { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
-      );
-    }
-
-    // Send notification email via Lovable API
-    const lovableApiKey = Deno.env.get("LOVABLE_API_KEY");
-    if (lovableApiKey) {
+    // Send notification email via Resend
+    const resendApiKey = Deno.env.get("RESEND_API_KEY");
+    if (resendApiKey) {
       try {
-        const emailRes = await fetch("https://api.lovable.dev/v1/email/send", {
+        const emailRes = await fetch("https://api.resend.com/emails", {
           method: "POST",
           headers: {
-            "Authorization": `Bearer ${lovableApiKey}`,
+            "Authorization": `Bearer ${resendApiKey}`,
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            to: contactEmail,
+            from: "CyberSecure <onboarding@resend.dev>",
+            to: ["lamoinematieu@gmail.com"],
             subject: `[CyberSecure] Nouveau message de ${prenom} ${nom}`,
             html: `
               <h2>Nouveau message depuis le formulaire de contact</h2>
@@ -73,12 +65,18 @@ serve(async (req) => {
             `,
           }),
         });
+
         if (!emailRes.ok) {
-          console.error("Email send failed:", await emailRes.text());
+          const errText = await emailRes.text();
+          console.error("Resend email send failed:", errText);
+        } else {
+          console.log("Email sent successfully via Resend");
         }
       } catch (emailErr) {
-        console.error("Email send error:", emailErr);
+        console.error("Resend email send error:", emailErr);
       }
+    } else {
+      console.error("RESEND_API_KEY not configured");
     }
 
     return new Response(
