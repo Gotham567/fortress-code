@@ -18,6 +18,18 @@ import Glossaire from "./pages/Glossaire.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 
+// Articles
+import AuditCybersecurite from "./pages/articles/AuditCybersecurite.tsx";
+import PentestEntreprise from "./pages/articles/PentestEntreprise.tsx";
+import ChoisirPrestataire from "./pages/articles/ChoisirPrestataire.tsx";
+import CybersecuritePME from "./pages/articles/CybersecuritePME.tsx";
+import CoutAudit from "./pages/articles/CoutAudit.tsx";
+import PentestVsAudit from "./pages/articles/PentestVsAudit.tsx";
+import CyberattaquesPME from "./pages/articles/CyberattaquesPME.tsx";
+import ApresCyberattaque from "./pages/articles/ApresCyberattaque.tsx";
+import AuditObligatoire from "./pages/articles/AuditObligatoire.tsx";
+import PreparerPentest from "./pages/articles/PreparerPentest.tsx";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -40,6 +52,17 @@ const App = () => (
           <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
           <Route path="/rse" element={<RSE />} />
           <Route path="/glossaire" element={<Glossaire />} />
+          {/* Articles */}
+          <Route path="/actualites/audit-cybersecurite-guide" element={<AuditCybersecurite />} />
+          <Route path="/actualites/pentest-entreprise-guide-pme" element={<PentestEntreprise />} />
+          <Route path="/actualites/choisir-prestataire-cybersecurite" element={<ChoisirPrestataire />} />
+          <Route path="/actualites/cybersecurite-pme-par-ou-commencer" element={<CybersecuritePME />} />
+          <Route path="/actualites/cout-audit-cybersecurite-2025" element={<CoutAudit />} />
+          <Route path="/actualites/pentest-vs-audit-securite-differences" element={<PentestVsAudit />} />
+          <Route path="/actualites/10-cyberattaques-frequentes-pme" element={<CyberattaquesPME />} />
+          <Route path="/actualites/que-faire-apres-cyberattaque" element={<ApresCyberattaque />} />
+          <Route path="/actualites/audit-cybersecurite-obligatoire" element={<AuditObligatoire />} />
+          <Route path="/actualites/comment-se-preparer-pentest" element={<PreparerPentest />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
