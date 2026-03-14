@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const services = [
-  { icon: Search, title: "Audit", desc: "Tests d'intrusion, audits de configuration et d'architecture", href: "/audit" },
+  { icon: Search, title: "Audit cybersécurité", desc: "Pentest entreprise, audits de configuration et d'architecture pour PME et ETI", href: "/audit" },
   { icon: ShieldCheck, title: "Conseil", desc: "Accompagnement RSSI, conformité, formations", href: "/conseil" },
   { icon: Phone, title: "CERT", desc: "Réponse à incident, analyse forensique, gestion de crise", href: "/cert" },
   { icon: Award, title: "Certifications", desc: "PASSI, ISO 27001, Cyber Expert, OSEP, OSCP", href: "/qui-sommes-nous" },
