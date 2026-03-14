@@ -51,8 +51,8 @@ const Audit = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Audit de sécurité & pentest qualifié PASSI"
-        description="Audits de sécurité informatique qualifiés PASSI par l'ANSSI : tests d'intrusion, audit de configuration, revue de code, Red Team. Cabinet indépendant certifié ISO 27001 à Lyon et Paris."
+        title="Audit cybersécurité & pentest entreprise PME ETI"
+        description="Audit cybersécurité et pentest entreprise pour PME et ETI. Cabinet qualifié PASSI, certifié ISO 27001. Tests d'intrusion, audit de configuration, Red Team. Lyon & Paris."
         canonical="/audit"
         jsonLd={[faqJsonLd, serviceJsonLd]}
       />
