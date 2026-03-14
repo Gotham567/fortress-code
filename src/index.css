@@ -61,9 +61,17 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Space Grotesk', sans-serif;
+  }
+  /* Improve touch targets on mobile */
+  @media (max-width: 768px) {
+    button, a, input, textarea, select {
+      min-height: 44px;
+    }
   }
 }
 
@@ -84,4 +92,21 @@
   .section-padding {
     @apply py-20 md:py-28 px-6 md:px-12 lg:px-20;
   }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus visible for accessibility */
+*:focus-visible {
+  outline: 2px solid hsl(145 72% 45%);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+*:focus-visible {
+  outline: 2px solid hsl(145 72% 45%);
+  outline-offset: 2px;
+  border-radius: 4px;
 }

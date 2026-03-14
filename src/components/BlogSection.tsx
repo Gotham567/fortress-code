@@ -51,7 +51,7 @@ const BlogSection = () => {
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">{a.desc}</p>
                 <span className="text-primary text-sm font-heading font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                  Lire l'article <ArrowRight className="h-4 w-4" />
+                  Lire l'article <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </span>
               </div>
             </motion.article>
