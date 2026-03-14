@@ -38,7 +38,7 @@ const DifferentiatorsSection = () => {
               transition={{ delay: i * 0.08 }}
               className="flex gap-4 p-6 rounded-xl bg-secondary/30 border border-border hover:border-primary/30 transition-all group"
             >
-              <item.icon className="h-6 w-6 text-primary shrink-0 mt-1" />
+              <item.icon className="h-6 w-6 text-primary shrink-0 mt-1" aria-hidden="true" />
               <div>
                 <h3 className="font-heading font-semibold text-foreground mb-1">{item.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>

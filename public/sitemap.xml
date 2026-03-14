@@ -60,4 +60,66 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  <!-- Articles piliers -->
+  <url>
+    <loc>https://fortress-code.lovable.app/actualites/audit-cybersecurite-guide</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fortress-code.lovable.app/actualites/pentest-entreprise-guide-pme</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fortress-code.lovable.app/actualites/choisir-prestataire-cybersecurite</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fortress-code.lovable.app/actualites/cybersecurite-pme-par-ou-commencer</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Articles de blog -->
+  <url>
+    <loc>https://fortress-code.lovable.app/actualites/cout-audit-cybersecurite-2025</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fortress-code.lovable.app/actualites/pentest-vs-audit-securite-differences</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fortress-code.lovable.app/actualites/10-cyberattaques-frequentes-pme</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fortress-code.lovable.app/actualites/que-faire-apres-cyberattaque</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fortress-code.lovable.app/actualites/audit-cybersecurite-obligatoire</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fortress-code.lovable.app/actualites/comment-se-preparer-pentest</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import SEOHead from "@/components/SEOHead";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const PolitiqueConfidentialite = () => {
   return (
@@ -34,7 +35,7 @@ const PolitiqueConfidentialite = () => {
                 </div>
                 <div>
                   <h2 className="font-heading text-xl font-semibold text-foreground mb-3">Vos droits (RGPD)</h2>
-                  <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, de suppression, de limitation et de portabilité de vos données personnelles. Pour exercer ces droits, contactez-nous via notre <a href="/contact" className="text-primary hover:underline">page de contact</a>.</p>
+                  <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, de suppression, de limitation et de portabilité de vos données personnelles. Pour exercer ces droits, contactez-nous via notre <Link to="/contact" className="text-primary hover:underline">page de contact</Link>.</p>
                 </div>
                 <div>
                   <h2 className="font-heading text-xl font-semibold text-foreground mb-3">Cookies</h2>

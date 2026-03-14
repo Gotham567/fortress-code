@@ -48,7 +48,7 @@ const CertificationsSection = () => {
               className="card-glass rounded-xl p-8 hover:border-primary/50 transition-all group"
             >
               <div className="h-14 w-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <cert.icon className="h-7 w-7 text-primary" />
+                <cert.icon className="h-7 w-7 text-primary" aria-hidden="true" />
               </div>
               <h3 className="font-heading text-xl font-semibold text-foreground mb-3">{cert.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{cert.desc}</p>

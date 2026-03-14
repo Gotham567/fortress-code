@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import SEOHead from "@/components/SEOHead";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const MentionsLegales = () => {
   return (
@@ -34,7 +35,7 @@ const MentionsLegales = () => {
                 </div>
                 <div>
                   <h2 className="font-heading text-xl font-semibold text-foreground mb-3">Contact</h2>
-                  <p>Pour toute question, vous pouvez nous contacter via notre <a href="/contact" className="text-primary hover:underline">formulaire de contact</a> ou par téléphone au <a href="tel:0426782486" className="text-primary hover:underline">04 26 78 24 86</a>.</p>
+                  <p>Pour toute question, vous pouvez nous contacter via notre <Link to="/contact" className="text-primary hover:underline">formulaire de contact</Link> ou par téléphone au <a href="tel:0426782486" className="text-primary hover:underline">04 26 78 24 86</a>.</p>
                 </div>
               </div>
             </motion.div>

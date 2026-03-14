@@ -5,13 +5,16 @@ interface SEOHeadProps {
   description: string;
   canonical?: string;
   jsonLd?: object | object[];
+  ogImage?: string;
 }
 
 const SITE_URL = "https://fortress-code.lovable.app";
+const DEFAULT_OG_IMAGE = "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png";
 
-const SEOHead = ({ title, description, canonical, jsonLd }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, jsonLd, ogImage }: SEOHeadProps) => {
   const fullTitle = `${title} | CyberSecure`;
   const canonicalUrl = canonical ? `${SITE_URL}${canonical}` : undefined;
+  const image = ogImage || DEFAULT_OG_IMAGE;
 
   return (
     <Helmet>
@@ -20,11 +23,15 @@ const SEOHead = ({ title, description, canonical, jsonLd }: SEOHeadProps) => {
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
+      <meta property="og:image" content={image} />
+      <meta property="og:locale" content="fr_FR" />
+      <meta property="og:site_name" content="CyberSecure" />
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
       {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={image} />
       {jsonLd && (
         <script type="application/ld+json">
           {JSON.stringify(Array.isArray(jsonLd) ? jsonLd : jsonLd)}
