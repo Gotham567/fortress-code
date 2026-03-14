@@ -67,8 +67,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Cabinet de conseil en cybersécurité à Lyon et Paris"
-        description="CyberSecure, cabinet indépendant qualifié PASSI et certifié ISO 27001. Experts en audit de sécurité, pentest, conseil RSSI, CERT 24/7 et gestion de surface d'attaque. Lyon, Paris, France."
+        title="Audit cybersécurité & pentest entreprise | Lyon Paris"
+        description="CyberSecure, cabinet indépendant qualifié PASSI et certifié ISO 27001. Audit cybersécurité et pentest entreprise pour PME et ETI. Conseil RSSI, CERT 24/7. Lyon, Paris."
         canonical="/"
         jsonLd={[organizationJsonLd, localBusinessJsonLd]}
       />

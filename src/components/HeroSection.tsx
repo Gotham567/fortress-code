@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const services = [
-  { icon: Search, title: "Audit", desc: "Tests d'intrusion, audits de configuration et d'architecture", href: "/audit" },
+  { icon: Search, title: "Audit cybersécurité", desc: "Pentest entreprise, audits de configuration et d'architecture pour PME et ETI", href: "/audit" },
   { icon: ShieldCheck, title: "Conseil", desc: "Accompagnement RSSI, conformité, formations", href: "/conseil" },
   { icon: Phone, title: "CERT", desc: "Réponse à incident, analyse forensique, gestion de crise", href: "/cert" },
   { icon: Award, title: "Certifications", desc: "PASSI, ISO 27001, Cyber Expert, OSEP, OSCP", href: "/qui-sommes-nous" },
@@ -36,7 +36,7 @@ const HeroSection = () => {
                 <span className="text-gradient">cybersécurité</span>
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl max-w-xl mb-8 leading-relaxed">
-                Nous accompagnons les entreprises et organismes publics pour sécuriser leur système d'information avec expertise et indépendance.
+                Nous accompagnons les <strong>PME et ETI</strong> de toutes industries avec des <strong>audits cybersécurité</strong> et <strong>pentests entreprise</strong> adaptés à vos enjeux et votre budget.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/audit">
