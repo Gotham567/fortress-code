@@ -41,11 +41,12 @@ const Audit = () => {
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Audit de sécurité informatique",
+    "name": "Audit cybersécurité et pentest entreprise pour PME ETI",
     "provider": { "@type": "Organization", "name": "CyberSecure" },
-    "description": "Audits de sécurité qualifiés PASSI : pentest, audit de configuration, audit d'architecture, revue de code, Red Team.",
+    "description": "Audit cybersécurité et pentest entreprise pour PME et ETI. Tests d'intrusion qualifiés PASSI, audit de configuration, revue de code, Red Team. Lyon et Paris.",
     "areaServed": "FR",
-    "serviceType": "Cybersecurity Audit"
+    "audience": { "@type": "Audience", "audienceType": "PME, ETI, toutes industries" },
+    "serviceType": "Audit cybersécurité, Pentest entreprise"
   };
 
   return (
