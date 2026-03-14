@@ -107,9 +107,9 @@ const Audit = () => {
               transition={{ delay: 0.4 }}
               className="mt-16 card-glass rounded-2xl p-8 md:p-12"
             >
-              <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Pourquoi réaliser un audit de sécurité ?</h2>
+              <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Pourquoi réaliser un audit cybersécurité en PME ou ETI ?</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Un audit de sécurité informatique permet d'identifier les vulnérabilités de votre système d'information avant qu'elles ne soient exploitées par un attaquant. C'est une démarche proactive indispensable dans un contexte de menaces croissantes (ransomware, APT, phishing). Combiné à un <Link to="/conseil" className="text-primary hover:underline">accompagnement en conseil cybersécurité</Link>, il constitue la base d'une stratégie de sécurité efficace. En cas d'incident avéré, notre <Link to="/cert" className="text-primary hover:underline">CERT intervient 24/7</Link> pour contenir et remédier.
+                Les <strong>PME et ETI</strong> sont aujourd'hui les cibles privilégiées des cyberattaques : 43 % des attaques visent les petites et moyennes entreprises. Un <strong>audit cybersécurité</strong> permet d'identifier les vulnérabilités de votre système d'information avant qu'elles ne soient exploitées. Un <strong>pentest entreprise</strong> régulier est une démarche proactive indispensable face aux ransomwares, APT et phishing. Combiné à un <Link to="/conseil" className="text-primary hover:underline">accompagnement en conseil cybersécurité</Link>, il constitue la base d'une stratégie de sécurité efficace pour votre PME ou ETI. En cas d'incident, notre <Link to="/cert" className="text-primary hover:underline">CERT intervient 24/7</Link>.
               </p>
             </motion.div>
 

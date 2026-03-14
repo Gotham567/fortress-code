@@ -36,7 +36,7 @@ const HeroSection = () => {
                 <span className="text-gradient">cybersécurité</span>
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl max-w-xl mb-8 leading-relaxed">
-                Nous accompagnons les entreprises et organismes publics pour sécuriser leur système d'information avec expertise et indépendance.
+                Nous accompagnons les <strong>PME et ETI</strong> de toutes industries avec des <strong>audits cybersécurité</strong> et <strong>pentests entreprise</strong> adaptés à vos enjeux et votre budget.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/audit">
