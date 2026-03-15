@@ -38,19 +38,19 @@ const TrustSection = () => {
         <div className="overflow-hidden relative">
           <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10" />
           <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10" />
-          <div className="flex animate-scroll-left gap-12 w-max items-center">
+          <div className="flex animate-scroll-left gap-16 w-max items-center py-4">
             {[...logos, ...logos, ...logos].map((logo, i) => (
               <div
                 key={`${logo.name}-${i}`}
-                className="flex items-center justify-center h-20 px-8 rounded-lg bg-secondary/50 border border-border min-w-[180px]"
+                className="flex items-center justify-center h-24 px-10 rounded-xl bg-secondary/50 border border-border min-w-[200px]"
               >
                 <img
                   src={logo.src}
                   alt={`${logo.name} fait confiance à CyberSecure pour sa cybersécurité`}
-                  className="h-10 max-w-[120px] object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
+                  className="h-14 max-w-[140px] object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
                   loading="lazy"
-                  width="120"
-                  height="40"
+                  width="140"
+                  height="56"
                 />
               </div>
             ))}

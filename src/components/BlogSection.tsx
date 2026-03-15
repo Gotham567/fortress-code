@@ -1,17 +1,21 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import summerSecureImg from "@/assets/articles/blog-summer-secure.jpg";
+import doraImg from "@/assets/articles/blog-dora-reglement.jpg";
 
 const articles = [
   {
     tag: "Actualité",
     title: "Summer Secure : 8 réflexes pour renforcer votre sécurité numérique",
     desc: "Chaque semaine, nous avons partagé des réflexes concrets pour réduire les risques et renforcer la sécurité de votre SI.",
+    image: summerSecureImg,
   },
   {
     tag: "Blog",
     title: "Le règlement DORA dans le secteur financier : une mise en conformité obligatoire",
     desc: "Le règlement DORA vise à renforcer la cybersécurité et la résilience informatique du secteur financier européen.",
+    image: doraImg,
   },
 ];
 
@@ -41,8 +45,15 @@ const BlogSection = () => {
               transition={{ delay: i * 0.15 }}
               className="card-glass rounded-xl overflow-hidden group cursor-pointer hover:border-primary/40 transition-all"
             >
-              <div className="h-48 bg-secondary/50 flex items-center justify-center">
-                <span className="text-muted-foreground font-heading text-sm">{a.tag}</span>
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={a.image}
+                  alt={a.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  width="800"
+                  height="512"
+                />
               </div>
               <div className="p-6">
                 <span className="text-primary text-xs font-heading font-semibold uppercase tracking-wider">{a.tag}</span>
