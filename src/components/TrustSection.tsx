@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import nikeLogo from "@/assets/logos/nike.png";
 import doctolibLogo from "@/assets/logos/doctolib.png";
-import samsungLogo from "@/assets/logos/samsung.png";
-import lorealLogo from "@/assets/logos/loreal.png";
+import ibmLogo from "@/assets/logos/ibm.png";
+import netflixLogo from "@/assets/logos/netflix.png";
 import googleLogo from "@/assets/logos/google.png";
 import microsoftLogo from "@/assets/logos/microsoft.png";
 import amazonLogo from "@/assets/logos/amazon.png";
@@ -10,8 +10,8 @@ import amazonLogo from "@/assets/logos/amazon.png";
 const logos = [
   { name: "Nike", src: nikeLogo },
   { name: "Doctolib", src: doctolibLogo },
-  { name: "Samsung", src: samsungLogo },
-  { name: "L'Oréal", src: lorealLogo },
+  { name: "IBM", src: ibmLogo },
+  { name: "Netflix", src: netflixLogo },
   { name: "Google", src: googleLogo },
   { name: "Microsoft", src: microsoftLogo },
   { name: "Amazon", src: amazonLogo },
