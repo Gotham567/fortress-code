@@ -84,6 +84,7 @@ const Index = () => {
         <NewsletterSection />
       </main>
       <FooterSection />
+      <CookieConsent />
     </div>
   );
 };
