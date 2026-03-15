@@ -15,7 +15,7 @@ const organizationJsonLd = {
   "@type": "Organization",
   "name": "CyberSecure",
   "url": "https://fortress-code.lovable.app",
-  "logo": "https://fortress-code.lovable.app/favicon.ico",
+  "logo": "https://fortress-code.lovable.app/favicon.png",
   "description": "Cabinet de conseil indépendant en cybersécurité qualifié PASSI et certifié ISO 27001. Audit, pentest, conseil, CERT et gestion de surface d'attaque.",
   "foundingDate": "2008",
   "address": [
