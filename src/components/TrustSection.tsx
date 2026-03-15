@@ -1,20 +1,20 @@
 import { motion } from "framer-motion";
-import orangeLogo from "@/assets/logos/orange.png";
-import sfrLogo from "@/assets/logos/sfr.png";
 import nikeLogo from "@/assets/logos/nike.png";
-import spotifyLogo from "@/assets/logos/spotify.png";
-import deliverooLogo from "@/assets/logos/deliveroo.png";
-import macifLogo from "@/assets/logos/macif.png";
 import doctolibLogo from "@/assets/logos/doctolib.png";
+import samsungLogo from "@/assets/logos/samsung.png";
+import lorealLogo from "@/assets/logos/loreal.png";
+import googleLogo from "@/assets/logos/google.png";
+import microsoftLogo from "@/assets/logos/microsoft.png";
+import amazonLogo from "@/assets/logos/amazon.png";
 
 const logos = [
-  { name: "Orange", src: orangeLogo },
-  { name: "SFR", src: sfrLogo },
   { name: "Nike", src: nikeLogo },
-  { name: "Spotify", src: spotifyLogo },
-  { name: "Deliveroo", src: deliverooLogo },
-  { name: "Macif", src: macifLogo },
   { name: "Doctolib", src: doctolibLogo },
+  { name: "Samsung", src: samsungLogo },
+  { name: "L'Oréal", src: lorealLogo },
+  { name: "Google", src: googleLogo },
+  { name: "Microsoft", src: microsoftLogo },
+  { name: "Amazon", src: amazonLogo },
 ];
 
 const TrustSection = () => {
