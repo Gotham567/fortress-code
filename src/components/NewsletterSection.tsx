@@ -22,7 +22,7 @@ const NewsletterSection = () => {
 
     setLoading(true);
     try {
-      const { error } = await supabase.from("newsletter_subscribers").insert({ email: email.trim().toLowerCase() });
+      const { error } = await supabase.from("newsletter_subscribers" as any).insert({ email: email.trim().toLowerCase() } as any);
       if (error) {
         if (error.code === "23505") {
           toast({ title: "Déjà inscrit", description: "Cet email est déjà abonné à notre newsletter." });
