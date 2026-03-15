@@ -7,6 +7,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import BlogSection from "@/components/BlogSection";
 import NewsletterSection from "@/components/NewsletterSection";
 import FooterSection from "@/components/FooterSection";
+import CookieConsent from "@/components/CookieConsent";
 import SEOHead from "@/components/SEOHead";
 
 const organizationJsonLd = {
