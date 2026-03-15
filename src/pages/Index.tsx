@@ -7,6 +7,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import BlogSection from "@/components/BlogSection";
 import NewsletterSection from "@/components/NewsletterSection";
 import FooterSection from "@/components/FooterSection";
+import CookieConsent from "@/components/CookieConsent";
 import SEOHead from "@/components/SEOHead";
 
 const organizationJsonLd = {
@@ -14,7 +15,7 @@ const organizationJsonLd = {
   "@type": "Organization",
   "name": "CyberSecure",
   "url": "https://fortress-code.lovable.app",
-  "logo": "https://fortress-code.lovable.app/favicon.ico",
+  "logo": "https://fortress-code.lovable.app/favicon.png",
   "description": "Cabinet de conseil indépendant en cybersécurité qualifié PASSI et certifié ISO 27001. Audit, pentest, conseil, CERT et gestion de surface d'attaque.",
   "foundingDate": "2008",
   "address": [
@@ -43,7 +44,7 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "CyberSecure",
-  "image": "https://fortress-code.lovable.app/favicon.ico",
+  "image": "https://fortress-code.lovable.app/favicon.png",
   "telephone": "+33426782486",
   "address": {
     "@type": "PostalAddress",
@@ -83,6 +84,7 @@ const Index = () => {
         <NewsletterSection />
       </main>
       <FooterSection />
+      <CookieConsent />
     </div>
   );
 };
