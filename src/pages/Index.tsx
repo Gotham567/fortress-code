@@ -44,7 +44,7 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "CyberSecure",
-  "image": "https://fortress-code.lovable.app/favicon.ico",
+  "image": "https://fortress-code.lovable.app/favicon.png",
   "telephone": "+33426782486",
   "address": {
     "@type": "PostalAddress",
