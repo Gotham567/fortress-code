@@ -29,6 +29,9 @@ import CyberattaquesPME from "./pages/articles/CyberattaquesPME.tsx";
 import ApresCyberattaque from "./pages/articles/ApresCyberattaque.tsx";
 import AuditObligatoire from "./pages/articles/AuditObligatoire.tsx";
 import PreparerPentest from "./pages/articles/PreparerPentest.tsx";
+import DirectiveNIS2 from "./pages/articles/DirectiveNIS2.tsx";
+import RSSIExternalise from "./pages/articles/RSSIExternalise.tsx";
+import SecuriserTeletravail from "./pages/articles/SecuriserTeletravail.tsx";
 
 const queryClient = new QueryClient();
 
@@ -63,6 +66,9 @@ const App = () => (
           <Route path="/actualites/que-faire-apres-cyberattaque" element={<ApresCyberattaque />} />
           <Route path="/actualites/audit-cybersecurite-obligatoire" element={<AuditObligatoire />} />
           <Route path="/actualites/comment-se-preparer-pentest" element={<PreparerPentest />} />
+          <Route path="/actualites/directive-nis2-guide-pme-eti" element={<DirectiveNIS2 />} />
+          <Route path="/actualites/rssi-externalise-guide" element={<RSSIExternalise />} />
+          <Route path="/actualites/securiser-teletravail-entreprise" element={<SecuriserTeletravail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
