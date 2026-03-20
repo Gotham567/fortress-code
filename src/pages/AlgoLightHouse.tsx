@@ -17,6 +17,9 @@ const features = [
 const faq = [
   { q: "Qu'est-ce que la gestion de surface d'attaque (ASM) ?", a: "L'Attack Surface Management (ASM) est une approche continue de découverte, d'analyse et de surveillance de tous les actifs numériques d'une organisation exposés sur Internet. Contrairement à un audit ponctuel, l'ASM offre une vision en temps réel de votre exposition aux menaces." },
   { q: "Quelle est la différence avec un scan de vulnérabilités classique ?", a: "AlgoLightHouse va au-delà du simple scan automatisé : il combine technologie de pointe et expertise humaine. Nos analystes vérifient chaque alerte, éliminent les faux positifs et fournissent des recommandations contextualisées avec un plan d'action priorisé." },
+  { q: "Combien de temps faut-il pour cartographier ma surface d'attaque ?", a: "La cartographie initiale est réalisée sous 48 à 72 heures. AlgoLightHouse découvre automatiquement vos domaines, sous-domaines, IP exposées, services et technologies utilisées. La surveillance continue prend ensuite le relais avec des mises à jour en temps réel." },
+  { q: "AlgoLightHouse remplace-t-il un pentest ?", a: "Non, les deux approches sont complémentaires. AlgoLightHouse assure une surveillance continue de votre exposition externe entre les audits. Le pentest, lui, teste en profondeur l'exploitabilité des vulnérabilités. Nous recommandons de combiner les deux pour une couverture optimale." },
+  { q: "Quelles technologies sont surveillées ?", a: "AlgoLightHouse couvre l'ensemble de votre exposition : serveurs web, API, applications SaaS, services cloud (AWS, Azure, GCP), serveurs mail, DNS, certificats SSL/TLS, ports ouverts et shadow IT. Toute ressource accessible depuis Internet est identifiée et surveillée." },
 ];
 
 const AlgoLightHouse = () => {
