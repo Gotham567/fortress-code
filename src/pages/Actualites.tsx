@@ -16,6 +16,9 @@ import imgAttaques from "@/assets/articles/cyberattaques-pme.jpg";
 import imgApres from "@/assets/articles/apres-cyberattaque.jpg";
 import imgObligatoire from "@/assets/articles/audit-obligatoire.jpg";
 import imgPreparer from "@/assets/articles/preparer-pentest.jpg";
+import imgNIS2 from "@/assets/articles/nis2-directive.jpg";
+import imgRSSI from "@/assets/articles/rssi-externalise.jpg";
+import imgTeletravail from "@/assets/articles/securiser-teletravail.jpg";
 
 const pillarPages = [
   { tag: "Page pilier", title: "Qu'est-ce qu'un audit cybersécurité et pourquoi en faire un ?", desc: "Guide complet sur l'audit cybersécurité : définition, méthodologie, types d'audits, bénéfices et fréquence recommandée pour les PME et ETI.", date: "10 Mars 2026", slug: "/actualites/audit-cybersecurite-guide", img: imgAudit },
@@ -25,6 +28,9 @@ const pillarPages = [
 ];
 
 const blogArticles = [
+  { tag: "Article", title: "Directive NIS2 : ce que les PME et ETI doivent savoir", desc: "Guide complet sur la directive NIS2 : entreprises concernées, obligations, sanctions, calendrier et plan de mise en conformité en 6 étapes.", date: "18 Mars 2026", slug: "/actualites/directive-nis2-guide-pme-eti", img: imgNIS2 },
+  { tag: "Article", title: "RSSI externalisé : pourquoi et comment externaliser votre sécurité", desc: "Tout savoir sur le RSSI externalisé (vCISO) : missions, coûts, avantages par rapport au recrutement et critères de choix pour les PME.", date: "15 Mars 2026", slug: "/actualites/rssi-externalise-guide", img: imgRSSI },
+  { tag: "Article", title: "Sécuriser le télétravail : 12 mesures essentielles", desc: "Guide pratique pour sécuriser le télétravail : VPN, MFA, gestion des appareils, protection des données et sensibilisation des collaborateurs.", date: "12 Mars 2026", slug: "/actualites/securiser-teletravail-entreprise", img: imgTeletravail },
   { tag: "Article", title: "Combien coûte un audit cybersécurité en 2025 ?", desc: "Prix détaillés par type d'audit, facteurs de coût, conseils pour optimiser votre budget et ROI d'un audit cybersécurité pour les PME.", date: "25 Fév 2026", slug: "/actualites/cout-audit-cybersecurite-2025", img: imgCout },
   { tag: "Article", title: "Pentest vs audit de sécurité : quelles différences ?", desc: "Comprendre les différences fondamentales entre pentest et audit de sécurité : approche, méthodologie, livrables et comment choisir.", date: "20 Fév 2026", slug: "/actualites/pentest-vs-audit-securite-differences", img: imgVs },
   { tag: "Article", title: "Les 10 cyberattaques les plus fréquentes sur les PME", desc: "Phishing, ransomware, arnaque au président... Les 10 menaces les plus courantes avec leur impact réel et les mesures de protection.", date: "15 Fév 2026", slug: "/actualites/10-cyberattaques-frequentes-pme", img: imgAttaques },
