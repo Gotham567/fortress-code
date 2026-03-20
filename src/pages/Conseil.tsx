@@ -20,6 +20,9 @@ const faq = [
   { q: "Qu'est-ce qu'un RSSI externalisé ?", a: "Un RSSI (Responsable de la Sécurité des Systèmes d'Information) externalisé est un expert cybersécurité qui intervient à temps partagé dans votre organisation pour piloter la stratégie de sécurité, sans les coûts d'un recrutement à temps plein. Il définit la politique de sécurité, coordonne les audits et assure la conformité réglementaire." },
   { q: "Comment se préparer à la directive NIS2 ?", a: "La directive NIS2 élargit les obligations de cybersécurité à de nombreux secteurs. La préparation inclut : cartographie des actifs critiques, analyse de risques, mise en place de politiques de sécurité, plans de réponse aux incidents et reporting. Nous réalisons un diagnostic d'écart et un plan d'action adapté à votre contexte." },
   { q: "Combien de temps faut-il pour obtenir la certification ISO 27001 ?", a: "En moyenne, le processus de certification ISO 27001 prend 6 à 18 mois selon la maturité de votre organisation. Cela comprend l'analyse de risques, la mise en place du SMSI, la rédaction documentaire, la formation des équipes et l'audit de certification par un organisme accrédité." },
+  { q: "Quel est le coût d'un RSSI externalisé par rapport à un recrutement ?", a: "Un RSSI externalisé coûte en moyenne 2 à 4 fois moins qu'un RSSI salarié à temps plein (70-90k€/an). Nos formules démarrent à quelques jours par mois, ajustables selon vos besoins. Vous bénéficiez d'une expertise senior sans charges sociales, formation continue ni risque de turnover." },
+  { q: "Mon entreprise est-elle concernée par NIS2 ou DORA ?", a: "NIS2 s'applique aux entités essentielles et importantes de 18 secteurs (énergie, santé, transport, numérique, agroalimentaire…) dès 50 salariés ou 10 M€ de CA. DORA concerne toutes les entités financières et leurs prestataires IT critiques. Nous réalisons un diagnostic gratuit pour déterminer vos obligations." },
+  { q: "La sensibilisation des collaborateurs est-elle vraiment efficace ?", a: "Oui : 91 % des cyberattaques commencent par un e-mail de phishing. Nos campagnes de sensibilisation réduisent le taux de clic sur les e-mails frauduleux de 35 % à moins de 5 % en 6 mois. La formation continue est un levier majeur et un prérequis de conformité ISO 27001 et NIS2." },
 ];
 
 const Conseil = () => {
@@ -98,23 +101,35 @@ const Conseil = () => {
               <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-8">
                 Questions fréquentes sur le <span className="text-gradient">conseil cybersécurité</span>
               </h2>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {faq.map((f, i) => (
-                  <div key={i} className="card-glass rounded-xl overflow-hidden">
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 12 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ delay: i * 0.08, duration: 0.5 }}
+                    className="card-glass rounded-xl overflow-hidden"
+                  >
                     <button
-                      className="w-full flex items-center justify-between p-6 text-left"
+                      className="w-full flex items-center justify-between p-6 text-left group"
                       onClick={() => setOpenFaq(openFaq === i ? null : i)}
                       aria-expanded={openFaq === i}
                     >
-                      <h3 className="font-heading font-semibold text-foreground pr-4">{f.q}</h3>
-                      <ChevronDown className={`h-5 w-5 text-primary shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} />
+                      <h3 className="font-heading font-semibold text-foreground pr-4 group-hover:text-primary transition-colors">{f.q}</h3>
+                      <ChevronDown className={`h-5 w-5 text-primary shrink-0 transition-transform duration-300 ${openFaq === i ? "rotate-180" : ""}`} />
                     </button>
-                    {openFaq === i && (
+                    <motion.div
+                      initial={false}
+                      animate={openFaq === i ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                      className="overflow-hidden"
+                    >
                       <div className="px-6 pb-6">
                         <p className="text-muted-foreground text-sm leading-relaxed">{f.a}</p>
                       </div>
-                    )}
-                  </div>
+                    </motion.div>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>

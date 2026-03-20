@@ -35,6 +35,7 @@ const FooterSection = () => {
               <li><Link to="/actualites" className="hover:text-primary transition-colors">Actualités & blog</Link></li>
               <li><Link to="/rse" className="hover:text-primary transition-colors">Démarche RSE</Link></li>
               <li><Link to="/glossaire" className="hover:text-primary transition-colors">Glossaire cybersécurité</Link></li>
+              <li><Link to="/faq" className="hover:text-primary transition-colors">FAQ</Link></li>
               <li><Link to="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
             </ul>
           </nav>

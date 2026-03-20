@@ -23,6 +23,9 @@ const faq = [
   { q: "Pourquoi choisir un prestataire qualifié PASSI pour vos audits ?", a: "La qualification PASSI, délivrée par l'ANSSI, garantit que le prestataire respecte des exigences strictes en matière de compétences techniques, de méthodologie et de confidentialité. C'est un gage de qualité reconnu par les organismes publics et les entreprises soumises à des réglementations (LPM, NIS2, DORA)." },
   { q: "Combien de temps dure un audit de sécurité ?", a: "La durée dépend du périmètre : un pentest web simple peut prendre 5 jours, un audit d'architecture réseau complet 2 à 3 semaines. Nous adaptons la durée à vos besoins et contraintes opérationnelles." },
   { q: "Quelle est la différence entre un audit et un Red Team ?", a: "Un audit cible un périmètre défini avec une méthodologie structurée. Un exercice Red Team simule une attaque réaliste sans périmètre prédéfini, combinant techniques physiques, sociales et numériques pour tester votre résilience globale." },
+  { q: "Quel est le coût d'un audit cybersécurité ?", a: "Le coût varie selon la complexité et le périmètre : de 3 000 € pour un pentest ciblé à 25 000 € et plus pour un audit complet multi-périmètre. Nous proposons des devis personnalisés après un cadrage précis de vos besoins. Un audit est un investissement : le coût moyen d'une cyberattaque pour une PME dépasse 50 000 €." },
+  { q: "À quelle fréquence faut-il réaliser un audit ?", a: "Nous recommandons un pentest au minimum annuel, et après chaque changement majeur de votre SI (migration cloud, nouvelle application, fusion-acquisition). Les référentiels comme ISO 27001 et la directive NIS2 imposent des évaluations régulières. Un programme d'audit continu avec notre solution AlgoLightHouse complète cette démarche." },
+  { q: "Que contient le rapport d'audit ?", a: "Nos rapports incluent un résumé exécutif pour la direction, un détail technique de chaque vulnérabilité avec preuve d'exploitation, une classification par criticité (CVSS), des recommandations de remédiation priorisées et un plan d'action. Un atelier de restitution est systématiquement organisé avec vos équipes." },
 ];
 
 const Audit = () => {
@@ -123,23 +126,35 @@ const Audit = () => {
               <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-8">
                 Questions fréquentes sur l'<span className="text-gradient">audit de sécurité</span>
               </h2>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {faq.map((f, i) => (
-                  <div key={i} className="card-glass rounded-xl overflow-hidden">
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 12 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ delay: i * 0.08, duration: 0.5 }}
+                    className="card-glass rounded-xl overflow-hidden"
+                  >
                     <button
-                      className="w-full flex items-center justify-between p-6 text-left"
+                      className="w-full flex items-center justify-between p-6 text-left group"
                       onClick={() => setOpenFaq(openFaq === i ? null : i)}
                       aria-expanded={openFaq === i}
                     >
-                      <h3 className="font-heading font-semibold text-foreground pr-4">{f.q}</h3>
-                      <ChevronDown className={`h-5 w-5 text-primary shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} />
+                      <h3 className="font-heading font-semibold text-foreground pr-4 group-hover:text-primary transition-colors">{f.q}</h3>
+                      <ChevronDown className={`h-5 w-5 text-primary shrink-0 transition-transform duration-300 ${openFaq === i ? "rotate-180" : ""}`} />
                     </button>
-                    {openFaq === i && (
+                    <motion.div
+                      initial={false}
+                      animate={openFaq === i ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                      className="overflow-hidden"
+                    >
                       <div className="px-6 pb-6">
                         <p className="text-muted-foreground text-sm leading-relaxed">{f.a}</p>
                       </div>
-                    )}
-                  </div>
+                    </motion.div>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>

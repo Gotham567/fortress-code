@@ -15,6 +15,7 @@ import MentionsLegales from "./pages/MentionsLegales.tsx";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite.tsx";
 import RSE from "./pages/RSE.tsx";
 import Glossaire from "./pages/Glossaire.tsx";
+import FAQ from "./pages/FAQ.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 
@@ -55,6 +56,7 @@ const App = () => (
           <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
           <Route path="/rse" element={<RSE />} />
           <Route path="/glossaire" element={<Glossaire />} />
+          <Route path="/faq" element={<FAQ />} />
           {/* Articles */}
           <Route path="/actualites/audit-cybersecurite-guide" element={<AuditCybersecurite />} />
           <Route path="/actualites/pentest-entreprise-guide-pme" element={<PentestEntreprise />} />
