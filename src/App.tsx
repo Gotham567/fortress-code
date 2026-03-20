@@ -29,6 +29,9 @@ import CyberattaquesPME from "./pages/articles/CyberattaquesPME.tsx";
 import ApresCyberattaque from "./pages/articles/ApresCyberattaque.tsx";
 import AuditObligatoire from "./pages/articles/AuditObligatoire.tsx";
 import PreparerPentest from "./pages/articles/PreparerPentest.tsx";
+import DirectiveNIS2 from "./pages/articles/DirectiveNIS2.tsx";
+import RSSIExternalise from "./pages/articles/RSSIExternalise.tsx";
+import SecuriserTeletravail from "./pages/articles/SecuriserTeletravail.tsx";
 
 const queryClient = new QueryClient();
 
