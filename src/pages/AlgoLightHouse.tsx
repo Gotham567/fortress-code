@@ -82,19 +82,35 @@ const AlgoLightHouse = () => {
               <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-8">
                 Questions fréquentes sur <span className="text-gradient">AlgoLightHouse</span>
               </h2>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {faq.map((f, i) => (
-                  <div key={i} className="card-glass rounded-xl overflow-hidden">
-                    <button className="w-full flex items-center justify-between p-6 text-left" onClick={() => setOpenFaq(openFaq === i ? null : i)} aria-expanded={openFaq === i}>
-                      <h3 className="font-heading font-semibold text-foreground pr-4">{f.q}</h3>
-                      <ChevronDown className={`h-5 w-5 text-primary shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} />
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 12 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ delay: i * 0.08, duration: 0.5 }}
+                    className="card-glass rounded-xl overflow-hidden"
+                  >
+                    <button
+                      className="w-full flex items-center justify-between p-6 text-left group"
+                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                      aria-expanded={openFaq === i}
+                    >
+                      <h3 className="font-heading font-semibold text-foreground pr-4 group-hover:text-primary transition-colors">{f.q}</h3>
+                      <ChevronDown className={`h-5 w-5 text-primary shrink-0 transition-transform duration-300 ${openFaq === i ? "rotate-180" : ""}`} />
                     </button>
-                    {openFaq === i && (
+                    <motion.div
+                      initial={false}
+                      animate={openFaq === i ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                      className="overflow-hidden"
+                    >
                       <div className="px-6 pb-6">
                         <p className="text-muted-foreground text-sm leading-relaxed">{f.a}</p>
                       </div>
-                    )}
-                  </div>
+                    </motion.div>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>
