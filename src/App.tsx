@@ -56,6 +56,7 @@ const App = () => (
           <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
           <Route path="/rse" element={<RSE />} />
           <Route path="/glossaire" element={<Glossaire />} />
+          <Route path="/faq" element={<FAQ />} />
           {/* Articles */}
           <Route path="/actualites/audit-cybersecurite-guide" element={<AuditCybersecurite />} />
           <Route path="/actualites/pentest-entreprise-guide-pme" element={<PentestEntreprise />} />
