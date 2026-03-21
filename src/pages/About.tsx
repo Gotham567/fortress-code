@@ -40,7 +40,7 @@ const About = () => {
                 CyberSecure est un cabinet de conseil indépendant en cybersécurité fondé en 2008 à Lyon. Nous accompagnons entreprises et organismes publics dans la sécurisation de leurs systèmes d'information avec expertise, indépendance et bienveillance.
               </p>
               <p className="text-muted-foreground text-base leading-relaxed mb-8">
-                Notre indépendance est notre force : aucun partenariat éditeur ou constructeur ne biaise nos recommandations. Nos consultants certifiés (OSCP, OSEP, CEH, Lead Auditor ISO 27001) interviennent en <Link to="/audit" className="text-primary hover:underline">audit</Link>, <Link to="/conseil" className="text-primary hover:underline">conseil</Link> et <Link to="/cert" className="text-primary hover:underline">réponse à incident</Link> pour des organisations de toutes tailles et secteurs.
+                Notre indépendance est notre force : aucun partenariat éditeur ou constructeur ne biaise nos recommandations. Nos consultants certifiés (OSCP, OSEP, CEH, Lead Auditor ISO 27001) interviennent en <Link to="/audit" className="text-primary hover:underline">audit</Link>, <Link to="/conseil" className="text-primary hover:underline">conseil</Link> et <Link to="/cert" className="text-primary hover:underline">réponse à incident</Link> pour des organisations de toutes tailles et secteurs. Notre expertise s'étend à la <a href="https://cloud-secure.fr" target="_blank" rel="noopener" className="text-primary hover:underline">sécurisation des environnements cloud</a> et à l'accompagnement en <a href="https://cyberconform.fr" target="_blank" rel="noopener" className="text-primary hover:underline">conformité réglementaire</a>.
               </p>
             </motion.div>
 

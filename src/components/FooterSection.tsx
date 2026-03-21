@@ -41,7 +41,12 @@ const FooterSection = () => {
           </nav>
 
           <div>
-            <h3 className="font-heading font-semibold text-foreground text-sm mb-4">Contact</h3>
+            <h3 className="font-heading font-semibold text-foreground text-sm mb-4">Écosystème</h3>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li><a href="https://cloud-secure.fr" target="_blank" rel="noopener" className="hover:text-primary transition-colors">Cloud Secure — Sécurité cloud</a></li>
+              <li><a href="https://cyberconform.fr" target="_blank" rel="noopener" className="hover:text-primary transition-colors">CyberConform — Conformité cyber</a></li>
+            </ul>
+            <h3 className="font-heading font-semibold text-foreground text-sm mb-4 mt-6">Contact</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="tel:0426782486" className="hover:text-primary transition-colors">04 26 78 24 86</a></li>
               <li><a href="mailto:contact@cybersecure.fr" className="hover:text-primary transition-colors">contact@cybersecure.fr</a></li>
