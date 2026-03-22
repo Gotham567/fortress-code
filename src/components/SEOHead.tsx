@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 
 interface SEOHeadProps {
   title: string;
@@ -12,22 +13,26 @@ const SITE_URL = "https://fortress-code.lovable.app";
 const DEFAULT_OG_IMAGE = "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png";
 
 const SEOHead = ({ title, description, canonical, jsonLd, ogImage }: SEOHeadProps) => {
+  const location = useLocation();
   const fullTitle = `${title} | CyberSecure`;
-  const canonicalUrl = canonical ? `${SITE_URL}${canonical}` : undefined;
+  // Auto-generate canonical from current path if not explicitly provided
+  const canonicalUrl = canonical
+    ? `${SITE_URL}${canonical}`
+    : `${SITE_URL}${location.pathname === "/" ? "/" : location.pathname.replace(/\/+$/, "")}`;
   const image = ogImage || DEFAULT_OG_IMAGE;
 
   return (
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      <link rel="canonical" href={canonicalUrl} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
+      <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={image} />
       <meta property="og:locale" content="fr_FR" />
       <meta property="og:site_name" content="CyberSecure" />
-      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
-      {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
