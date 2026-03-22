@@ -41,6 +41,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://fortress-code.lovable.app/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://fortress-code.lovable.app/glossaire</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -60,7 +65,7 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-  <!-- Articles piliers -->
+  <!-- Articles -->
   <url>
     <loc>https://fortress-code.lovable.app/actualites/audit-cybersecurite-guide</loc>
     <lastmod>2026-03-10</lastmod>
@@ -85,7 +90,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Articles de blog -->
   <url>
     <loc>https://fortress-code.lovable.app/actualites/cout-audit-cybersecurite-2025</loc>
     <lastmod>2026-02-25</lastmod>
@@ -119,6 +123,24 @@
   <url>
     <loc>https://fortress-code.lovable.app/actualites/comment-se-preparer-pentest</loc>
     <lastmod>2026-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fortress-code.lovable.app/actualites/directive-nis2-guide-pme-eti</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fortress-code.lovable.app/actualites/rssi-externalise-guide</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fortress-code.lovable.app/actualites/securiser-teletravail-entreprise</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
