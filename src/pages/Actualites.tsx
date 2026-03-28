@@ -19,6 +19,9 @@ import imgPreparer from "@/assets/articles/preparer-pentest.jpg";
 import imgNIS2 from "@/assets/articles/nis2-directive.jpg";
 import imgRSSI from "@/assets/articles/rssi-externalise.jpg";
 import imgTeletravail from "@/assets/articles/securiser-teletravail.jpg";
+import imgPCA from "@/assets/articles/pca-pra-cybersecurite.jpg";
+import imgFormation from "@/assets/articles/formation-cybersecurite.jpg";
+import imgRGPD from "@/assets/articles/rgpd-cybersecurite.jpg";
 
 const pillarPages = [
   { tag: "Page pilier", title: "Qu'est-ce qu'un audit cybersécurité et pourquoi en faire un ?", desc: "Guide complet sur l'audit cybersécurité : définition, méthodologie, types d'audits, bénéfices et fréquence recommandée pour les PME et ETI.", date: "10 Mars 2026", slug: "/actualites/audit-cybersecurite-guide", img: imgAudit },
