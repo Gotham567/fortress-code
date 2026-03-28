@@ -74,6 +74,9 @@ const App = () => (
           <Route path="/actualites/directive-nis2-guide-pme-eti" element={<DirectiveNIS2 />} />
           <Route path="/actualites/rssi-externalise-guide" element={<RSSIExternalise />} />
           <Route path="/actualites/securiser-teletravail-entreprise" element={<SecuriserTeletravail />} />
+          <Route path="/actualites/pca-pra-cybersecurite-guide" element={<PlanContinuite />} />
+          <Route path="/actualites/formation-sensibilisation-cybersecurite-entreprise" element={<FormationCybersecurite />} />
+          <Route path="/actualites/conformite-rgpd-cybersecurite-guide-pme" element={<ConformiteRGPD />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
