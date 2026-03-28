@@ -33,6 +33,9 @@ import PreparerPentest from "./pages/articles/PreparerPentest.tsx";
 import DirectiveNIS2 from "./pages/articles/DirectiveNIS2.tsx";
 import RSSIExternalise from "./pages/articles/RSSIExternalise.tsx";
 import SecuriserTeletravail from "./pages/articles/SecuriserTeletravail.tsx";
+import PlanContinuite from "./pages/articles/PlanContinuite.tsx";
+import FormationCybersecurite from "./pages/articles/FormationCybersecurite.tsx";
+import ConformiteRGPD from "./pages/articles/ConformiteRGPD.tsx";
 
 const queryClient = new QueryClient();
 
