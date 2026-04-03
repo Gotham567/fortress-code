@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Search, ShieldCheck, Phone, Award } from "lucide-react";
+import { ShieldCheck, Calendar, ArrowRight, Search, Phone, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
@@ -77,24 +77,50 @@ const HeroSection = () => {
             className="lg:col-span-2 hidden lg:block"
           >
             <div className="card-glass rounded-2xl p-8 text-center glow-border">
-              <p className="text-primary font-heading font-semibold text-xs uppercase tracking-widest mb-6">
-                Surveillance
-              </p>
-              <h2 className="font-heading text-2xl font-bold text-foreground mb-2">
-                algo<span className="text-primary">LightHouse</span>
+              <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-6">
+                <ShieldCheck className="h-4 w-4 text-primary" />
+                <span className="text-primary font-heading text-xs font-semibold uppercase tracking-widest">
+                  Offre découverte
+                </span>
+              </div>
+
+              <h2 className="font-heading text-2xl font-bold text-foreground mb-3 leading-tight">
+                Audit cybersécurité{" "}
+                <span className="text-gradient">gratuit</span>
               </h2>
-              <p className="text-muted-foreground text-sm mb-6">by cybersecure</p>
-              <h3 className="font-heading text-xl font-semibold text-foreground mb-4 leading-snug">
-                Pilotez et maîtrisez votre surface d'attaque externe
-              </h3>
-              <p className="text-muted-foreground text-sm mb-8 leading-relaxed">
-                Service managé combinant technologie et expertise humaine pour une cybersécurité pilotable et efficiente.
+
+              <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
+                15 minutes pour identifier vos <strong className="text-foreground">principaux risques</strong> et vous orienter vers les actions prioritaires.
               </p>
-              <Link to="/algolighthouse">
-                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold w-full">
-                  Découvrir AlgoLightHouse
+
+              <ul className="text-left space-y-2.5 mb-6">
+                {[
+                  "Vision claire de votre niveau de risque",
+                  "Recommandations concrètes",
+                  "Sans engagement",
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-2.5 text-muted-foreground text-sm">
+                    <div className="h-4 w-4 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                      <ArrowRight className="h-2.5 w-2.5 text-primary" />
+                    </div>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href="https://calendly.com/many-cyberconform/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold w-full gap-2">
+                  <Calendar className="h-4 w-4" />
+                  Réserver mon audit gratuit
                 </Button>
-              </Link>
+              </a>
+              <p className="text-muted-foreground text-xs mt-3">
+                En visio • 100% gratuit
+              </p>
             </div>
           </motion.div>
         </div>

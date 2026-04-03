@@ -79,7 +79,7 @@ const Index = () => {
       <Navbar />
       <main>
         <HeroSection />
-        <FreeAuditBanner />
+        
         <TrustSection />
         <CertificationsSection />
         <DifferentiatorsSection />
