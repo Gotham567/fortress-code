@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Search, ShieldCheck, Phone, Award } from "lucide-react";
+import { ShieldCheck, Calendar, ArrowRight, Search, Phone, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
