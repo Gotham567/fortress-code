@@ -1,5 +1,7 @@
 import Navbar from "@/components/Navbar";
+import StickyAuditBanner from "@/components/StickyAuditBanner";
 import HeroSection from "@/components/HeroSection";
+import FreeAuditBanner from "@/components/FreeAuditBanner";
 import TrustSection from "@/components/TrustSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import DifferentiatorsSection from "@/components/DifferentiatorsSection";
@@ -73,9 +75,11 @@ const Index = () => {
         canonical="/"
         jsonLd={[organizationJsonLd, localBusinessJsonLd]}
       />
+      <StickyAuditBanner />
       <Navbar />
       <main>
         <HeroSection />
+        <FreeAuditBanner />
         <TrustSection />
         <CertificationsSection />
         <DifferentiatorsSection />

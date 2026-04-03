@@ -18,7 +18,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border" role="navigation" aria-label="Navigation principale">
+    <nav className="fixed top-10 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border" role="navigation" aria-label="Navigation principale">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <Link to="/" className="flex items-center gap-2" aria-label="CyberSecure - Accueil">
           <Shield className="h-8 w-8 text-primary" aria-hidden="true" />
