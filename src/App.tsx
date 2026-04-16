@@ -36,6 +36,9 @@ import SecuriserTeletravail from "./pages/articles/SecuriserTeletravail.tsx";
 import PlanContinuite from "./pages/articles/PlanContinuite.tsx";
 import FormationCybersecurite from "./pages/articles/FormationCybersecurite.tsx";
 import ConformiteRGPD from "./pages/articles/ConformiteRGPD.tsx";
+import RansomwarePME from "./pages/articles/RansomwarePME.tsx";
+import EDRXDRProtection from "./pages/articles/EDRXDRProtection.tsx";
+import AuditActiveDirectory from "./pages/articles/AuditActiveDirectory.tsx";
 
 const queryClient = new QueryClient();
 
@@ -77,6 +80,9 @@ const App = () => (
           <Route path="/actualites/pca-pra-cybersecurite-guide" element={<PlanContinuite />} />
           <Route path="/actualites/formation-sensibilisation-cybersecurite-entreprise" element={<FormationCybersecurite />} />
           <Route path="/actualites/conformite-rgpd-cybersecurite-guide-pme" element={<ConformiteRGPD />} />
+          <Route path="/actualites/ransomware-pme-guide-prevention-reponse" element={<RansomwarePME />} />
+          <Route path="/actualites/edr-xdr-protection-endpoint-pme" element={<EDRXDRProtection />} />
+          <Route path="/actualites/audit-active-directory-securite-pme" element={<AuditActiveDirectory />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
