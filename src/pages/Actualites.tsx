@@ -22,6 +22,9 @@ import imgTeletravail from "@/assets/articles/securiser-teletravail.jpg";
 import imgPCA from "@/assets/articles/pca-pra-cybersecurite.jpg";
 import imgFormation from "@/assets/articles/formation-cybersecurite.jpg";
 import imgRGPD from "@/assets/articles/rgpd-cybersecurite.jpg";
+import imgRansomware from "@/assets/articles/ransomware-pme.jpg";
+import imgEDR from "@/assets/articles/edr-xdr-protection.jpg";
+import imgAD from "@/assets/articles/audit-active-directory.jpg";
 
 const pillarPages = [
   { tag: "Page pilier", title: "Qu'est-ce qu'un audit cybersécurité et pourquoi en faire un ?", desc: "Guide complet sur l'audit cybersécurité : définition, méthodologie, types d'audits, bénéfices et fréquence recommandée pour les PME et ETI.", date: "10 Mars 2026", slug: "/actualites/audit-cybersecurite-guide", img: imgAudit },
@@ -31,6 +34,9 @@ const pillarPages = [
 ];
 
 const blogArticles = [
+  { tag: "Article", title: "Ransomware PME : guide complet de prévention et de réponse", desc: "Modes opératoires des attaques, 12 mesures de prévention, plan de réponse à incident et faut-il payer la rançon ? Guide complet pour les dirigeants de PME.", date: "10 Avril 2026", slug: "/actualites/ransomware-pme-guide-prevention-reponse", img: imgRansomware },
+  { tag: "Article", title: "EDR vs XDR : choisir sa solution de détection et réponse", desc: "Comprendre les différences entre antivirus, EDR et XDR : comparatif des solutions du marché, prix et plan de déploiement en 6 étapes pour les PME.", date: "8 Avril 2026", slug: "/actualites/edr-xdr-protection-endpoint-pme", img: imgEDR },
+  { tag: "Article", title: "Audit Active Directory : sécuriser le cœur de votre SI", desc: "10 vulnérabilités AD les plus fréquentes, outils d'audit (PingCastle, BloodHound), méthodologie en 7 étapes et quick wins pour sécuriser votre annuaire.", date: "5 Avril 2026", slug: "/actualites/audit-active-directory-securite-pme", img: imgAD },
   { tag: "Article", title: "PCA et PRA en cybersécurité : protéger la continuité de votre entreprise", desc: "Guide complet sur le Plan de Continuité (PCA) et le Plan de Reprise d'Activité (PRA) : méthodologie en 8 étapes, RTO/RPO, budget et erreurs à éviter.", date: "25 Mars 2026", slug: "/actualites/pca-pra-cybersecurite-guide", img: imgPCA },
   { tag: "Article", title: "Formation cybersécurité : sensibiliser vos collaborateurs", desc: "95 % des incidents impliquent une erreur humaine. Programme de sensibilisation, simulations de phishing, plan annuel et mesure du ROI pour les PME.", date: "22 Mars 2026", slug: "/actualites/formation-sensibilisation-cybersecurite-entreprise", img: imgFormation },
   { tag: "Article", title: "Conformité RGPD et cybersécurité : deux faces d'une même obligation", desc: "Obligations RGPD en matière de sécurité, sanctions CNIL, 12 mesures techniques indispensables et plan de mise en conformité en 10 étapes.", date: "20 Mars 2026", slug: "/actualites/conformite-rgpd-cybersecurite-guide-pme", img: imgRGPD },

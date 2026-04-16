@@ -67,6 +67,24 @@
   </url>
   <!-- Articles -->
   <url>
+    <loc>https://fortress-code.lovable.app/actualites/ransomware-pme-guide-prevention-reponse</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://fortress-code.lovable.app/actualites/edr-xdr-protection-endpoint-pme</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fortress-code.lovable.app/actualites/audit-active-directory-securite-pme</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://fortress-code.lovable.app/actualites/pca-pra-cybersecurite-guide</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
