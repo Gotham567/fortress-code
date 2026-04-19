@@ -25,6 +25,9 @@ import imgRGPD from "@/assets/articles/rgpd-cybersecurite.jpg";
 import imgRansomware from "@/assets/articles/ransomware-pme.jpg";
 import imgEDR from "@/assets/articles/edr-xdr-protection.jpg";
 import imgAD from "@/assets/articles/audit-active-directory.jpg";
+import imgZeroTrust from "@/assets/articles/zero-trust.jpg";
+import imgM365 from "@/assets/articles/securite-microsoft-365.jpg";
+import imgPhishing from "@/assets/articles/phishing-avance.jpg";
 
 const pillarPages = [
   { tag: "Page pilier", title: "Qu'est-ce qu'un audit cybersécurité et pourquoi en faire un ?", desc: "Guide complet sur l'audit cybersécurité : définition, méthodologie, types d'audits, bénéfices et fréquence recommandée pour les PME et ETI.", date: "10 Mars 2026", slug: "/actualites/audit-cybersecurite-guide", img: imgAudit },
@@ -34,6 +37,9 @@ const pillarPages = [
 ];
 
 const blogArticles = [
+  { tag: "Article", title: "Zero Trust : guide d'implémentation pour les PME et ETI", desc: "Comprendre les 5 piliers du Zero Trust, feuille de route en 7 étapes, technologies (ZTNA, MFA, micro-segmentation), bénéfices mesurables et erreurs à éviter.", date: "15 Avril 2026", slug: "/actualites/zero-trust-architecture-guide-pme", img: imgZeroTrust },
+  { tag: "Article", title: "Sécuriser Microsoft 365 : guide complet pour les PME", desc: "15 mesures essentielles, MFA, accès conditionnel, Defender, Purview, gestion des partages externes et plan d'action en 30 jours pour sécuriser votre tenant.", date: "13 Avril 2026", slug: "/actualites/securiser-microsoft-365-pme", img: imgM365 },
+  { tag: "Article", title: "Spear-phishing & BEC : se protéger des attaques email avancées", desc: "Techniques 2025 (AiTM, deepfake, quishing), 12 mesures techniques, programme de sensibilisation et plan de réponse en cas de fraude pour les PME.", date: "12 Avril 2026", slug: "/actualites/spear-phishing-bec-guide-protection-pme", img: imgPhishing },
   { tag: "Article", title: "Ransomware PME : guide complet de prévention et de réponse", desc: "Modes opératoires des attaques, 12 mesures de prévention, plan de réponse à incident et faut-il payer la rançon ? Guide complet pour les dirigeants de PME.", date: "10 Avril 2026", slug: "/actualites/ransomware-pme-guide-prevention-reponse", img: imgRansomware },
   { tag: "Article", title: "EDR vs XDR : choisir sa solution de détection et réponse", desc: "Comprendre les différences entre antivirus, EDR et XDR : comparatif des solutions du marché, prix et plan de déploiement en 6 étapes pour les PME.", date: "8 Avril 2026", slug: "/actualites/edr-xdr-protection-endpoint-pme", img: imgEDR },
   { tag: "Article", title: "Audit Active Directory : sécuriser le cœur de votre SI", desc: "10 vulnérabilités AD les plus fréquentes, outils d'audit (PingCastle, BloodHound), méthodologie en 7 étapes et quick wins pour sécuriser votre annuaire.", date: "5 Avril 2026", slug: "/actualites/audit-active-directory-securite-pme", img: imgAD },

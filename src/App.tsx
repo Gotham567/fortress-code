@@ -39,6 +39,9 @@ import ConformiteRGPD from "./pages/articles/ConformiteRGPD.tsx";
 import RansomwarePME from "./pages/articles/RansomwarePME.tsx";
 import EDRXDRProtection from "./pages/articles/EDRXDRProtection.tsx";
 import AuditActiveDirectory from "./pages/articles/AuditActiveDirectory.tsx";
+import ZeroTrust from "./pages/articles/ZeroTrust.tsx";
+import SecuriteMicrosoft365 from "./pages/articles/SecuriteMicrosoft365.tsx";
+import SpearPhishing from "./pages/articles/SpearPhishing.tsx";
 
 const queryClient = new QueryClient();
 
@@ -83,6 +86,9 @@ const App = () => (
           <Route path="/actualites/ransomware-pme-guide-prevention-reponse" element={<RansomwarePME />} />
           <Route path="/actualites/edr-xdr-protection-endpoint-pme" element={<EDRXDRProtection />} />
           <Route path="/actualites/audit-active-directory-securite-pme" element={<AuditActiveDirectory />} />
+          <Route path="/actualites/zero-trust-architecture-guide-pme" element={<ZeroTrust />} />
+          <Route path="/actualites/securiser-microsoft-365-pme" element={<SecuriteMicrosoft365 />} />
+          <Route path="/actualites/spear-phishing-bec-guide-protection-pme" element={<SpearPhishing />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
