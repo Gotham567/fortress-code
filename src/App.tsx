@@ -42,6 +42,9 @@ import AuditActiveDirectory from "./pages/articles/AuditActiveDirectory.tsx";
 import ZeroTrust from "./pages/articles/ZeroTrust.tsx";
 import SecuriteMicrosoft365 from "./pages/articles/SecuriteMicrosoft365.tsx";
 import SpearPhishing from "./pages/articles/SpearPhishing.tsx";
+import SecuriteCloudAWS from "./pages/articles/SecuriteCloudAWS.tsx";
+import SOCManage from "./pages/articles/SOCManage.tsx";
+import CyberAssurance from "./pages/articles/CyberAssurance.tsx";
 
 const queryClient = new QueryClient();
 
@@ -89,6 +92,9 @@ const App = () => (
           <Route path="/actualites/zero-trust-architecture-guide-pme" element={<ZeroTrust />} />
           <Route path="/actualites/securiser-microsoft-365-pme" element={<SecuriteMicrosoft365 />} />
           <Route path="/actualites/spear-phishing-bec-guide-protection-pme" element={<SpearPhishing />} />
+          <Route path="/actualites/securite-cloud-aws-guide-pme" element={<SecuriteCloudAWS />} />
+          <Route path="/actualites/soc-manage-mdr-guide-pme" element={<SOCManage />} />
+          <Route path="/actualites/cyber-assurance-guide-pme-eti" element={<CyberAssurance />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
