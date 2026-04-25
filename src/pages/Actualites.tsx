@@ -28,6 +28,9 @@ import imgAD from "@/assets/articles/audit-active-directory.jpg";
 import imgZeroTrust from "@/assets/articles/zero-trust.jpg";
 import imgM365 from "@/assets/articles/securite-microsoft-365.jpg";
 import imgPhishing from "@/assets/articles/phishing-avance.jpg";
+import imgAWS from "@/assets/articles/securite-cloud-aws.jpg";
+import imgSOC from "@/assets/articles/soc-mdr-manage.jpg";
+import imgCyberAssurance from "@/assets/articles/cyber-assurance.jpg";
 
 const pillarPages = [
   { tag: "Page pilier", title: "Qu'est-ce qu'un audit cybersécurité et pourquoi en faire un ?", desc: "Guide complet sur l'audit cybersécurité : définition, méthodologie, types d'audits, bénéfices et fréquence recommandée pour les PME et ETI.", date: "10 Mars 2026", slug: "/actualites/audit-cybersecurite-guide", img: imgAudit },
@@ -37,6 +40,9 @@ const pillarPages = [
 ];
 
 const blogArticles = [
+  { tag: "Article", title: "Sécurité Cloud AWS : guide complet pour les PME et ETI", desc: "Modèle de responsabilité partagée, IAM, GuardDuty, CloudTrail, chiffrement KMS, hardening VPC, conformité RGPD/NIS2 et 15 bonnes pratiques pour sécuriser votre environnement AWS.", date: "22 Avril 2026", slug: "/actualites/securite-cloud-aws-guide-pme", img: imgAWS },
+  { tag: "Article", title: "SOC managé et MDR : guide pour les PME et ETI", desc: "Différences SOC managé / MDR / XDR, services à exiger, prix moyens 2026, 8 critères de choix et erreurs à éviter pour externaliser sa supervision sécurité 24/7.", date: "20 Avril 2026", slug: "/actualites/soc-manage-mdr-guide-pme", img: imgSOC },
+  { tag: "Article", title: "Cyber-assurance : guide complet pour les PME et ETI", desc: "Garanties (RC, dommages, rançon, frais de gestion de crise), exclusions, prix 2026, obligations LPM 2023 et 12 mesures attendues par les assureurs pour souscrire.", date: "18 Avril 2026", slug: "/actualites/cyber-assurance-guide-pme-eti", img: imgCyberAssurance },
   { tag: "Article", title: "Zero Trust : guide d'implémentation pour les PME et ETI", desc: "Comprendre les 5 piliers du Zero Trust, feuille de route en 7 étapes, technologies (ZTNA, MFA, micro-segmentation), bénéfices mesurables et erreurs à éviter.", date: "15 Avril 2026", slug: "/actualites/zero-trust-architecture-guide-pme", img: imgZeroTrust },
   { tag: "Article", title: "Sécuriser Microsoft 365 : guide complet pour les PME", desc: "15 mesures essentielles, MFA, accès conditionnel, Defender, Purview, gestion des partages externes et plan d'action en 30 jours pour sécuriser votre tenant.", date: "13 Avril 2026", slug: "/actualites/securiser-microsoft-365-pme", img: imgM365 },
   { tag: "Article", title: "Spear-phishing & BEC : se protéger des attaques email avancées", desc: "Techniques 2025 (AiTM, deepfake, quishing), 12 mesures techniques, programme de sensibilisation et plan de réponse en cas de fraude pour les PME.", date: "12 Avril 2026", slug: "/actualites/spear-phishing-bec-guide-protection-pme", img: imgPhishing },
