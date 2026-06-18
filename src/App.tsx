@@ -45,6 +45,9 @@ import SpearPhishing from "./pages/articles/SpearPhishing.tsx";
 import SecuriteCloudAWS from "./pages/articles/SecuriteCloudAWS.tsx";
 import SOCManage from "./pages/articles/SOCManage.tsx";
 import CyberAssurance from "./pages/articles/CyberAssurance.tsx";
+import IACybersecurite from "./pages/articles/IACybersecurite.tsx";
+import SauvegardeImmuable from "./pages/articles/SauvegardeImmuable.tsx";
+import SecuriteOTICS from "./pages/articles/SecuriteOTICS.tsx";
 
 const queryClient = new QueryClient();
 
@@ -95,6 +98,9 @@ const App = () => (
           <Route path="/actualites/securite-cloud-aws-guide-pme" element={<SecuriteCloudAWS />} />
           <Route path="/actualites/soc-manage-mdr-guide-pme" element={<SOCManage />} />
           <Route path="/actualites/cyber-assurance-guide-pme-eti" element={<CyberAssurance />} />
+          <Route path="/actualites/ia-cybersecurite-guide-pme" element={<IACybersecurite />} />
+          <Route path="/actualites/sauvegarde-immuable-3-2-1-guide-pme" element={<SauvegardeImmuable />} />
+          <Route path="/actualites/securite-ot-ics-industrielle-guide" element={<SecuriteOTICS />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
