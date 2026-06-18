@@ -31,6 +31,9 @@ import imgPhishing from "@/assets/articles/phishing-avance.jpg";
 import imgAWS from "@/assets/articles/securite-cloud-aws.jpg";
 import imgSOC from "@/assets/articles/soc-mdr-manage.jpg";
 import imgCyberAssurance from "@/assets/articles/cyber-assurance.jpg";
+import imgIA from "@/assets/articles/ia-cybersecurite.jpg";
+import imgBackup from "@/assets/articles/sauvegarde-immuable.jpg";
+import imgOT from "@/assets/articles/securite-ot-ics.jpg";
 
 const pillarPages = [
   { tag: "Page pilier", title: "Qu'est-ce qu'un audit cybersécurité et pourquoi en faire un ?", desc: "Guide complet sur l'audit cybersécurité : définition, méthodologie, types d'audits, bénéfices et fréquence recommandée pour les PME et ETI.", date: "10 Mars 2026", slug: "/actualites/audit-cybersecurite-guide", img: imgAudit },
@@ -40,6 +43,9 @@ const pillarPages = [
 ];
 
 const blogArticles = [
+  { tag: "Article", title: "Sécurité OT & ICS : protéger les environnements industriels", desc: "Modèle Purdue, IEC 62443, segmentation IT/OT, monitoring passif des protocoles industriels (Modbus, OPC-UA), conformité NIS2 et plan d'action en 10 étapes pour les industriels.", date: "12 Mai 2026", slug: "/actualites/securite-ot-ics-industrielle-guide", img: imgOT },
+  { tag: "Article", title: "Sauvegarde immuable & règle 3-2-1-1-0 : la dernière ligne de défense", desc: "Stratégie anti-ransomware : règle 3-2-1-1-0, immuabilité WORM/Object Lock, air gap, RTO/RPO, tests de restauration et 10 bonnes pratiques pour PME et ETI.", date: "8 Mai 2026", slug: "/actualites/sauvegarde-immuable-3-2-1-guide-pme", img: imgBackup },
+  { tag: "Article", title: "IA et cybersécurité : opportunités, risques et bonnes pratiques", desc: "Usages défensifs de l'IA, nouvelles menaces (deepfake, prompt injection, shadow AI), cadre AI Act et ISO 42001, plan d'action en 8 étapes pour les PME et ETI.", date: "5 Mai 2026", slug: "/actualites/ia-cybersecurite-guide-pme", img: imgIA },
   { tag: "Article", title: "Sécurité Cloud AWS : guide complet pour les PME et ETI", desc: "Modèle de responsabilité partagée, IAM, GuardDuty, CloudTrail, chiffrement KMS, hardening VPC, conformité RGPD/NIS2 et 15 bonnes pratiques pour sécuriser votre environnement AWS.", date: "22 Avril 2026", slug: "/actualites/securite-cloud-aws-guide-pme", img: imgAWS },
   { tag: "Article", title: "SOC managé et MDR : guide pour les PME et ETI", desc: "Différences SOC managé / MDR / XDR, services à exiger, prix moyens 2026, 8 critères de choix et erreurs à éviter pour externaliser sa supervision sécurité 24/7.", date: "20 Avril 2026", slug: "/actualites/soc-manage-mdr-guide-pme", img: imgSOC },
   { tag: "Article", title: "Cyber-assurance : guide complet pour les PME et ETI", desc: "Garanties (RC, dommages, rançon, frais de gestion de crise), exclusions, prix 2026, obligations LPM 2023 et 12 mesures attendues par les assureurs pour souscrire.", date: "18 Avril 2026", slug: "/actualites/cyber-assurance-guide-pme-eti", img: imgCyberAssurance },
