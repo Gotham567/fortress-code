@@ -61,6 +61,11 @@ import CyberAssurance from "./pages/articles/CyberAssurance.tsx";
 import IACybersecurite from "./pages/articles/IACybersecurite.tsx";
 import SauvegardeImmuable from "./pages/articles/SauvegardeImmuable.tsx";
 import SecuriteOTICS from "./pages/articles/SecuriteOTICS.tsx";
+import OwaspTop10 from "./pages/articles/OwaspTop10.tsx";
+import PentestActiveDirectory from "./pages/articles/PentestActiveDirectory.tsx";
+import BugBountyProgramme from "./pages/articles/BugBountyProgramme.tsx";
+import SimulationPhishing from "./pages/articles/SimulationPhishing.tsx";
+import AuditSecuriteMobile from "./pages/articles/AuditSecuriteMobile.tsx";
 
 const queryClient = new QueryClient();
 
@@ -126,6 +131,11 @@ const App = () => (
           <Route path="/actualites/ia-cybersecurite-guide-pme" element={<IACybersecurite />} />
           <Route path="/actualites/sauvegarde-immuable-3-2-1-guide-pme" element={<SauvegardeImmuable />} />
           <Route path="/actualites/securite-ot-ics-industrielle-guide" element={<SecuriteOTICS />} />
+          <Route path="/actualites/owasp-top-10-guide-securite-web" element={<OwaspTop10 />} />
+          <Route path="/actualites/pentest-active-directory-guide" element={<PentestActiveDirectory />} />
+          <Route path="/actualites/bug-bounty-programme-entreprise-guide" element={<BugBountyProgramme />} />
+          <Route path="/actualites/simulation-phishing-campagne-sensibilisation" element={<SimulationPhishing />} />
+          <Route path="/actualites/audit-securite-application-mobile-ios-android" element={<AuditSecuriteMobile />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
