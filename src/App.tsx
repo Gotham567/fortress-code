@@ -19,6 +19,20 @@ import FAQ from "./pages/FAQ.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 
+// Cities
+import AuditSecuriteParis from "./pages/cities/AuditSecuriteParis.tsx";
+import AuditSecuriteLyon from "./pages/cities/AuditSecuriteLyon.tsx";
+import AuditSecuriteMarseille from "./pages/cities/AuditSecuriteMarseille.tsx";
+import AuditSecuriteToulouse from "./pages/cities/AuditSecuriteToulouse.tsx";
+import AuditSecuriteNantes from "./pages/cities/AuditSecuriteNantes.tsx";
+import AuditSecuriteLille from "./pages/cities/AuditSecuriteLille.tsx";
+import AuditSecuriteNice from "./pages/cities/AuditSecuriteNice.tsx";
+import AuditSecuriteRennes from "./pages/cities/AuditSecuriteRennes.tsx";
+import AuditSecuriteStrasbourg from "./pages/cities/AuditSecuriteStrasbourg.tsx";
+import AuditSecuriteGrenoble from "./pages/cities/AuditSecuriteGrenoble.tsx";
+import AuditSecuriteRouen from "./pages/cities/AuditSecuriteRouen.tsx";
+import AuditSecuriteClermontFerrand from "./pages/cities/AuditSecuriteClermontFerrand.tsx";
+
 // Articles
 import AuditCybersecurite from "./pages/articles/AuditCybersecurite.tsx";
 import PentestEntreprise from "./pages/articles/PentestEntreprise.tsx";
@@ -72,6 +86,19 @@ const App = () => (
           <Route path="/rse" element={<RSE />} />
           <Route path="/glossaire" element={<Glossaire />} />
           <Route path="/faq" element={<FAQ />} />
+          {/* Cities */}
+          <Route path="/cybersecurite-paris" element={<AuditSecuriteParis />} />
+          <Route path="/cybersecurite-lyon" element={<AuditSecuriteLyon />} />
+          <Route path="/cybersecurite-marseille" element={<AuditSecuriteMarseille />} />
+          <Route path="/cybersecurite-toulouse" element={<AuditSecuriteToulouse />} />
+          <Route path="/cybersecurite-nantes" element={<AuditSecuriteNantes />} />
+          <Route path="/cybersecurite-lille" element={<AuditSecuriteLille />} />
+          <Route path="/cybersecurite-nice" element={<AuditSecuriteNice />} />
+          <Route path="/cybersecurite-rennes" element={<AuditSecuriteRennes />} />
+          <Route path="/cybersecurite-strasbourg" element={<AuditSecuriteStrasbourg />} />
+          <Route path="/cybersecurite-grenoble" element={<AuditSecuriteGrenoble />} />
+          <Route path="/cybersecurite-rouen" element={<AuditSecuriteRouen />} />
+          <Route path="/cybersecurite-clermont-ferrand" element={<AuditSecuriteClermontFerrand />} />
           {/* Articles */}
           <Route path="/actualites/audit-cybersecurite-guide" element={<AuditCybersecurite />} />
           <Route path="/actualites/pentest-entreprise-guide-pme" element={<PentestEntreprise />} />
