@@ -24,7 +24,6 @@ const FooterSection = () => {
               <li><Link to="/audit" className="hover:text-primary transition-colors">Audit & pentest</Link></li>
               <li><Link to="/conseil" className="hover:text-primary transition-colors">Conseil cybersécurité</Link></li>
               <li><Link to="/cert" className="hover:text-primary transition-colors">CERT — Réponse à incident</Link></li>
-              <li><Link to="/algolighthouse" className="hover:text-primary transition-colors">AlgoLightHouse</Link></li>
             </ul>
           </nav>
 

@@ -10,7 +10,6 @@ import Conseil from "./pages/Conseil.tsx";
 import Cert from "./pages/Cert.tsx";
 import Actualites from "./pages/Actualites.tsx";
 import Contact from "./pages/Contact.tsx";
-import AlgoLightHouse from "./pages/AlgoLightHouse.tsx";
 import MentionsLegales from "./pages/MentionsLegales.tsx";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite.tsx";
 import RSE from "./pages/RSE.tsx";
@@ -80,7 +79,6 @@ const App = () => (
           <Route path="/cert" element={<Cert />} />
           <Route path="/actualites" element={<Actualites />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/algolighthouse" element={<AlgoLightHouse />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
           <Route path="/rse" element={<RSE />} />

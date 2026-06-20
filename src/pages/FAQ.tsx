@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import SEOHead from "@/components/SEOHead";
 import { motion } from "framer-motion";
-import { ChevronDown, Shield, FileText, Eye, Ambulance } from "lucide-react";
+import { ChevronDown, Shield, FileText, Ambulance } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -32,18 +32,6 @@ const categories = [
       { q: "Quel est le coût d'un RSSI externalisé ?", a: "Un RSSI externalisé coûte en moyenne 2 à 4 fois moins qu'un RSSI salarié à temps plein (70-90k€/an). Nos formules démarrent à quelques jours par mois, ajustables selon vos besoins." },
       { q: "Mon entreprise est-elle concernée par NIS2 ou DORA ?", a: "NIS2 s'applique aux entités essentielles et importantes de 18 secteurs dès 50 salariés ou 10 M€ de CA. DORA concerne toutes les entités financières et leurs prestataires IT critiques. Nous réalisons un diagnostic gratuit pour déterminer vos obligations." },
       { q: "La sensibilisation des collaborateurs est-elle efficace ?", a: "Oui : 91 % des cyberattaques commencent par un e-mail de phishing. Nos campagnes réduisent le taux de clic sur les e-mails frauduleux de 35 % à moins de 5 % en 6 mois." },
-    ],
-  },
-  {
-    id: "lighthouse",
-    label: "AlgoLightHouse (ASM)",
-    icon: Eye,
-    questions: [
-      { q: "Qu'est-ce que la gestion de surface d'attaque (ASM) ?", a: "L'Attack Surface Management est une approche continue de découverte, d'analyse et de surveillance de tous les actifs numériques exposés sur Internet. Contrairement à un audit ponctuel, l'ASM offre une vision en temps réel de votre exposition." },
-      { q: "Quelle différence avec un scan de vulnérabilités classique ?", a: "AlgoLightHouse combine technologie de pointe et expertise humaine. Nos analystes vérifient chaque alerte, éliminent les faux positifs et fournissent des recommandations contextualisées." },
-      { q: "Combien de temps pour cartographier ma surface d'attaque ?", a: "La cartographie initiale est réalisée sous 48 à 72 heures. AlgoLightHouse découvre automatiquement vos domaines, sous-domaines, IP exposées, services et technologies utilisées." },
-      { q: "AlgoLightHouse remplace-t-il un pentest ?", a: "Non, les deux approches sont complémentaires. AlgoLightHouse assure une surveillance continue entre les audits, tandis que le pentest teste en profondeur l'exploitabilité des vulnérabilités." },
-      { q: "Quelles technologies sont surveillées ?", a: "Serveurs web, API, applications SaaS, services cloud (AWS, Azure, GCP), serveurs mail, DNS, certificats SSL/TLS, ports ouverts et shadow IT. Toute ressource accessible depuis Internet est identifiée." },
     ],
   },
   {
