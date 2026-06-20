@@ -9,7 +9,7 @@ interface SEOHeadProps {
   ogImage?: string;
 }
 
-const SITE_URL = "https://fortress-code.lovable.app";
+const SITE_URL = "https://securecyber.fr";
 const DEFAULT_OG_IMAGE = "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png";
 
 const SEOHead = ({ title, description, canonical, jsonLd, ogImage }: SEOHeadProps) => {

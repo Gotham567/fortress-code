@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fortress-code.lovable.app/sitemap.xml
+Sitemap: https://securecyber.fr/sitemap.xml
