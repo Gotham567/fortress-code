@@ -1,8 +1,15 @@
 import { motion } from "framer-motion";
-import { ShieldCheck, Calendar, ArrowRight, Search, Phone, Award } from "lucide-react";
+import { ShieldCheck, Calendar, ArrowRight, Search, Phone, Award, Shield, Users, Clock, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
+
+const stats = [
+  { icon: Shield, value: "500+", label: "Audits & pentests" },
+  { icon: Users, value: "15+", label: "Années d'expertise" },
+  { icon: Clock, value: "24/7", label: "CERT disponible" },
+  { icon: Star, value: "100%", label: "Indépendant PASSI" },
+];
 
 const services = [
   { icon: Search, title: "Audit cybersécurité", desc: "Pentest entreprise, audits de configuration et d'architecture pour PME et ETI", href: "/audit" },
@@ -124,6 +131,32 @@ const HeroSection = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Stats row */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.9 }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-16 pt-12 border-t border-border/30"
+        >
+          {stats.map((s, i) => (
+            <motion.div
+              key={s.label}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 1 + i * 0.1 }}
+              className="flex items-center gap-3 group"
+            >
+              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                <s.icon className="h-5 w-5 text-primary" />
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-gradient font-heading leading-none">{s.value}</div>
+                <div className="text-xs text-muted-foreground mt-0.5">{s.label}</div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );

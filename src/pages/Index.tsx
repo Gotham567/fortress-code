@@ -84,6 +84,7 @@ const Index = () => {
         <CertificationsSection />
         <DifferentiatorsSection />
         <TestimonialsSection />
+        <FreeAuditBanner />
         <BlogSection />
         <NewsletterSection />
       </main>
