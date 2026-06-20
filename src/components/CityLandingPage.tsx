@@ -40,8 +40,8 @@ const CityLandingPage = ({ data }: Props) => {
     name: `CyberSecure ${data.city}`,
     description,
     url,
-    telephone: "+33155270400",
-    email: "contact@securecyber.fr",
+    telephone: "+33426782486",
+    email: "contact@cybersecure.fr",
     areaServed: {
       "@type": "City",
       name: data.city,
@@ -128,10 +128,10 @@ const CityLandingPage = ({ data }: Props) => {
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
-                  href="tel:+33155270400"
+                  href="tel:+33426782486"
                   className="inline-flex items-center gap-2 rounded-md border border-border px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/40 hover:bg-primary/5 transition-all min-h-[44px]"
                 >
-                  <Phone className="h-4 w-4" /> 01 55 27 04 00
+                  <Phone className="h-4 w-4" /> 04 26 78 24 86
                 </a>
               </div>
             </section>
