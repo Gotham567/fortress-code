@@ -50,7 +50,7 @@ serve(async (req) => {
           },
           body: JSON.stringify({
             from: "CyberSecure <onboarding@resend.dev>",
-            to: ["lamoinematieu@gmail.com"],
+            to: ["vraih1915@gmail.com"],
             subject: `[CyberSecure] Nouveau message de ${prenom} ${nom}`,
             html: `
               <h2>Nouveau message depuis le formulaire de contact</h2>
