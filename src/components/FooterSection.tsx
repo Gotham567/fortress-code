@@ -57,7 +57,7 @@ const FooterSection = () => {
 
         <div className="border-t border-border pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-xs">
-            © CyberSecure 2026 — Cabinet de conseil en cybersécurité à Lyon, Paris, Saint-Étienne, Grenoble et Annecy
+            © CyberSecure {new Date().getFullYear()} — Cabinet de conseil en cybersécurité à Lyon, Paris, Saint-Étienne, Grenoble et Annecy
           </p>
           <div className="flex gap-4 text-xs text-muted-foreground">
             <Link to="/mentions-legales" className="hover:text-primary transition-colors">Mentions légales</Link>
