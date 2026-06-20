@@ -55,9 +55,33 @@ const FooterSection = () => {
           </div>
         </div>
 
+        <div className="border-t border-border pt-6 pb-6">
+          <p className="text-xs font-semibold text-foreground mb-3">Nos interventions en France</p>
+          <nav aria-label="Villes desservies" className="flex flex-wrap gap-x-4 gap-y-2">
+            {[
+              ["Audit Paris", "/cybersecurite-paris"],
+              ["Audit Lyon", "/cybersecurite-lyon"],
+              ["Audit Marseille", "/cybersecurite-marseille"],
+              ["Audit Toulouse", "/cybersecurite-toulouse"],
+              ["Audit Nantes", "/cybersecurite-nantes"],
+              ["Audit Lille", "/cybersecurite-lille"],
+              ["Audit Nice", "/cybersecurite-nice"],
+              ["Audit Rennes", "/cybersecurite-rennes"],
+              ["Audit Strasbourg", "/cybersecurite-strasbourg"],
+              ["Audit Grenoble", "/cybersecurite-grenoble"],
+              ["Audit Rouen", "/cybersecurite-rouen"],
+              ["Audit Clermont-Ferrand", "/cybersecurite-clermont-ferrand"],
+            ].map(([label, href]) => (
+              <Link key={href} to={href} className="text-xs text-muted-foreground hover:text-primary transition-colors">
+                {label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+
         <div className="border-t border-border pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-xs">
-            © CyberSecure {new Date().getFullYear()} — Cabinet de conseil en cybersécurité à Lyon, Paris, Saint-Étienne, Grenoble et Annecy
+            © CyberSecure {new Date().getFullYear()} — Cabinet d'audit et pentest cybersécurité à Lyon, Paris, Toulouse, Lille et dans toute la France
           </p>
           <div className="flex gap-4 text-xs text-muted-foreground">
             <Link to="/mentions-legales" className="hover:text-primary transition-colors">Mentions légales</Link>
