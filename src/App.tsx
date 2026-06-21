@@ -146,6 +146,13 @@ import PentestActiveDirectory from "./pages/articles/PentestActiveDirectory.tsx"
 import BugBountyProgramme from "./pages/articles/BugBountyProgramme.tsx";
 import SimulationPhishing from "./pages/articles/SimulationPhishing.tsx";
 import AuditSecuriteMobile from "./pages/articles/AuditSecuriteMobile.tsx";
+import VulnerabilitesCritiques from "./pages/articles/VulnerabilitesCritiques.tsx";
+import AuditSecuriteApi from "./pages/articles/AuditSecuriteApi.tsx";
+import ReconnaissanceOsint from "./pages/articles/ReconnaissanceOsint.tsx";
+import PentestWifi from "./pages/articles/PentestWifi.tsx";
+import ForensiqueNumerique from "./pages/articles/ForensiqueNumerique.tsx";
+import LateralMovement from "./pages/articles/LateralMovement.tsx";
+import CvssGestionVulnerabilites from "./pages/articles/CvssGestionVulnerabilites.tsx";
 
 const queryClient = new QueryClient();
 
@@ -216,6 +223,13 @@ const App = () => (
           <Route path="/actualites/bug-bounty-programme-entreprise-guide" element={<BugBountyProgramme />} />
           <Route path="/actualites/simulation-phishing-campagne-sensibilisation" element={<SimulationPhishing />} />
           <Route path="/actualites/audit-securite-application-mobile-ios-android" element={<AuditSecuriteMobile />} />
+          <Route path="/actualites/vulnerabilites-critiques-cve-gestion" element={<VulnerabilitesCritiques />} />
+          <Route path="/actualites/audit-securite-api-web-guide" element={<AuditSecuriteApi />} />
+          <Route path="/actualites/reconnaissance-osint-ethical-hacking" element={<ReconnaissanceOsint />} />
+          <Route path="/actualites/pentest-wifi-reseau-sans-fil-guide" element={<PentestWifi />} />
+          <Route path="/actualites/investigation-forensique-numerique-guide" element={<ForensiqueNumerique />} />
+          <Route path="/actualites/lateral-movement-escalade-privileges-defense" element={<LateralMovement />} />
+          <Route path="/actualites/cvss-priorisation-vulnerabilites-guide" element={<CvssGestionVulnerabilites />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                     <Route path="/audit-securite-toulon" element={<AuditSecuriteToulon />} />
           <Route path="/audit-securite-aix-en-provence" element={<AuditSecuriteAixEnProvence />} />
