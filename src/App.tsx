@@ -19,6 +19,22 @@ import NotFound from "./pages/NotFound.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 
 // Cities
+import AuditSecuriteBruxelles from "./pages/cities/AuditSecuriteBruxelles.tsx";
+import AuditSecuriteLiege from "./pages/cities/AuditSecuriteLiege.tsx";
+import AuditSecuriteNamur from "./pages/cities/AuditSecuriteNamur.tsx";
+import AuditSecuriteCharleroi from "./pages/cities/AuditSecuriteCharleroi.tsx";
+import AuditSecuriteMons from "./pages/cities/AuditSecuriteMons.tsx";
+import AuditSecuriteGeneve from "./pages/cities/AuditSecuriteGeneve.tsx";
+import AuditSecuriteLausanne from "./pages/cities/AuditSecuriteLausanne.tsx";
+import AuditSecuriteFribourg from "./pages/cities/AuditSecuriteFribourg.tsx";
+import AuditSecuriteNeuchatel from "./pages/cities/AuditSecuriteNeuchatel.tsx";
+import AuditSecuriteLuxembourg from "./pages/cities/AuditSecuriteLuxembourg.tsx";
+import AuditSecuriteEschSurAlzette from "./pages/cities/AuditSecuriteEschSurAlzette.tsx";
+import AuditSecuriteMontreal from "./pages/cities/AuditSecuriteMontreal.tsx";
+import AuditSecuriteQuebec from "./pages/cities/AuditSecuriteQuebec.tsx";
+import AuditSecuriteGatineau from "./pages/cities/AuditSecuriteGatineau.tsx";
+import AuditSecuriteSherbrooke from "./pages/cities/AuditSecuriteSherbrooke.tsx";
+import AuditSecuriteMonaco from "./pages/cities/AuditSecuriteMonaco.tsx";
 import AuditSecuriteMulhouse from "./pages/cities/AuditSecuriteMulhouse.tsx";
 import AuditSecuriteChambery from "./pages/cities/AuditSecuriteChambery.tsx";
 import AuditSecuriteNiort from "./pages/cities/AuditSecuriteNiort.tsx";
@@ -265,6 +281,22 @@ const App = () => (
           <Route path="/audit-securite-versailles" element={<AuditSecuriteVersailles />} />
           <Route path="/audit-securite-creteil" element={<AuditSecuriteCreteil />} />
           <Route path="/audit-securite-nanterre" element={<AuditSecuriteNanterre />} />
+                    <Route path="/audit-securite-bruxelles" element={<AuditSecuriteBruxelles />} />
+          <Route path="/audit-securite-liege" element={<AuditSecuriteLiege />} />
+          <Route path="/audit-securite-namur" element={<AuditSecuriteNamur />} />
+          <Route path="/audit-securite-charleroi" element={<AuditSecuriteCharleroi />} />
+          <Route path="/audit-securite-mons" element={<AuditSecuriteMons />} />
+          <Route path="/audit-securite-geneve" element={<AuditSecuriteGeneve />} />
+          <Route path="/audit-securite-lausanne" element={<AuditSecuriteLausanne />} />
+          <Route path="/audit-securite-fribourg" element={<AuditSecuriteFribourg />} />
+          <Route path="/audit-securite-neuchatel" element={<AuditSecuriteNeuchatel />} />
+          <Route path="/audit-securite-luxembourg" element={<AuditSecuriteLuxembourg />} />
+          <Route path="/audit-securite-esch-sur-alzette" element={<AuditSecuriteEschSurAlzette />} />
+          <Route path="/audit-securite-montreal" element={<AuditSecuriteMontreal />} />
+          <Route path="/audit-securite-quebec" element={<AuditSecuriteQuebec />} />
+          <Route path="/audit-securite-gatineau" element={<AuditSecuriteGatineau />} />
+          <Route path="/audit-securite-sherbrooke" element={<AuditSecuriteSherbrooke />} />
+          <Route path="/audit-securite-monaco" element={<AuditSecuriteMonaco />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
