@@ -30,7 +30,7 @@ const services = [
 ];
 
 const CityLandingPage = ({ data }: Props) => {
-  const url = `https://securecyber.fr/cybersecurite-${data.citySlug}`;
+  const url = `https://securecyber.fr/audit-securite-${data.citySlug}`;
   const title = `Cybersécurité ${data.city} — Audit & Pentest | CyberSecure`;
   const description = `Cabinet d'audit et pentest cybersécurité à ${data.city} (${data.region}). Tests d'intrusion, audit de sécurité, CERT et conformité NIS2 pour les entreprises ${data.region.toLowerCase()}.`;
 
@@ -93,6 +93,13 @@ const CityLandingPage = ({ data }: Props) => {
         <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="fr_FR" />
+        <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png" />
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
