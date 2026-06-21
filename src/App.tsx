@@ -19,6 +19,36 @@ import NotFound from "./pages/NotFound.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 
 // Cities
+import AuditSecuriteToulon from "./pages/cities/AuditSecuriteToulon.tsx";
+import AuditSecuriteAixEnProvence from "./pages/cities/AuditSecuriteAixEnProvence.tsx";
+import AuditSecuriteBrest from "./pages/cities/AuditSecuriteBrest.tsx";
+import AuditSecuriteDijon from "./pages/cities/AuditSecuriteDijon.tsx";
+import AuditSecuriteAngers from "./pages/cities/AuditSecuriteAngers.tsx";
+import AuditSecuriteSaintEtienne from "./pages/cities/AuditSecuriteSaintEtienne.tsx";
+import AuditSecuriteLeMans from "./pages/cities/AuditSecuriteLeMans.tsx";
+import AuditSecuriteAmiens from "./pages/cities/AuditSecuriteAmiens.tsx";
+import AuditSecuriteTours from "./pages/cities/AuditSecuriteTours.tsx";
+import AuditSecuriteLimoges from "./pages/cities/AuditSecuriteLimoges.tsx";
+import AuditSecuriteMetz from "./pages/cities/AuditSecuriteMetz.tsx";
+import AuditSecuriteNancy from "./pages/cities/AuditSecuriteNancy.tsx";
+import AuditSecuriteCaen from "./pages/cities/AuditSecuriteCaen.tsx";
+import AuditSecuriteOrleans from "./pages/cities/AuditSecuriteOrleans.tsx";
+import AuditSecuriteReims from "./pages/cities/AuditSecuriteReims.tsx";
+import AuditSecuritePau from "./pages/cities/AuditSecuritePau.tsx";
+import AuditSecuritePerpignan from "./pages/cities/AuditSecuritePerpignan.tsx";
+import AuditSecuriteBesancon from "./pages/cities/AuditSecuriteBesancon.tsx";
+import AuditSecuriteAvignon from "./pages/cities/AuditSecuriteAvignon.tsx";
+import AuditSecuriteLaRochelle from "./pages/cities/AuditSecuriteLaRochelle.tsx";
+import AuditSecuriteNimes from "./pages/cities/AuditSecuriteNimes.tsx";
+import AuditSecuriteAnnecy from "./pages/cities/AuditSecuriteAnnecy.tsx";
+import AuditSecuriteColmar from "./pages/cities/AuditSecuriteColmar.tsx";
+import AuditSecuriteBordeaux from "./pages/cities/AuditSecuriteBordeaux.tsx";
+import AuditSecuriteMontpellier from "./pages/cities/AuditSecuriteMontpellier.tsx";
+import AuditSecuriteBayonne from "./pages/cities/AuditSecuriteBayonne.tsx";
+import AuditSecuriteValence from "./pages/cities/AuditSecuriteValence.tsx";
+import AuditSecuritePoitiers from "./pages/cities/AuditSecuritePoitiers.tsx";
+import AuditSecuriteDunkerque from "./pages/cities/AuditSecuriteDunkerque.tsx";
+import AuditSecuriteTroyes from "./pages/cities/AuditSecuriteTroyes.tsx";
 import AuditSecuriteParis from "./pages/cities/AuditSecuriteParis.tsx";
 import AuditSecuriteLyon from "./pages/cities/AuditSecuriteLyon.tsx";
 import AuditSecuriteMarseille from "./pages/cities/AuditSecuriteMarseille.tsx";
@@ -137,6 +167,36 @@ const App = () => (
           <Route path="/actualites/simulation-phishing-campagne-sensibilisation" element={<SimulationPhishing />} />
           <Route path="/actualites/audit-securite-application-mobile-ios-android" element={<AuditSecuriteMobile />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                    <Route path="/audit-securite-toulon" element={<AuditSecuriteToulon />} />
+          <Route path="/audit-securite-aix-en-provence" element={<AuditSecuriteAixEnProvence />} />
+          <Route path="/audit-securite-brest" element={<AuditSecuriteBrest />} />
+          <Route path="/audit-securite-dijon" element={<AuditSecuriteDijon />} />
+          <Route path="/audit-securite-angers" element={<AuditSecuriteAngers />} />
+          <Route path="/audit-securite-saint-etienne" element={<AuditSecuriteSaintEtienne />} />
+          <Route path="/audit-securite-le-mans" element={<AuditSecuriteLeMans />} />
+          <Route path="/audit-securite-amiens" element={<AuditSecuriteAmiens />} />
+          <Route path="/audit-securite-tours" element={<AuditSecuriteTours />} />
+          <Route path="/audit-securite-limoges" element={<AuditSecuriteLimoges />} />
+          <Route path="/audit-securite-metz" element={<AuditSecuriteMetz />} />
+          <Route path="/audit-securite-nancy" element={<AuditSecuriteNancy />} />
+          <Route path="/audit-securite-caen" element={<AuditSecuriteCaen />} />
+          <Route path="/audit-securite-orleans" element={<AuditSecuriteOrleans />} />
+          <Route path="/audit-securite-reims" element={<AuditSecuriteReims />} />
+          <Route path="/audit-securite-pau" element={<AuditSecuritePau />} />
+          <Route path="/audit-securite-perpignan" element={<AuditSecuritePerpignan />} />
+          <Route path="/audit-securite-besancon" element={<AuditSecuriteBesancon />} />
+          <Route path="/audit-securite-avignon" element={<AuditSecuriteAvignon />} />
+          <Route path="/audit-securite-la-rochelle" element={<AuditSecuriteLaRochelle />} />
+          <Route path="/audit-securite-nimes" element={<AuditSecuriteNimes />} />
+          <Route path="/audit-securite-annecy" element={<AuditSecuriteAnnecy />} />
+          <Route path="/audit-securite-colmar" element={<AuditSecuriteColmar />} />
+          <Route path="/audit-securite-bordeaux" element={<AuditSecuriteBordeaux />} />
+          <Route path="/audit-securite-montpellier" element={<AuditSecuriteMontpellier />} />
+          <Route path="/audit-securite-bayonne" element={<AuditSecuriteBayonne />} />
+          <Route path="/audit-securite-valence" element={<AuditSecuriteValence />} />
+          <Route path="/audit-securite-poitiers" element={<AuditSecuritePoitiers />} />
+          <Route path="/audit-securite-dunkerque" element={<AuditSecuriteDunkerque />} />
+          <Route path="/audit-securite-troyes" element={<AuditSecuriteTroyes />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
