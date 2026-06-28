@@ -45,7 +45,7 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="https://calendly.com/many-cyberconform/30min"
+            href="https://calendly.com/lakaoub/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-semibold text-primary border border-primary/30 px-4 py-2 rounded-lg hover:bg-primary/10 transition-colors font-heading"

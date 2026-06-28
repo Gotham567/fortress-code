@@ -64,7 +64,7 @@ const FreeAuditBanner = () => {
                   Choisissez le créneau qui vous convient
                 </p>
                 <a
-                  href="https://calendly.com/many-cyberconform/30min"
+                  href="https://calendly.com/lakaoub/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
