@@ -123,7 +123,7 @@ const Contact = () => {
                     <Phone className="h-5 w-5 text-primary" aria-hidden="true" />
                     <h3 className="font-heading font-semibold text-foreground">Téléphone</h3>
                   </div>
-                  <a href="tel:0426782486" className="text-muted-foreground hover:text-primary transition-colors">04 26 78 24 86</a>
+                  <a href="tel:0769323019" className="text-muted-foreground hover:text-primary transition-colors">07 69 32 30 19</a>
                 </div>
                 <div className="card-glass rounded-xl p-6">
                   <div className="flex items-center gap-3 mb-4">

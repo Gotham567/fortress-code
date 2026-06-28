@@ -40,7 +40,7 @@ const AuditSecuriteToulouse = () => (
         },
         {
           q: "Que faire en cas d'attaque sur nos systèmes industriels ?",
-          a: "En cas d'attaque sur vos systèmes OT/embarqués, contactez notre CERT au 01 55 27 04 00. Nous intervenons sous 4h à Toulouse et déployons une équipe spécialisée en sécurité industrielle et forensique.",
+          a: "En cas d'attaque sur vos systèmes OT/embarqués, contactez notre CERT au 07 69 32 30 19. Nous intervenons sous 4h à Toulouse et déployons une équipe spécialisée en sécurité industrielle et forensique.",
         },
       ],
     }}

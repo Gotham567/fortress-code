@@ -17,7 +17,7 @@ const services = [
 ];
 
 const faq = [
-  { q: "Que faire en cas de cyberattaque ?", a: "En cas de cyberattaque, les premiers réflexes sont : isoler les systèmes compromis du réseau, ne pas éteindre les machines (pour préserver les traces), contacter votre CERT ou prestataire de réponse à incident, et notifier les autorités compétentes (ANSSI, CNIL en cas de fuite de données personnelles). Notre CERT CyberSecure est joignable 24/7 au 04 26 78 24 86." },
+  { q: "Que faire en cas de cyberattaque ?", a: "En cas de cyberattaque, les premiers réflexes sont : isoler les systèmes compromis du réseau, ne pas éteindre les machines (pour préserver les traces), contacter votre CERT ou prestataire de réponse à incident, et notifier les autorités compétentes (ANSSI, CNIL en cas de fuite de données personnelles). Notre CERT CyberSecure est joignable 24/7 au 07 69 32 30 19." },
   { q: "Qu'est-ce que l'analyse forensique ?", a: "L'analyse forensique (ou investigation numérique) consiste à collecter, préserver et analyser les preuves numériques suite à un incident de sécurité. Elle permet d'identifier le mode opératoire de l'attaquant, l'étendue de la compromission et les données potentiellement exfiltrées. Les résultats peuvent être utilisés dans le cadre de poursuites judiciaires." },
   { q: "Faut-il un contrat pour bénéficier du CERT ?", a: "Nous intervenons à la fois pour les clients sous contrat (avec SLA garanti et tarifs préférentiels) et en mode ad hoc pour les urgences. Un contrat d'astreinte permet cependant une prise en charge plus rapide avec un numéro dédié et une mobilisation garantie sous 4h." },
 ];
@@ -76,10 +76,10 @@ const Cert = () => {
                   <p className="text-muted-foreground leading-relaxed mb-6">
                     En cas d'incident de sécurité, nos analystes prennent en charge votre situation immédiatement : containment, investigation forensique et plan de remédiation. Ne restez pas seul face à une cyberattaque.
                   </p>
-                  <a href="tel:0426782486">
+                  <a href="tel:0769323019">
                     <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold">
                       <Phone className="h-5 w-5 mr-2" aria-hidden="true" />
-                      04 26 78 24 86
+                      07 69 32 30 19
                     </Button>
                   </a>
                 </div>
