@@ -47,7 +47,7 @@ const FooterSection = () => {
             </ul>
             <h3 className="font-heading font-semibold text-foreground text-sm mb-4 mt-6">Contact</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="tel:0426782486" className="hover:text-primary transition-colors">04 26 78 24 86</a></li>
+              <li><a href="tel:0769323019" className="hover:text-primary transition-colors">07 69 32 30 19</a></li>
               <li><a href="mailto:contact@cybersecure.fr" className="hover:text-primary transition-colors">contact@cybersecure.fr</a></li>
               <li className="text-xs pt-2">40 rue de Bruxelles, 69009 Lyon</li>
             </ul>

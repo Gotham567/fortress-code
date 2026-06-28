@@ -40,7 +40,7 @@ const AuditSecuriteParis = () => (
         },
         {
           q: "Que faire en cas de cyberattaque à Paris ?",
-          a: "Contactez notre CERT immédiatement au 01 55 27 04 00 (disponible 24/7). Nous déployons une équipe de réponse à incident sous 4 heures à Paris. Isolez vos systèmes en attendant notre arrivée.",
+          a: "Contactez notre CERT immédiatement au 07 69 32 30 19 (disponible 24/7). Nous déployons une équipe de réponse à incident sous 4 heures à Paris. Isolez vos systèmes en attendant notre arrivée.",
         },
       ],
     }}
