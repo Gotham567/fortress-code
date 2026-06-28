@@ -208,7 +208,7 @@ const AuditActiveDirectory = () => {
                 Réservez un audit gratuit de 15 minutes pour échanger sur l'état de votre Active Directory et identifier les chantiers prioritaires de sécurisation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://calendly.com/many-cyberconform/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold px-6 py-3 rounded-lg transition-colors">
+                <a href="https://calendly.com/lakaoub/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold px-6 py-3 rounded-lg transition-colors">
                   <Calendar className="h-4 w-4" /> Réserver un audit gratuit
                 </a>
                 <Link to="/contact" className="inline-flex items-center justify-center gap-2 border border-primary/40 text-primary hover:bg-primary/10 font-heading font-semibold px-6 py-3 rounded-lg transition-colors">

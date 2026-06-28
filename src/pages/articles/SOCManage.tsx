@@ -183,7 +183,7 @@ const SOCManage = () => {
                 15 minutes pour évaluer si un SOC managé ou un MDR est adapté à votre contexte, et identifier les questions clés à poser à vos prestataires. Sans engagement.
               </p>
               <a
-                href="https://calendly.com/many-cyberconform/30min"
+                href="https://calendly.com/lakaoub/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-heading font-semibold hover:bg-primary/90 transition-all"

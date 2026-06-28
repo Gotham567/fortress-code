@@ -178,7 +178,7 @@ const SauvegardeImmuable = () => {
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
                 15 minutes pour challenger votre stratégie de sauvegarde, vérifier l'immuabilité et identifier les axes de renforcement. Sans engagement.
               </p>
-              <a href="https://calendly.com/many-cyberconform/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-heading font-semibold hover:bg-primary/90 transition-all">
+              <a href="https://calendly.com/lakaoub/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-heading font-semibold hover:bg-primary/90 transition-all">
                 Réserver mon audit gratuit
               </a>
             </motion.section>
