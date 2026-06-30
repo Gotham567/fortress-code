@@ -5,6 +5,7 @@ const AuditSecuriteRennes = () => (
     data={{
       city: "Rennes",
       citySlug: "rennes",
+      urlPath: "cybersecurite-rennes",
       region: "Bretagne",
       postalCode: "35000",
       intro: "CyberSecure accompagne les entreprises rennaises et bretonnes avec des audits de sécurité et pentests. Défense, télécoms, agroalimentaire et numérique : nos experts protègent les entreprises de Rennes et de toute la Bretagne.",

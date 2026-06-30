@@ -7,15 +7,41 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Globe, ShieldCheck, AlertTriangle, Lock, Calendar } from "lucide-react";
 
 const OwaspTop10 = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "OWASP Top 10 2025 : guide complet des vulnérabilités web pour PME",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-06-18",
-    "dateModified": "2026-06-18",
-    "description": "Comprendre et corriger les 10 vulnérabilités web les plus critiques selon l'OWASP : injections, broken auth, SSRF, IDOR, XSS et stratégies de correction pour sécuriser vos applications."
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "OWASP Top 10 2025 : guide complet des vulnérabilités web pour PME",
+      "url": "https://securecyber.fr/actualites/owasp-top-10-guide-securite-web",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/owasp-top-10-guide-securite-web" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-06-18",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "OWASP Top 10 2025 : guide complet des vulnérabilités web pour PME", "item": "https://securecyber.fr/actualites/owasp-top-10-guide-securite-web" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -23,6 +49,7 @@ const OwaspTop10 = () => {
         title="OWASP Top 10 2025 : guide des vulnérabilités web critiques"
         description="Guide complet OWASP Top 10 2025 : injections SQL, broken authentication, SSRF, IDOR, XSS, mauvaise configuration. Comprendre, tester et corriger les failles web de vos applications."
         canonical="/actualites/owasp-top-10-guide-securite-web"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

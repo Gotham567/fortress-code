@@ -5,6 +5,7 @@ const AuditSecuriteGrenoble = () => (
     data={{
       city: "Grenoble",
       citySlug: "grenoble",
+      urlPath: "cybersecurite-grenoble",
       region: "Auvergne-Rhône-Alpes",
       postalCode: "38000",
       intro: "CyberSecure réalise des audits de sécurité et pentests pour les industriels et laboratoires de recherche grenoblois. Microélectronique, énergie, nucléaire et deeptech : nos experts protègent la propriété intellectuelle des entreprises de Grenoble et de l'Isère.",

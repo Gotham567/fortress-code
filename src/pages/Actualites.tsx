@@ -113,13 +113,31 @@ const Actualites = () => {
         title="Blog cybersécurité : audit, pentest, conseils PME"
         description="Blog cybersécurité de CyberSecure : guides complets sur l'audit cybersécurité, le pentest entreprise, la conformité NIS2/DORA et les bonnes pratiques pour les PME et ETI."
         canonical="/actualites"
-        jsonLd={{
-          "@context": "https://schema.org",
-          "@type": "Blog",
-          "name": "Blog cybersécurité CyberSecure",
-          "description": "Articles et guides sur l'audit cybersécurité et le pentest entreprise pour les PME",
-          "publisher": { "@type": "Organization", "name": "CyberSecure" }
-        }}
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "@id": "https://securecyber.fr/actualites",
+            "name": "Blog cybersécurité CyberSecure",
+            "description": "Guides complets et articles pratiques sur l'audit cybersécurité, le pentest entreprise, la conformité NIS2/DORA et les bonnes pratiques pour les PME et ETI.",
+            "url": "https://securecyber.fr/actualites",
+            "inLanguage": "fr-FR",
+            "publisher": {
+              "@type": "Organization",
+              "name": "CyberSecure",
+              "url": "https://securecyber.fr",
+              "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+              { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" }
+            ]
+          }
+        ]}
       />
       <Navbar />
       <main>

@@ -5,6 +5,7 @@ const AuditSecuriteParis = () => (
     data={{
       city: "Paris",
       citySlug: "paris",
+      urlPath: "cybersecurite-paris",
       region: "Île-de-France",
       postalCode: "75000",
       intro: "CyberSecure accompagne les entreprises parisiennes avec des audits de sécurité, pentests et une cellule CERT disponible 24h/24. Qualifié PASSI ANSSI, nous intervenons sur Paris et toute l'Île-de-France pour protéger vos systèmes d'information.",

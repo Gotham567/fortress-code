@@ -5,6 +5,7 @@ const AuditSecuriteNantes = () => (
     data={{
       city: "Nantes",
       citySlug: "nantes",
+      urlPath: "cybersecurite-nantes",
       region: "Pays de la Loire",
       postalCode: "44000",
       intro: "CyberSecure réalise des audits de sécurité et pentests pour les entreprises nantaises. Industrie navale, agroalimentaire, numérique et santé : nos experts protègent les ETI et PME de Nantes et des Pays de la Loire contre les cybermenaces.",

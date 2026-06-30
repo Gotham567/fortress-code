@@ -5,6 +5,7 @@ const AuditSecuriteStrasbourg = () => (
     data={{
       city: "Strasbourg",
       citySlug: "strasbourg",
+      urlPath: "cybersecurite-strasbourg",
       region: "Grand Est",
       postalCode: "67000",
       intro: "CyberSecure réalise des audits de sécurité et pentests pour les entreprises strasbourgeoises et alsaciennes. Pharma, automobile, institutions européennes et entreprises transfrontalières : nos experts interviennent à Strasbourg et dans tout le Grand Est.",

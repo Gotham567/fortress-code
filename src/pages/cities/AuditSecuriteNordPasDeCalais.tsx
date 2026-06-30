@@ -5,6 +5,7 @@ const AuditSecuriteNordPasDeCalais = () => (
     data={{
       city: "Nord-Pas-de-Calais",
       citySlug: "nord-pas-de-calais",
+      urlPath: "cybersecurite-nord-pas-de-calais",
       region: "Hauts-de-France",
       postalCode: "59 / 62",
       intro: "CyberSecure est votre prestataire cybersécurité Nord-Pas-de-Calais : audit PASSI certifié, pentest, conformité RGPD et NIS2, réponse aux incidents cyber 24/7 pour les entreprises industrielles, PME, ETI, collectivités et sous-traitants des départements 59 (Nord) et 62 (Pas-de-Calais).",

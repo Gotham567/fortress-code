@@ -7,14 +7,41 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Shield, Building2, AlertTriangle, FileCheck, Scale, Clock, CheckCircle2 } from "lucide-react";
 
 const DirectiveNIS2 = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Directive NIS2 : ce que les PME et ETI doivent savoir en 2026",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-03-18",
-    "dateModified": "2026-03-18"
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Directive NIS2 : ce que les PME et ETI doivent savoir en 2026",
+      "url": "https://securecyber.fr/actualites/directive-nis2-guide-pme-eti",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/directive-nis2-guide-pme-eti" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-03-18",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "Directive NIS2 : ce que les PME et ETI doivent savoir en 2026", "item": "https://securecyber.fr/actualites/directive-nis2-guide-pme-eti" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -22,6 +49,7 @@ const DirectiveNIS2 = () => {
         title="Directive NIS2 : guide complet pour les PME et ETI"
         description="Tout savoir sur la directive NIS2 : entreprises concernées, obligations de cybersécurité, sanctions, calendrier de mise en conformité et plan d'action pour les PME et ETI."
         canonical="/actualites/directive-nis2-guide-pme-eti"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

@@ -7,15 +7,41 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Search, Target, Eye, Shield, AlertTriangle, Network } from "lucide-react";
 
 const ThreatHuntingApt = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Threat hunting : détecter les APT avant qu'elles s'activent",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-06-29",
-    "dateModified": "2026-06-29",
-    "description": "Le threat hunting proactif détecte les APT et menaces avancées avant qu'elles s'activent. Méthode, outils MITRE ATT&CK, SIEM, EDR et cas pratiques pour PME et ETI."
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Threat hunting : détecter les APT avant qu'elles s'activent",
+      "url": "https://securecyber.fr/actualites/threat-hunting-apt-detection-proactive",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/threat-hunting-apt-detection-proactive" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-06-29",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "Threat hunting : détecter les APT avant qu'elles s'activent", "item": "https://securecyber.fr/actualites/threat-hunting-apt-detection-proactive" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -23,6 +49,7 @@ const ThreatHuntingApt = () => {
         title="Threat hunting : détecter les APT avant qu'elles frappent"
         description="Threat hunting proactif pour détecter les APT : méthodologie hypothèse-recherche-validation, MITRE ATT&CK, outils SIEM/EDR, IOC/TTP et cas pratiques pour PME et ETI."
         canonical="/actualites/threat-hunting-apt-detection-proactive"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

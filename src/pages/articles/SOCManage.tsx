@@ -8,15 +8,41 @@ import { ArrowLeft, Eye, Activity, Clock, ShieldCheck, CheckCircle2, AlertTriang
 import heroImg from "@/assets/articles/soc-mdr-manage.jpg";
 
 const SOCManage = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "SOC managé et MDR : guide pour les PME et ETI",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-04-20",
-    "dateModified": "2026-04-20",
-    "description": "Tout comprendre sur le SOC managé (MSSP) et le MDR : différences, services inclus, prix, critères de choix et plan d'externalisation pour les PME et ETI."
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "SOC managé et MDR : guide pour les PME et ETI",
+      "url": "https://securecyber.fr/actualites/soc-manage-mdr-guide-pme",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/soc-manage-mdr-guide-pme" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-04-20",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "SOC managé et MDR : guide pour les PME et ETI", "item": "https://securecyber.fr/actualites/soc-manage-mdr-guide-pme" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -24,6 +50,7 @@ const SOCManage = () => {
         title="SOC managé & MDR : guide complet PME et ETI"
         description="SOC managé vs MDR : définitions, services inclus (SIEM, EDR, threat hunting, SOAR), prix moyens, critères de choix et plan d'externalisation pour PME et ETI."
         canonical="/actualites/soc-manage-mdr-guide-pme"
+        ogType="article"
         jsonLd={jsonLd}
         ogImage={heroImg}
       />

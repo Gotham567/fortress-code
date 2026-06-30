@@ -60,15 +60,30 @@ const FAQ = () => {
       ? allQuestions
       : allQuestions.filter((q) => q.category === categories.find((c) => c.id === activeCategory)?.label);
 
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: allQuestions.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
+  const faqJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://securecyber.fr/faq",
+      "name": "FAQ cybersécurité — Audit, pentest, conformité NIS2, RSSI",
+      "description": "Retrouvez les réponses à toutes vos questions sur la cybersécurité : audit, pentest, conformité NIS2, RSSI externalisé, réponse à incident.",
+      "url": "https://securecyber.fr/faq",
+      "publisher": { "@id": "https://securecyber.fr/#organization" },
+      mainEntity: allQuestions.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "FAQ cybersécurité", "item": "https://securecyber.fr/faq" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">

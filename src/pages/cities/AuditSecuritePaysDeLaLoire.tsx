@@ -5,6 +5,7 @@ const AuditSecuritePaysDeLaLoire = () => (
     data={{
       city: "Pays de la Loire",
       citySlug: "pays-de-la-loire",
+      urlPath: "cybersecurite-pays-de-la-loire",
       region: "Pays de la Loire",
       postalCode: "44 / 49 / 53 / 72 / 85",
       intro: "CyberSecure est votre prestataire audit de sécurité Pays de la Loire : pentest, audit NIS2, conformité RGPD et réponse aux incidents pour les entreprises de Nantes, Saint-Nazaire, Angers, Le Mans, La Roche-sur-Yon et toute la région.",

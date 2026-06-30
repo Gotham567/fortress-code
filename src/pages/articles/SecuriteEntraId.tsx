@@ -7,15 +7,41 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Lock, Shield, Users, Eye, AlertTriangle, Settings } from "lucide-react";
 
 const SecuriteEntraId = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Sécuriser Microsoft Entra ID : audit et bonnes pratiques 2026",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-06-29",
-    "dateModified": "2026-06-29",
-    "description": "Audit et durcissement de Microsoft Entra ID (Azure AD) : MFA, Conditional Access, PIM, protection des comptes admin, détection des compromissions et outils d'audit recommandés."
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Sécuriser Microsoft Entra ID : audit et bonnes pratiques 2026",
+      "url": "https://securecyber.fr/actualites/securite-microsoft-entra-id-audit",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/securite-microsoft-entra-id-audit" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-06-29",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "Sécuriser Microsoft Entra ID : audit et bonnes pratiques 2026", "item": "https://securecyber.fr/actualites/securite-microsoft-entra-id-audit" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -23,6 +49,7 @@ const SecuriteEntraId = () => {
         title="Sécuriser Microsoft Entra ID : audit et bonnes pratiques 2026"
         description="Audit Microsoft Entra ID (Azure AD) : MFA obligatoire, Conditional Access, Privileged Identity Management (PIM), détection compromissions, BloodHound et Purple Knight."
         canonical="/actualites/securite-microsoft-entra-id-audit"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

@@ -1,5 +1,12 @@
 User-agent: *
 Allow: /
+
+# Pages légales et techniques — pas utile d'indexer
+Disallow: /mentions-legales
+Disallow: /politique-confidentialite
 Disallow: /api/
+
+# Crawl-delay pour les bots non-Google
+Crawl-delay: 1
 
 Sitemap: https://securecyber.fr/sitemap.xml

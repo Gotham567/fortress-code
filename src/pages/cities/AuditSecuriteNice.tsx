@@ -5,6 +5,7 @@ const AuditSecuriteNice = () => (
     data={{
       city: "Nice",
       citySlug: "nice",
+      urlPath: "cybersecurite-nice",
       region: "Provence-Alpes-Côte d'Azur",
       postalCode: "06000",
       intro: "CyberSecure réalise des audits de sécurité et pentests pour les entreprises niçoises et la Côte d'Azur. Tourisme, hôtellerie, santé et tech : nos experts protègent les entreprises de Nice, Monaco et de toute la Riviera.",

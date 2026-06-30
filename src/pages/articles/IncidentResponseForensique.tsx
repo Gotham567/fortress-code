@@ -7,15 +7,41 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Search, FileSearch, Shield, AlertTriangle, Clock, Lock } from "lucide-react";
 
 const IncidentResponseForensique = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Forensique après cyberattaque : collecte de preuves et chaîne de custody",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-06-29",
-    "dateModified": "2026-06-29",
-    "description": "Forensique numérique post-incident : collecte de preuves légales, ordre de volatilité, chaîne de custody, outils Volatility/Autopsy/FTK et coordination avec les autorités pour les PME."
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Forensique après cyberattaque : collecte de preuves et chaîne de custody",
+      "url": "https://securecyber.fr/actualites/forensique-numerique-apres-cyberattaque-preuves",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/forensique-numerique-apres-cyberattaque-preuves" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-06-29",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "Forensique après cyberattaque : collecte de preuves et chaîne de custody", "item": "https://securecyber.fr/actualites/forensique-numerique-apres-cyberattaque-preuves" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -23,6 +49,7 @@ const IncidentResponseForensique = () => {
         title="Forensique après cyberattaque : collecte de preuves et chaîne de custody"
         description="Forensique numérique après cyberattaque : ordre de volatilité RFC 3227, collecte RAM et disques, chaîne de custody, outils (Volatility, Autopsy, DFIR-ORC) et coordination ANSSI/BEFTI."
         canonical="/actualites/forensique-numerique-apres-cyberattaque-preuves"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

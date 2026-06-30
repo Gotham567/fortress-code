@@ -7,15 +7,41 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, ShieldCheck, Network, KeyRound, Eye, CheckCircle2, Layers, Calendar, Mail, Compass } from "lucide-react";
 
 const ZeroTrust = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Zero Trust : guide d'implémentation pour les PME et ETI",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-04-15",
-    "dateModified": "2026-04-15",
-    "description": "Comprendre et déployer une architecture Zero Trust : principes, piliers, feuille de route en 7 étapes, technologies et erreurs à éviter pour les PME et ETI."
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Zero Trust : guide d'implémentation pour les PME et ETI",
+      "url": "https://securecyber.fr/actualites/zero-trust-architecture-guide-pme",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/zero-trust-architecture-guide-pme" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-04-15",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "Zero Trust : guide d'implémentation pour les PME et ETI", "item": "https://securecyber.fr/actualites/zero-trust-architecture-guide-pme" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -23,6 +49,7 @@ const ZeroTrust = () => {
         title="Zero Trust : guide d'implémentation pour PME et ETI"
         description="Architecture Zero Trust expliquée : 5 piliers, feuille de route en 7 étapes, technologies (ZTNA, MFA, micro-segmentation), coûts et erreurs à éviter pour réussir votre projet."
         canonical="/actualites/zero-trust-architecture-guide-pme"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

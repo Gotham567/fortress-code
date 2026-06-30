@@ -5,6 +5,7 @@ const AuditSecuriteLille = () => (
     data={{
       city: "Lille",
       citySlug: "lille",
+      urlPath: "cybersecurite-lille",
       region: "Hauts-de-France",
       postalCode: "59000",
       intro: "CyberSecure accompagne les entreprises lilloises et nordistes avec des audits de sécurité et pentests professionnels. Retail, logistique et industrie : nos experts protègent les entreprises de Lille et des Hauts-de-France contre les cyberattaques.",

@@ -5,6 +5,7 @@ const AuditSecuriteHautsDeFrance = () => (
     data={{
       city: "Hauts-de-France",
       citySlug: "hauts-de-france",
+      urlPath: "prestataire-cybersecurite-hauts-de-france",
       region: "Hauts-de-France",
       postalCode: "59 / 62",
       intro: "CyberSecure est votre prestataire cybersécurité Hauts-de-France : audit PASSI, pentest, conformité NIS2 et CERT d'urgence pour les PME, ETI et industries du Nord–Pas-de-Calais. Interventions sur Lille, Lens, Béthune, Arras, Valenciennes, Dunkerque, Calais et toute la région.",

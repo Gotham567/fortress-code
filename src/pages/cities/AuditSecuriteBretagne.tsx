@@ -5,6 +5,7 @@ const AuditSecuriteBretagne = () => (
     data={{
       city: "Bretagne",
       citySlug: "bretagne",
+      urlPath: "cybersecurite-bretagne",
       region: "Bretagne",
       postalCode: "22 / 29 / 35 / 56",
       intro: "CyberSecure est votre prestataire d'audit cybersécurité Bretagne : pentest, audit NIS2, conformité RGPD, réponse aux incidents pour les entreprises de Rennes, Brest, Quimper, Lorient, Vannes et Saint-Brieuc.",

@@ -56,12 +56,50 @@ const Contact = () => {
     }
   };
 
+  const contactJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "@id": "https://securecyber.fr/contact",
+      "name": "Contact CyberSecure — Devis audit cybersécurité",
+      "description": "Contactez CyberSecure pour un devis d'audit, un accompagnement en cybersécurité ou une urgence CERT. Bureaux à Lyon, Paris, Saint-Étienne, Grenoble et Annecy.",
+      "url": "https://securecyber.fr/contact",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+          { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://securecyber.fr/contact" }
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "CyberSecure",
+      "telephone": "+33769323019",
+      "email": "contact@cybersecure.fr",
+      "url": "https://securecyber.fr",
+      "address": [
+        { "@type": "PostalAddress", "streetAddress": "40 rue de Bruxelles", "addressLocality": "Lyon", "postalCode": "69009", "addressCountry": "FR" },
+        { "@type": "PostalAddress", "streetAddress": "8 rue de Hanovre", "addressLocality": "Paris", "postalCode": "75002", "addressCountry": "FR" },
+        { "@type": "PostalAddress", "streetAddress": "3 rue Javelin Pagnon", "addressLocality": "Saint-Étienne", "postalCode": "42000", "addressCountry": "FR" },
+        { "@type": "PostalAddress", "streetAddress": "17 rue Jean Prévost", "addressLocality": "Grenoble", "postalCode": "38000", "addressCountry": "FR" },
+        { "@type": "PostalAddress", "streetAddress": "21 avenue de Genève", "addressLocality": "Annecy", "postalCode": "74000", "addressCountry": "FR" }
+      ],
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "18:00" }
+      ],
+      "priceRange": "€€€"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Contact — Demandez un devis cybersécurité"
         description="Contactez CyberSecure pour un devis d'audit, un accompagnement en cybersécurité ou une urgence CERT. Bureaux à Lyon, Paris, Saint-Étienne, Grenoble et Annecy."
         canonical="/contact"
+        jsonLd={contactJsonLd}
       />
       <Navbar />
       <main>

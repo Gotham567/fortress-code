@@ -5,6 +5,7 @@ const AuditSecuriteAuvergneRhoneAlpes = () => (
     data={{
       city: "Auvergne-Rhône-Alpes",
       citySlug: "auvergne-rhone-alpes",
+      urlPath: "cybersecurite-auvergne-rhone-alpes",
       region: "Auvergne-Rhône-Alpes",
       postalCode: "01 / 03 / 07 / 15 / 26 / 38 / 42 / 43 / 63 / 69 / 73 / 74",
       intro: "CyberSecure est votre prestataire audit de sécurité Auvergne-Rhône-Alpes : pentest, audit NIS2, conformité RGPD et réponse aux incidents pour les entreprises de Lyon, Grenoble, Saint-Étienne, Clermont-Ferrand, Annecy, Chambéry et toute la région.",

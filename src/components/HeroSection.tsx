@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { ShieldCheck, Calendar, ArrowRight, Search, Phone, Award, Shield, Users, Clock, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -21,9 +22,15 @@ const services = [
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-28">
+      {/* Preload hint for LCP image */}
+      <Helmet>
+        <link rel="preload" as="image" href={heroBg} fetchpriority="high" />
+      </Helmet>
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBg})` }}
+        role="img"
+        aria-label="Salle serveurs — CyberSecure cabinet de cybersécurité"
       />
       <div className="absolute inset-0 bg-background/75" />
 

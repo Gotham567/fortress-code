@@ -7,15 +7,41 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, KeyRound, Users, ShieldAlert, Search, CheckCircle2, GitBranch, Mail, Calendar, Layers } from "lucide-react";
 
 const AuditActiveDirectory = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Audit Active Directory : sécuriser le cœur de votre SI",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-04-05",
-    "dateModified": "2026-04-05",
-    "description": "Guide complet de l'audit de sécurité Active Directory : méthodologie, outils, vulnérabilités courantes, plan de remédiation et bonnes pratiques pour les PME et ETI."
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Audit Active Directory : sécuriser le cœur de votre SI",
+      "url": "https://securecyber.fr/actualites/audit-active-directory-securite-pme",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/audit-active-directory-securite-pme" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-04-05",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "Audit Active Directory : sécuriser le cœur de votre SI", "item": "https://securecyber.fr/actualites/audit-active-directory-securite-pme" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -23,6 +49,7 @@ const AuditActiveDirectory = () => {
         title="Audit Active Directory : guide complet de sécurité"
         description="Audit de sécurité Active Directory : méthodologie, outils (PingCastle, BloodHound, Purple Knight), 10 vulnérabilités les plus fréquentes et plan de remédiation pour les PME."
         canonical="/actualites/audit-active-directory-securite-pme"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

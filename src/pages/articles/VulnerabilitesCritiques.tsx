@@ -7,15 +7,41 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, ShieldAlert, Calendar } from "lucide-react";
 
 const VulnerabilitesCritiques = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "CVE et gestion des vulnérabilités critiques : prioriser et remédier en 2026",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-06-20",
-    "dateModified": "2026-06-20",
-    "description": "Méthode complète de gestion des vulnérabilités : CVE, CVSS 3.1, EPSS, catalogue KEV CISA, SLA de remédiation, outils de scan (Nessus, Qualys, Trivy) et conformité NIS2."
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "CVE et gestion des vulnérabilités critiques : prioriser et remédier en 2026",
+      "url": "https://securecyber.fr/actualites/vulnerabilites-critiques-cve-gestion",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/vulnerabilites-critiques-cve-gestion" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-06-20",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "CVE et gestion des vulnérabilités critiques : prioriser et remédier en 2026", "item": "https://securecyber.fr/actualites/vulnerabilites-critiques-cve-gestion" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -23,6 +49,7 @@ const VulnerabilitesCritiques = () => {
         title="CVE et vulnérabilités critiques : gestion et priorisation 2026"
         description="Méthode complète de gestion des vulnérabilités : CVE, CVSS 3.1, EPSS, catalogue KEV CISA, SLA de remédiation, outils de scan et conformité NIS2 pour les PME et ETI."
         canonical="/actualites/vulnerabilites-critiques-cve-gestion"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

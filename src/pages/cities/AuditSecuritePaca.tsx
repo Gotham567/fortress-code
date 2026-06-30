@@ -5,6 +5,7 @@ const AuditSecuritePaca = () => (
     data={{
       city: "PACA",
       citySlug: "paca",
+      urlPath: "cybersecurite-paca",
       region: "Provence-Alpes-Côte d'Azur",
       postalCode: "04 / 05 / 06 / 13 / 83 / 84",
       intro: "CyberSecure est votre prestataire d'audit cybersécurité PACA : pentest PASSI, audit NIS2, conformité RGPD, réponse aux incidents 24/7 pour les entreprises de Marseille, Nice, Toulon, Aix-en-Provence, Sophia Antipolis et toute la région Provence-Alpes-Côte d'Azur.",

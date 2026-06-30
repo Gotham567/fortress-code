@@ -5,6 +5,7 @@ const AuditSecuriteRouen = () => (
     data={{
       city: "Rouen",
       citySlug: "rouen",
+      urlPath: "cybersecurite-rouen",
       region: "Normandie",
       postalCode: "76000",
       intro: "CyberSecure accompagne les entreprises rouennaises et normandes avec des audits de sécurité et pentests industriels. Chimie, logistique, agroalimentaire et santé : nos experts interviennent à Rouen, Le Havre et dans toute la Normandie.",

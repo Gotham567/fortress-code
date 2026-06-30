@@ -5,6 +5,7 @@ const AuditSecuriteNouvelleAquitaine = () => (
     data={{
       city: "Nouvelle-Aquitaine",
       citySlug: "nouvelle-aquitaine",
+      urlPath: "cybersecurite-nouvelle-aquitaine",
       region: "Nouvelle-Aquitaine",
       postalCode: "16 / 17 / 19 / 23 / 24 / 33 / 40 / 47 / 64 / 79 / 86 / 87",
       intro: "CyberSecure est votre prestataire audit de sécurité Nouvelle-Aquitaine : pentest, audit NIS2, conformité RGPD et réponse aux incidents pour les entreprises de Bordeaux, Pau, Bayonne, Limoges, Poitiers, La Rochelle, Périgueux et toute la région.",

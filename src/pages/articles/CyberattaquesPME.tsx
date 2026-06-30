@@ -7,14 +7,41 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, AlertTriangle, Mail, Lock, Globe, Server, Wifi, Bug, Users, Database, CreditCard } from "lucide-react";
 
 const CyberattaquesPME = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Les 10 cyberattaques les plus fréquentes sur les PME",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-02-15",
-    "dateModified": "2026-03-14"
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Les 10 cyberattaques les plus fréquentes sur les PME",
+      "url": "https://securecyber.fr/actualites/10-cyberattaques-frequentes-pme",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/10-cyberattaques-frequentes-pme" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-02-15",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "Les 10 cyberattaques les plus fréquentes sur les PME", "item": "https://securecyber.fr/actualites/10-cyberattaques-frequentes-pme" }
+      ]
+    }
+  ];
 
   const attacks = [
     { icon: Mail, title: "1. Le phishing (hameçonnage)", desc: "Le phishing reste la menace numéro un pour les PME. Il s'agit d'emails, SMS ou messages frauduleux qui imitent une communication légitime (banque, fournisseur, administration, collègue) pour inciter la victime à cliquer sur un lien malveillant, ouvrir une pièce jointe infectée ou divulguer des informations sensibles (identifiants, coordonnées bancaires).", impact: "Selon l'ANSSI, 90% des cyberattaques commencent par un email de phishing. Pour les PME, les campagnes de phishing ciblé (spear phishing) sont particulièrement dangereuses car elles utilisent des informations spécifiques à l'entreprise (nom du dirigeant, projets en cours, noms de fournisseurs) pour gagner en crédibilité. Un seul clic peut suffire à compromettre l'ensemble du réseau.", protection: "Sensibilisation régulière des collaborateurs avec exercices de simulation, déploiement d'une solution anti-phishing, activation de la MFA sur tous les comptes, mise en place de SPF/DKIM/DMARC sur les domaines de messagerie." },
@@ -35,6 +62,7 @@ const CyberattaquesPME = () => {
         title="Les 10 cyberattaques les plus fréquentes sur les PME"
         description="Découvrez les 10 types de cyberattaques les plus courantes ciblant les PME : phishing, ransomware, arnaque au président, et comment s'en protéger efficacement."
         canonical="/actualites/10-cyberattaques-frequentes-pme"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

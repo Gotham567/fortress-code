@@ -7,14 +7,41 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, AlertTriangle, Lock, Shield, CheckCircle, FileText } from "lucide-react";
 
 const Article32RgpdSecurite = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Article 32 RGPD : mesures techniques de sécurité obligatoires pour votre entreprise",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-06-28",
-    "dateModified": "2026-06-28"
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Article 32 RGPD : mesures techniques de sécurité obligatoires pour votre entreprise",
+      "url": "https://securecyber.fr/actualites/article-32-rgpd-mesures-techniques-securite",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/article-32-rgpd-mesures-techniques-securite" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-06-28",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "Article 32 RGPD : mesures techniques de sécurité obligatoires pour votre entreprise", "item": "https://securecyber.fr/actualites/article-32-rgpd-mesures-techniques-securite" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -22,6 +49,7 @@ const Article32RgpdSecurite = () => {
         title="Article 32 RGPD : mesures techniques de sécurité obligatoires pour votre entreprise"
         description="Article 32 RGPD décrypté : quelles mesures techniques sont obligatoires, comment les choisir selon le risque, ce que la CNIL vérifie lors des contrôles et les sanctions en cas d'insuffisance."
         canonical="/actualites/article-32-rgpd-mesures-techniques-securite"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

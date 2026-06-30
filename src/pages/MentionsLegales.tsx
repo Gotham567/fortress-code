@@ -11,6 +11,7 @@ const MentionsLegales = () => {
         title="Mentions légales"
         description="Mentions légales du site CyberSecure, cabinet de conseil indépendant en cybersécurité. Informations sur l'éditeur, l'hébergement et la propriété intellectuelle."
         canonical="/mentions-legales"
+        noIndex={true}
       />
       <Navbar />
       <main>

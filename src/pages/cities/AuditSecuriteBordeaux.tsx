@@ -5,6 +5,7 @@ const AuditSecuriteBordeaux = () => (
     data={{
       city: "Bordeaux",
       citySlug: "bordeaux",
+      urlPath: "cybersecurite-bordeaux",
       region: "Nouvelle-Aquitaine",
       postalCode: "33000",
       intro: "CyberSecure accompagne les entreprises de Bordeaux avec des audits de sécurité PASSI, des pentests et une cellule CERT disponible 24h/24. Nous intervenons sur Bordeaux et dans tout le département Gironde pour protéger vos systèmes d'information.",

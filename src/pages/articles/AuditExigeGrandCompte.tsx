@@ -7,14 +7,41 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Building2, FileCheck, Shield, AlertTriangle, CheckCircle } from "lucide-react";
 
 const AuditExigeGrandCompte = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Audit cyber exigé par un client grand compte : comment répondre à cette exigence ?",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-06-28",
-    "dateModified": "2026-06-28"
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Audit cyber exigé par un client grand compte : comment répondre à cette exigence ?",
+      "url": "https://securecyber.fr/actualites/audit-cyber-exige-client-grand-compte",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/audit-cyber-exige-client-grand-compte" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-06-28",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "Audit cyber exigé par un client grand compte : comment répondre à cette exigence ?", "item": "https://securecyber.fr/actualites/audit-cyber-exige-client-grand-compte" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -22,6 +49,7 @@ const AuditExigeGrandCompte = () => {
         title="Audit cyber exigé par client grand compte : comment y répondre ?"
         description="Votre client grand compte vous demande un audit cybersécurité ou un questionnaire de sécurité ? Découvrez comment répondre, quelles certifications montrer, quels délais prévoir et comment transformer cette exigence en avantage concurrentiel."
         canonical="/actualites/audit-cyber-exige-client-grand-compte"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

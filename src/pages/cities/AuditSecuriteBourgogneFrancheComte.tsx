@@ -5,6 +5,7 @@ const AuditSecuriteBourgogneFrancheComte = () => (
     data={{
       city: "Bourgogne-Franche-Comté",
       citySlug: "bourgogne-franche-comte",
+      urlPath: "cybersecurite-bourgogne-franche-comte",
       region: "Bourgogne-Franche-Comté",
       postalCode: "21 / 25 / 39 / 58 / 70 / 71 / 89 / 90",
       intro: "CyberSecure est votre prestataire audit de sécurité Bourgogne-Franche-Comté : pentest, audit NIS2, conformité RGPD et réponse aux incidents pour les entreprises de Dijon, Besançon, Belfort-Montbéliard, Chalon-sur-Saône, Mâcon, Auxerre et toute la région.",

@@ -6,15 +6,41 @@ import NewsletterSection from "@/components/NewsletterSection";
 import SEOHead from "@/components/SEOHead";
 
 const AuditMicrosoft365Securite = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: "Audit sécurité Microsoft 365 pour PME : méthode, points de contrôle et remédiation",
-    description:
-      "Guide complet pour auditer la sécurité de Microsoft 365 en PME : Secure Score, Conditional Access, Exchange Online Protection, Entra ID, MFA, DLP et conformité NIS2 et RGPD.",
-    datePublished: "2026-06-28",
-    author: { "@type": "Organization", name: "CyberSecure" },
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "",
+      "url": "https://securecyber.frhttps://cybersecure-pme.fr/actualites/audit-microsoft-365-securite-pme",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.frhttps://cybersecure-pme.fr/actualites/audit-microsoft-365-securite-pme" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-01-01",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "", "item": "https://securecyber.frhttps://cybersecure-pme.fr/actualites/audit-microsoft-365-securite-pme" }
+      ]
+    }
+  ];
 
   return (
     <>
@@ -22,6 +48,7 @@ const AuditMicrosoft365Securite = () => {
         title="Audit sécurité Microsoft 365 PME : méthode complète et points de contrôle 2026"
         description="Guide complet pour auditer la sécurité de Microsoft 365 en PME : Secure Score, Conditional Access, Exchange Online Protection, Entra ID, MFA, DLP et conformité NIS2 et RGPD."
         canonical="https://cybersecure-pme.fr/actualites/audit-microsoft-365-securite-pme"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

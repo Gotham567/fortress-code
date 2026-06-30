@@ -7,6 +7,7 @@ import FooterSection from "@/components/FooterSection";
 export interface CityData {
   city: string;
   citySlug: string;
+  urlPath?: string; // Override the full URL path (e.g. "cybersecurite-paris" instead of "audit-securite-paris")
   region: string;
   postalCode: string;
   intro: string;
@@ -30,37 +31,55 @@ const services = [
 ];
 
 const CityLandingPage = ({ data }: Props) => {
-  const url = `https://securecyber.fr/audit-securite-${data.citySlug}`;
+  const urlPath = data.urlPath || `audit-securite-${data.citySlug}`;
+  const url = `https://securecyber.fr/${urlPath}`;
   const title = `Cybersécurité ${data.city} — Audit & Pentest | CyberSecure`;
   const description = `Cabinet d'audit et pentest cybersécurité à ${data.city} (${data.region}). Tests d'intrusion, audit de sécurité, CERT et conformité NIS2 pour les entreprises ${data.region.toLowerCase()}.`;
+
+  const OG_IMAGE = "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png";
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: `CyberSecure ${data.city}`,
-    description,
-    url,
-    telephone: "+33426782486",
-    email: "contact@cybersecure.fr",
-    areaServed: {
-      "@type": "City",
-      name: data.city,
+    "@id": url,
+    "name": `CyberSecure — Cybersécurité ${data.city}`,
+    "description": description,
+    "url": url,
+    "image": OG_IMAGE,
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://securecyber.fr/favicon.png",
+      "width": 512,
+      "height": 512
     },
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: data.city,
-      postalCode: data.postalCode,
-      addressRegion: data.region,
-      addressCountry: "FR",
-    },
-    priceRange: "€€€",
-    serviceType: [
-      "Audit cybersécurité",
-      "Test d'intrusion",
-      "Pentest",
-      "CERT",
-      "Réponse à incident",
+    "telephone": "+33769323019",
+    "email": "contact@cybersecure.fr",
+    "parentOrganization": { "@id": "https://securecyber.fr/#organization" },
+    "areaServed": [
+      { "@type": "City", "name": data.city },
+      { "@type": "AdministrativeArea", "name": data.region }
     ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": data.city,
+      "postalCode": data.postalCode,
+      "addressRegion": data.region,
+      "addressCountry": "FR",
+    },
+    "priceRange": "€€€",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": `Services cybersécurité ${data.city}`,
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Audit de sécurité informatique", "url": "https://securecyber.fr/audit" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Test d'intrusion (Pentest)", "url": "https://securecyber.fr/audit" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CERT — Réponse à incident 24/7", "url": "https://securecyber.fr/cert" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "RSSI externalisé", "url": "https://securecyber.fr/conseil" } }
+      ]
+    }
   };
 
   const faqSchema = {
@@ -87,19 +106,26 @@ const CityLandingPage = ({ data }: Props) => {
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href={url} />
+        <link rel="alternate" hreflang="fr" href={url} />
+        <link rel="alternate" hreflang="x-default" href={url} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="fr_FR" />
-        <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png" />
+        <meta property="og:site_name" content="CyberSecure" />
+        <meta property="og:image" content={OG_IMAGE} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={`CyberSecure — Audit cybersécurité et pentest à ${data.city}`} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@cybersecure_fr" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png" />
+        <meta name="twitter:image" content={OG_IMAGE} />
+        <meta name="twitter:image:alt" content={`CyberSecure — Audit cybersécurité et pentest à ${data.city}`} />
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>

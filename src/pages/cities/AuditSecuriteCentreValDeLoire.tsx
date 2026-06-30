@@ -5,6 +5,7 @@ const AuditSecuriteCentreValDeLoire = () => (
     data={{
       city: "Centre-Val de Loire",
       citySlug: "centre-val-de-loire",
+      urlPath: "cybersecurite-centre-val-de-loire",
       region: "Centre-Val de Loire",
       postalCode: "18 / 28 / 36 / 37 / 41 / 45",
       intro: "CyberSecure est votre prestataire audit de sécurité Centre-Val de Loire : pentest, audit NIS2, conformité RGPD et réponse aux incidents pour les entreprises d'Orléans, Tours, Chartres, Bourges, Blois, Châteauroux et toute la région.",

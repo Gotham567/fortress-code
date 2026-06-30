@@ -7,15 +7,41 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, BarChart2 } from "lucide-react";
 
 const CvssGestionVulnerabilites = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Score CVSS 3.1 et 4.0 : comprendre et prioriser la remédiation des vulnérabilités",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-06-08",
-    "dateModified": "2026-06-08",
-    "description": "Guide complet sur CVSS 3.1 et CVSS 4.0 : métriques de base, temporelles et environnementales, différences entre les versions, combinaison avec EPSS et KEV pour une priorisation optimale."
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Score CVSS 3.1 et 4.0 : comprendre et prioriser la remédiation des vulnérabilités",
+      "url": "https://securecyber.fr/actualites/cvss-priorisation-vulnerabilites-guide",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/cvss-priorisation-vulnerabilites-guide" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-06-08",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "Score CVSS 3.1 et 4.0 : comprendre et prioriser la remédiation des vulnérabilités", "item": "https://securecyber.fr/actualites/cvss-priorisation-vulnerabilites-guide" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -23,6 +49,7 @@ const CvssGestionVulnerabilites = () => {
         title="Score CVSS 3.1 et 4.0 : prioriser la remédiation des vulnérabilités"
         description="Guide complet CVSS 3.1 et CVSS 4.0 : métriques de base, temporelles, environnementales et supplémentaires, limites du CVSS seul, combinaison avec EPSS et catalogue KEV CISA."
         canonical="/actualites/cvss-priorisation-vulnerabilites-guide"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

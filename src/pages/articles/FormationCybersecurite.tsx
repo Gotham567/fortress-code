@@ -7,15 +7,41 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Users, Target, Brain, ShieldAlert, BarChart3, CheckCircle2, GraduationCap } from "lucide-react";
 
 const FormationCybersecurite = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Formation cybersécurité en entreprise : sensibiliser vos collaborateurs",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-03-22",
-    "dateModified": "2026-03-22",
-    "description": "Guide complet sur la sensibilisation et la formation cybersécurité en entreprise : programmes, méthodes, fréquence et mesure de l'efficacité pour les PME."
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Formation cybersécurité en entreprise : sensibiliser vos collaborateurs",
+      "url": "https://securecyber.fr/actualites/formation-sensibilisation-cybersecurite-entreprise",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/formation-sensibilisation-cybersecurite-entreprise" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-03-22",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "Formation cybersécurité en entreprise : sensibiliser vos collaborateurs", "item": "https://securecyber.fr/actualites/formation-sensibilisation-cybersecurite-entreprise" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -23,6 +49,7 @@ const FormationCybersecurite = () => {
         title="Formation cybersécurité entreprise : guide de sensibilisation"
         description="Sensibilisation cybersécurité en entreprise : pourquoi former vos collaborateurs, programmes de formation, simulations de phishing, mesure du ROI et plan de formation annuel pour les PME."
         canonical="/actualites/formation-sensibilisation-cybersecurite-entreprise"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

@@ -6,15 +6,41 @@ import NewsletterSection from "@/components/NewsletterSection";
 import SEOHead from "@/components/SEOHead";
 
 const TestIntrusionPhysique = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: "Test d'intrusion physique et social engineering : méthode et portée",
-    description:
-      "Le pentest physique et le social engineering en entreprise : tailgating, badge cloning, pretexting, vishing — comment tester la sécurité physique et humaine de votre organisation.",
-    datePublished: "2026-06-28",
-    author: { "@type": "Organization", name: "CyberSecure" },
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "",
+      "url": "https://securecyber.frhttps://cybersecure-pme.fr/actualites/test-intrusion-physique-social-engineering",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.frhttps://cybersecure-pme.fr/actualites/test-intrusion-physique-social-engineering" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-01-01",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "", "item": "https://securecyber.frhttps://cybersecure-pme.fr/actualites/test-intrusion-physique-social-engineering" }
+      ]
+    }
+  ];
 
   return (
     <>
@@ -22,6 +48,7 @@ const TestIntrusionPhysique = () => {
         title="Test d'intrusion physique et social engineering : méthode complète 2026"
         description="Comment réaliser un test d'intrusion physique et social engineering : tailgating, badge cloning, pretexting, vishing — évaluer la sécurité humaine et physique de votre entreprise."
         canonical="https://cybersecure-pme.fr/actualites/test-intrusion-physique-social-engineering"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

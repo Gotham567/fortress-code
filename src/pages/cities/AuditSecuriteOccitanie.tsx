@@ -5,6 +5,7 @@ const AuditSecuriteOccitanie = () => (
     data={{
       city: "Occitanie",
       citySlug: "occitanie",
+      urlPath: "cybersecurite-occitanie",
       region: "Occitanie",
       postalCode: "09 / 11 / 12 / 30 / 31 / 32 / 34 / 46 / 48 / 65 / 66 / 81 / 82",
       intro: "CyberSecure est votre prestataire d'audit cybersécurité Occitanie : pentest, audit NIS2, conformité RGPD, réponse aux incidents pour les entreprises de Toulouse, Montpellier, Nîmes, Perpignan, Albi et toute la région.",

@@ -11,6 +11,7 @@ const PolitiqueConfidentialite = () => {
         title="Politique de confidentialité & RGPD"
         description="Politique de confidentialité de CyberSecure : collecte de données, finalité du traitement, durée de conservation, droits RGPD et politique de cookies."
         canonical="/politique-confidentialite"
+        noIndex={true}
       />
       <Navbar />
       <main>

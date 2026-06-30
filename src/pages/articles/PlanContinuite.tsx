@@ -7,15 +7,41 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Shield, Server, AlertTriangle, RefreshCw, CheckCircle2, Clock, FileCheck, Database } from "lucide-react";
 
 const PlanContinuite = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "PCA et PRA en cybersécurité : guide complet pour les PME",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-03-25",
-    "dateModified": "2026-03-25",
-    "description": "Guide complet sur le Plan de Continuité d'Activité (PCA) et le Plan de Reprise d'Activité (PRA) : méthodologie, étapes clés, tests et bonnes pratiques pour les PME."
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "PCA et PRA en cybersécurité : guide complet pour les PME",
+      "url": "https://securecyber.fr/actualites/pca-pra-cybersecurite-guide",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/pca-pra-cybersecurite-guide" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-03-25",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "PCA et PRA en cybersécurité : guide complet pour les PME", "item": "https://securecyber.fr/actualites/pca-pra-cybersecurite-guide" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -23,6 +49,7 @@ const PlanContinuite = () => {
         title="PCA et PRA cybersécurité : guide complet pour les PME"
         description="Plan de Continuité d'Activité (PCA) et Plan de Reprise d'Activité (PRA) : pourquoi c'est essentiel, méthodologie en 8 étapes, tests, coûts et erreurs à éviter pour les PME et ETI."
         canonical="/actualites/pca-pra-cybersecurite-guide"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

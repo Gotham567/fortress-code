@@ -5,6 +5,7 @@ const AuditSecuriteIleDeFrance = () => (
     data={{
       city: "Île-de-France",
       citySlug: "ile-de-france",
+      urlPath: "cybersecurite-ile-de-france",
       region: "Île-de-France",
       postalCode: "75 / 77 / 78 / 91 / 92 / 93 / 94 / 95",
       intro: "CyberSecure est votre prestataire d'audit cybersécurité Île-de-France : pentest PASSI certifié, audit NIS2, conformité RGPD et DORA, réponse aux incidents 24/7 pour les groupes du CAC40, ETI, startups, fintechs, cabinets d'avocats et collectivités franciliens.",

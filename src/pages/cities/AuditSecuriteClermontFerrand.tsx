@@ -5,6 +5,7 @@ const AuditSecuriteClermontFerrand = () => (
     data={{
       city: "Clermont-Ferrand",
       citySlug: "clermont-ferrand",
+      urlPath: "cybersecurite-clermont-ferrand",
       region: "Auvergne-Rhône-Alpes",
       postalCode: "63000",
       intro: "CyberSecure accompagne les entreprises clermontoises et auvergnates avec des audits de sécurité et pentests. Michelin, sous-traitants, santé et PME industrielles : nos experts protègent les entreprises de Clermont-Ferrand et de toute l'Auvergne.",

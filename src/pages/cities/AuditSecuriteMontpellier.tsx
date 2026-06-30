@@ -5,6 +5,7 @@ const AuditSecuriteMontpellier = () => (
     data={{
       city: "Montpellier",
       citySlug: "montpellier",
+      urlPath: "cybersecurite-montpellier",
       region: "Occitanie",
       postalCode: "34000",
       intro: "CyberSecure accompagne les entreprises de Montpellier avec des audits de sécurité PASSI, des pentests et une cellule CERT disponible 24h/24. Nous intervenons sur Montpellier et dans tout le département Hérault pour protéger vos systèmes d'information.",

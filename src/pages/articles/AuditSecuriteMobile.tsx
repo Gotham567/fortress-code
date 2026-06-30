@@ -7,15 +7,41 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Smartphone, Lock, Code, Shield, Calendar } from "lucide-react";
 
 const AuditSecuriteMobile = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Audit de sécurité application mobile iOS et Android : guide complet",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-06-10",
-    "dateModified": "2026-06-10",
-    "description": "Méthode d'audit de sécurité des applications mobiles iOS et Android : OWASP Mobile Top 10, analyse statique et dynamique, reverse engineering, stockage local et communications réseau."
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Audit de sécurité application mobile iOS et Android : guide complet",
+      "url": "https://securecyber.fr/actualites/audit-securite-application-mobile-ios-android",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/audit-securite-application-mobile-ios-android" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-06-10",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "Audit de sécurité application mobile iOS et Android : guide complet", "item": "https://securecyber.fr/actualites/audit-securite-application-mobile-ios-android" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -23,6 +49,7 @@ const AuditSecuriteMobile = () => {
         title="Audit sécurité application mobile iOS Android : guide 2026"
         description="Auditer la sécurité de vos applications mobiles iOS et Android : OWASP Mobile Top 10, analyse statique (SAST), dynamique (DAST), reverse engineering, stockage insécurisé, communications réseau."
         canonical="/actualites/audit-securite-application-mobile-ios-android"
+        ogType="article"
         jsonLd={jsonLd}
       />
       <Navbar />

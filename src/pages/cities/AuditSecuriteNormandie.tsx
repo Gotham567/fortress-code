@@ -5,6 +5,7 @@ const AuditSecuriteNormandie = () => (
     data={{
       city: "Normandie",
       citySlug: "normandie",
+      urlPath: "cybersecurite-normandie",
       region: "Normandie",
       postalCode: "14 / 27 / 50 / 61 / 76",
       intro: "CyberSecure est votre prestataire d'audit cybersécurité Normandie : pentest, audit NIS2, RGPD et réponse aux incidents pour les entreprises de Rouen, Caen, Le Havre, Évreux, Cherbourg et les PME/ETI industrielles de la région.",

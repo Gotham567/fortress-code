@@ -5,6 +5,7 @@ const AuditSecuriteToulouse = () => (
     data={{
       city: "Toulouse",
       citySlug: "toulouse",
+      urlPath: "cybersecurite-toulouse",
       region: "Occitanie",
       postalCode: "31000",
       intro: "CyberSecure accompagne les entreprises toulousaines, aéronautiques et spatiales avec des audits de sécurité et pentests de haut niveau. Airbus, sous-traitants et PME innovantes : nous protégeons l'industrie de pointe de Toulouse et de l'Occitanie.",

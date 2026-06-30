@@ -8,15 +8,41 @@ import { ArrowLeft, Cloud, ShieldCheck, KeyRound, Eye, AlertTriangle, CheckCircl
 import heroImg from "@/assets/articles/securite-cloud-aws.jpg";
 
 const SecuriteCloudAWS = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Sécurité Cloud AWS : guide complet pour les PME et ETI",
-    "author": { "@type": "Organization", "name": "CyberSecure" },
-    "datePublished": "2026-04-22",
-    "dateModified": "2026-04-22",
-    "description": "Guide complet pour sécuriser un environnement AWS : modèle de responsabilité partagée, IAM, CloudTrail, GuardDuty, chiffrement, conformité et 15 bonnes pratiques pour les PME et ETI."
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Sécurité Cloud AWS : guide complet pour les PME et ETI",
+      "url": "https://securecyber.fr/actualites/securite-cloud-aws-guide-pme",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://securecyber.fr/actualites/securite-cloud-aws-guide-pme" },
+      "author": { "@type": "Organization", "name": "CyberSecure", "url": "https://securecyber.fr" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CyberSecure",
+        "url": "https://securecyber.fr",
+        "logo": { "@type": "ImageObject", "url": "https://securecyber.fr/favicon.png", "width": 512, "height": 512 }
+      },
+      "datePublished": "2026-04-22",
+      "dateModified": "2026-06-30",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5393a1ce-90f4-4e06-84ab-2dee3e5dd962/id-preview-bc576449--9bd8c65b-b20f-4747-8f8a-63d66528046c.lovable.app-1773318218871.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@type": "Blog", "name": "Blog CyberSecure", "url": "https://securecyber.fr/actualites" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://securecyber.fr/actualites" },
+        { "@type": "ListItem", "position": 3, "name": "Sécurité Cloud AWS : guide complet pour les PME et ETI", "item": "https://securecyber.fr/actualites/securite-cloud-aws-guide-pme" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -24,6 +50,7 @@ const SecuriteCloudAWS = () => {
         title="Sécurité Cloud AWS : guide complet PME et ETI"
         description="Sécuriser AWS : modèle de responsabilité partagée, IAM, GuardDuty, CloudTrail, chiffrement KMS, hardening VPC, conformité et 15 bonnes pratiques pour les PME et ETI."
         canonical="/actualites/securite-cloud-aws-guide-pme"
+        ogType="article"
         jsonLd={jsonLd}
         ogImage={heroImg}
       />

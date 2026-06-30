@@ -5,6 +5,7 @@ const AuditSecuriteLyon = () => (
     data={{
       city: "Lyon",
       citySlug: "lyon",
+      urlPath: "cybersecurite-lyon",
       region: "Auvergne-Rhône-Alpes",
       postalCode: "69000",
       intro: "CyberSecure réalise des audits de sécurité et pentests pour les entreprises lyonnaises. Industrie, santé, finance : nos experts interviennent à Lyon, Villeurbanne et dans toute la métropole pour évaluer et renforcer votre cybersécurité.",

@@ -5,6 +5,7 @@ const AuditSecuriteMarseille = () => (
     data={{
       city: "Marseille",
       citySlug: "marseille",
+      urlPath: "cybersecurite-marseille",
       region: "Provence-Alpes-Côte d'Azur",
       postalCode: "13000",
       intro: "CyberSecure accompagne les entreprises marseillaises et provençales avec des audits de sécurité, pentests et réponse à incident. Port, logistique, tourisme et industrie : notre équipe intervient à Marseille et dans toute la région PACA.",

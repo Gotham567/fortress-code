@@ -5,6 +5,7 @@ const AuditSecuriteGrandEst = () => (
     data={{
       city: "Grand Est",
       citySlug: "grand-est",
+      urlPath: "cybersecurite-grand-est",
       region: "Grand Est",
       postalCode: "08 / 10 / 51 / 52 / 54 / 55 / 57 / 67 / 68 / 88",
       intro: "CyberSecure est votre prestataire audit de sécurité Grand Est : pentest, audit NIS2, conformité RGPD et réponse aux incidents pour les entreprises de Strasbourg, Metz, Nancy, Reims, Mulhouse, Colmar et toute la région.",
