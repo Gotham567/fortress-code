@@ -16,8 +16,8 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "CyberSecure",
-  "url": "https://fortress-code.lovable.app",
-  "logo": "https://fortress-code.lovable.app/favicon.png",
+  "url": "https://securecyber.fr",
+  "logo": "https://securecyber.fr/favicon.png",
   "description": "Cabinet de conseil indépendant en cybersécurité qualifié PASSI et certifié ISO 27001. Audit, pentest, conseil, CERT et gestion de surface d'attaque.",
   "foundingDate": "2008",
   "address": [
@@ -37,7 +37,10 @@ const organizationJsonLd = {
     }
   ],
   "telephone": "+33426782486",
-  "sameAs": [],
+  "sameAs": [
+    "https://www.linkedin.com/company/cybersecure",
+    "https://twitter.com/cybersecure_fr"
+  ],
   "areaServed": "FR",
   "knowsAbout": ["Cybersécurité", "Pentest", "Audit de sécurité", "ISO 27001", "PASSI", "CERT", "Réponse à incident"]
 };
@@ -46,7 +49,7 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "CyberSecure",
-  "image": "https://fortress-code.lovable.app/favicon.png",
+  "image": "https://securecyber.fr/favicon.png",
   "telephone": "+33426782486",
   "address": {
     "@type": "PostalAddress",

@@ -127,13 +127,13 @@ const CityLandingPage = ({ data }: Props) => {
                 {data.intro}
               </p>
               <div className="flex flex-wrap gap-4">
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 min-h-[44px]"
                 >
                   Audit gratuit à {data.city}
                   <ArrowRight className="h-4 w-4" />
-                </a>
+                </Link>
                 <a
                   href="tel:+33426782486"
                   className="inline-flex items-center gap-2 rounded-md border border-border px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/40 hover:bg-primary/5 transition-all min-h-[44px]"
@@ -236,12 +236,12 @@ const CityLandingPage = ({ data }: Props) => {
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
                 Un expert CyberSecure analyse vos risques en 30 minutes. Rapport de synthèse offert.
               </p>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-block rounded-md bg-primary px-8 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 min-h-[44px]"
               >
                 Réserver mon audit gratuit
-              </a>
+              </Link>
             </section>
           </div>
         </main>

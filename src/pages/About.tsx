@@ -14,8 +14,8 @@ const About = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://fortress-code.lovable.app/" },
-      { "@type": "ListItem", "position": 2, "name": "Qui sommes-nous", "item": "https://fortress-code.lovable.app/qui-sommes-nous" }
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://securecyber.fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Qui sommes-nous", "item": "https://securecyber.fr/qui-sommes-nous" }
     ]
   };
 

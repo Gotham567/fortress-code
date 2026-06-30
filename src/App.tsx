@@ -81,7 +81,6 @@ const AuditMicrosoft365Securite = lazy(() => import("./pages/articles/AuditMicro
 const AuditSecuriteEmail = lazy(() => import("./pages/articles/AuditSecuriteEmail.tsx"));
 const TestIntrusionPhysique = lazy(() => import("./pages/articles/TestIntrusionPhysique.tsx"));
 const ThreatHuntingApt = lazy(() => import("./pages/articles/ThreatHuntingApt.tsx"));
-const SecuriteOtIcs = lazy(() => import("./pages/articles/SecuriteOTICS.tsx"));
 const PentestApiRest = lazy(() => import("./pages/articles/PentestApiRest.tsx"));
 const SecuriteEntraId = lazy(() => import("./pages/articles/SecuriteEntraId.tsx"));
 const IncidentResponseForensique = lazy(() => import("./pages/articles/IncidentResponseForensique.tsx"));
@@ -230,7 +229,11 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
-        <Suspense fallback={<div className="min-h-screen bg-background" />}>
+        <Suspense fallback={
+          <div className="min-h-screen bg-background flex items-center justify-center">
+            <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" aria-label="Chargement..." />
+          </div>
+        }>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/qui-sommes-nous" element={<About />} />
@@ -304,7 +307,7 @@ const App = () => (
             <Route path="/actualites/audit-securite-messagerie-email-entreprise" element={<AuditSecuriteEmail />} />
             <Route path="/actualites/test-intrusion-physique-social-engineering" element={<TestIntrusionPhysique />} />
             <Route path="/actualites/threat-hunting-apt-detection-proactive" element={<ThreatHuntingApt />} />
-            <Route path="/actualites/securite-ot-ics-systemes-industriels-nis2" element={<SecuriteOtIcs />} />
+            <Route path="/actualites/securite-ot-ics-systemes-industriels-nis2" element={<SecuriteOTICS />} />
             <Route path="/actualites/pentest-api-rest-owasp-methode" element={<PentestApiRest />} />
             <Route path="/actualites/securite-microsoft-entra-id-audit" element={<SecuriteEntraId />} />
             <Route path="/actualites/forensique-numerique-apres-cyberattaque-preuves" element={<IncidentResponseForensique />} />
