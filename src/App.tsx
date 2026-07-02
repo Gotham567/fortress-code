@@ -219,6 +219,25 @@ const AuditSecuriteVendee = lazy(() => import("./pages/cities/AuditSecuriteVende
 const AuditSecuriteHautRhin = lazy(() => import("./pages/cities/AuditSecuriteHautRhin.tsx"));
 const AuditSecuritePasDeCalais = lazy(() => import("./pages/cities/AuditSecuritePasDeCalais.tsx"));
 const AuditSecuriteCoteDor = lazy(() => import("./pages/cities/AuditSecuriteCoteDor.tsx"));
+const AuditSecuriteCasablanca = lazy(() => import("./pages/cities/AuditSecuriteCasablanca.tsx"));
+const AuditSecuriteRabat = lazy(() => import("./pages/cities/AuditSecuriteRabat.tsx"));
+const AuditSecuriteMarrakech = lazy(() => import("./pages/cities/AuditSecuriteMarrakech.tsx"));
+const AuditSecuriteTanger = lazy(() => import("./pages/cities/AuditSecuriteTanger.tsx"));
+const AuditSecuriteAgadir = lazy(() => import("./pages/cities/AuditSecuriteAgadir.tsx"));
+const AuditSecuriteFes = lazy(() => import("./pages/cities/AuditSecuriteFes.tsx"));
+const AuditSecuriteTunis = lazy(() => import("./pages/cities/AuditSecuriteTunis.tsx"));
+const AuditSecuriteSfax = lazy(() => import("./pages/cities/AuditSecuriteSfax.tsx"));
+const AuditSecuriteSousse = lazy(() => import("./pages/cities/AuditSecuriteSousse.tsx"));
+const AuditSecuriteAlger = lazy(() => import("./pages/cities/AuditSecuriteAlger.tsx"));
+const AuditSecuriteOran = lazy(() => import("./pages/cities/AuditSecuriteOran.tsx"));
+const AuditSecuriteAbidjan = lazy(() => import("./pages/cities/AuditSecuriteAbidjan.tsx"));
+const AuditSecuriteDakar = lazy(() => import("./pages/cities/AuditSecuriteDakar.tsx"));
+const AuditSecuriteYaounde = lazy(() => import("./pages/cities/AuditSecuriteYaounde.tsx"));
+const AuditSecuriteDouala = lazy(() => import("./pages/cities/AuditSecuriteDouala.tsx"));
+const AuditSecuriteSaintDenisReunion = lazy(() => import("./pages/cities/AuditSecuriteSaintDenisReunion.tsx"));
+const AuditSecuriteFortDeFrance = lazy(() => import("./pages/cities/AuditSecuriteFortDeFrance.tsx"));
+const AuditSecuritePointeAPitre = lazy(() => import("./pages/cities/AuditSecuritePointeAPitre.tsx"));
+const AuditSecuriteCayenne = lazy(() => import("./pages/cities/AuditSecuriteCayenne.tsx"));
 
 const queryClient = new QueryClient();
 
@@ -445,6 +464,25 @@ const App = () => (
             <Route path="/audit-securite-haut-rhin" element={<AuditSecuriteHautRhin />} />
             <Route path="/audit-securite-pas-de-calais" element={<AuditSecuritePasDeCalais />} />
             <Route path="/audit-securite-cote-dor" element={<AuditSecuriteCoteDor />} />
+            <Route path="/audit-securite-casablanca" element={<AuditSecuriteCasablanca />} />
+            <Route path="/audit-securite-rabat" element={<AuditSecuriteRabat />} />
+            <Route path="/audit-securite-marrakech" element={<AuditSecuriteMarrakech />} />
+            <Route path="/audit-securite-tanger" element={<AuditSecuriteTanger />} />
+            <Route path="/audit-securite-agadir" element={<AuditSecuriteAgadir />} />
+            <Route path="/audit-securite-fes" element={<AuditSecuriteFes />} />
+            <Route path="/audit-securite-tunis" element={<AuditSecuriteTunis />} />
+            <Route path="/audit-securite-sfax" element={<AuditSecuriteSfax />} />
+            <Route path="/audit-securite-sousse" element={<AuditSecuriteSousse />} />
+            <Route path="/audit-securite-alger" element={<AuditSecuriteAlger />} />
+            <Route path="/audit-securite-oran" element={<AuditSecuriteOran />} />
+            <Route path="/audit-securite-abidjan" element={<AuditSecuriteAbidjan />} />
+            <Route path="/audit-securite-dakar" element={<AuditSecuriteDakar />} />
+            <Route path="/audit-securite-yaounde" element={<AuditSecuriteYaounde />} />
+            <Route path="/audit-securite-douala" element={<AuditSecuriteDouala />} />
+            <Route path="/audit-securite-saint-denis-reunion" element={<AuditSecuriteSaintDenisReunion />} />
+            <Route path="/audit-securite-fort-de-france" element={<AuditSecuriteFortDeFrance />} />
+            <Route path="/audit-securite-pointe-a-pitre" element={<AuditSecuritePointeAPitre />} />
+            <Route path="/audit-securite-cayenne" element={<AuditSecuriteCayenne />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
