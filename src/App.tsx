@@ -503,9 +503,9 @@ const App = () => (
             <Route path="/audit-securite-dom-tom" element={<AuditSecuriteDomTom />} />
             <Route path="/audit-securite-belgique" element={<AuditSecuriteBelgique />} />
             <Route path="/audit-securite-suisse" element={<AuditSecuriteSuisse />} />
-            <Route path="/audit-securite-luxembourg" element={<AuditSecuriteLuxembourg />} />
+            <Route path="/audit-securite-luxembourg-pays" element={<AuditSecuriteLuxembourgPays />} />
             <Route path="/audit-securite-canada" element={<AuditSecuriteCanada />} />
-            <Route path="/audit-securite-monaco" element={<AuditSecuriteMonaco />} />
+            <Route path="/audit-securite-monaco-pays" element={<AuditSecuriteMonacoPays />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
