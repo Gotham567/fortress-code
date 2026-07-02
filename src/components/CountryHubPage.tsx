@@ -66,8 +66,8 @@ const CountryHubPage = ({ data }: Props) => {
         <meta name="description" content={description} />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href={url} />
-        <link rel="alternate" hreflang="fr" href={url} />
-        <link rel="alternate" hreflang="x-default" href={url} />
+        <link rel="alternate" hrefLang="fr" href={url} />
+        <link rel="alternate" hrefLang="x-default" href={url} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={url} />
