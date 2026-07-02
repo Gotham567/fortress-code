@@ -11,6 +11,7 @@ import NewsletterSection from "@/components/NewsletterSection";
 import FooterSection from "@/components/FooterSection";
 import CookieConsent from "@/components/CookieConsent";
 import SEOHead from "@/components/SEOHead";
+import CountriesSection from "@/components/CountriesSection";
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
@@ -144,6 +145,7 @@ const Index = () => {
         <FreeAuditBanner />
         <BlogSection />
         <NewsletterSection />
+        <CountriesSection />
       </main>
       <FooterSection />
       <CookieConsent />
