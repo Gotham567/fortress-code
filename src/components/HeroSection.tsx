@@ -24,7 +24,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden pt-28">
       {/* Preload hint for LCP image */}
       <Helmet>
-        <link rel="preload" as="image" href={heroBg} fetchpriority="high" />
+        <link rel="preload" as="image" href={heroBg} fetchPriority="high" />
       </Helmet>
       <div
         className="absolute inset-0 bg-cover bg-center"
