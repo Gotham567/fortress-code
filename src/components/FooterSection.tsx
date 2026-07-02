@@ -78,6 +78,28 @@ const FooterSection = () => {
           </nav>
         </div>
 
+        <div className="border-t border-border pt-6 pb-6">
+          <p className="text-xs font-semibold text-foreground mb-3">Espace francophone international</p>
+          <nav aria-label="Pays francophones desservis" className="flex flex-wrap gap-x-4 gap-y-2">
+            {[
+              ["Audit Maroc", "/audit-securite-maroc"],
+              ["Audit Algérie", "/audit-securite-algerie"],
+              ["Audit Tunisie", "/audit-securite-tunisie"],
+              ["Audit Afrique francophone", "/audit-securite-afrique"],
+              ["Audit Belgique", "/audit-securite-belgique"],
+              ["Audit Suisse", "/audit-securite-suisse"],
+              ["Audit Luxembourg", "/audit-securite-luxembourg"],
+              ["Audit Canada — Québec", "/audit-securite-canada"],
+              ["Audit DOM-TOM", "/audit-securite-dom-tom"],
+              ["Audit Monaco", "/audit-securite-monaco"],
+            ].map(([label, href]) => (
+              <Link key={href} to={href} className="text-xs text-muted-foreground hover:text-primary transition-colors">
+                {label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+
         <div className="border-t border-border pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-xs">
             © CyberSecure {new Date().getFullYear()} — Cabinet d'audit et pentest cybersécurité à Lyon, Paris, Toulouse, Lille et dans toute la France
