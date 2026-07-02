@@ -239,6 +239,18 @@ const AuditSecuriteFortDeFrance = lazy(() => import("./pages/cities/AuditSecurit
 const AuditSecuritePointeAPitre = lazy(() => import("./pages/cities/AuditSecuritePointeAPitre.tsx"));
 const AuditSecuriteCayenne = lazy(() => import("./pages/cities/AuditSecuriteCayenne.tsx"));
 
+// Countries
+const AuditSecuriteMaroc = lazy(() => import("./pages/countries/AuditSecuriteMaroc.tsx"));
+const AuditSecuriteTunisie = lazy(() => import("./pages/countries/AuditSecuriteTunisie.tsx"));
+const AuditSecuriteAlgerie = lazy(() => import("./pages/countries/AuditSecuriteAlgerie.tsx"));
+const AuditSecuriteAfrique = lazy(() => import("./pages/countries/AuditSecuriteAfrique.tsx"));
+const AuditSecuriteDomTom = lazy(() => import("./pages/countries/AuditSecuriteDomTom.tsx"));
+const AuditSecuriteBelgique = lazy(() => import("./pages/countries/AuditSecuriteBelgique.tsx"));
+const AuditSecuriteSuisse = lazy(() => import("./pages/countries/AuditSecuriteSuisse.tsx"));
+const AuditSecuriteLuxembourg = lazy(() => import("./pages/countries/AuditSecuriteLuxembourg.tsx"));
+const AuditSecuriteCanada = lazy(() => import("./pages/countries/AuditSecuriteCanada.tsx"));
+const AuditSecuriteMonaco = lazy(() => import("./pages/countries/AuditSecuriteMonaco.tsx"));
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -483,6 +495,17 @@ const App = () => (
             <Route path="/audit-securite-fort-de-france" element={<AuditSecuriteFortDeFrance />} />
             <Route path="/audit-securite-pointe-a-pitre" element={<AuditSecuritePointeAPitre />} />
             <Route path="/audit-securite-cayenne" element={<AuditSecuriteCayenne />} />
+            {/* Countries */}
+            <Route path="/audit-securite-maroc" element={<AuditSecuriteMaroc />} />
+            <Route path="/audit-securite-tunisie" element={<AuditSecuriteTunisie />} />
+            <Route path="/audit-securite-algerie" element={<AuditSecuriteAlgerie />} />
+            <Route path="/audit-securite-afrique" element={<AuditSecuriteAfrique />} />
+            <Route path="/audit-securite-dom-tom" element={<AuditSecuriteDomTom />} />
+            <Route path="/audit-securite-belgique" element={<AuditSecuriteBelgique />} />
+            <Route path="/audit-securite-suisse" element={<AuditSecuriteSuisse />} />
+            <Route path="/audit-securite-luxembourg" element={<AuditSecuriteLuxembourg />} />
+            <Route path="/audit-securite-canada" element={<AuditSecuriteCanada />} />
+            <Route path="/audit-securite-monaco" element={<AuditSecuriteMonaco />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
